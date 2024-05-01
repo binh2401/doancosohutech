@@ -12,8 +12,8 @@ using WebBanHang.Models;
 namespace WebBanHang.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240411080608_t")]
-    partial class t
+    [Migration("20240501172504_dulieu")]
+    partial class dulieu
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -277,6 +277,9 @@ namespace WebBanHang.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
+                    b.Property<int>("count")
+                        .HasColumnType("int");
+
                     b.HasKey("Id");
 
                     b.HasIndex("UserId");
@@ -342,6 +345,16 @@ namespace WebBanHang.Migrations
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("author")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("countbuy")
+                        .HasColumnType("int");
+
+                    b.Property<int>("like")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 

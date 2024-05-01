@@ -63,13 +63,21 @@
             </div>
         </nav>
     </header>
-    <div class="container">
-        <main role="main" class="pb-3">
-            @RenderBody()
-        </main>
-    </div>
-    <!-- Footer -->
-    <partial name="footer"/>
+    <form class="form-inline my-2 my-lg-0" method="post" asp-controller="Product" asp-action="Search">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" name="searchTerm">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
+    
+        <div class="container">
+            <main role="main" class="pb-3">
+              @RenderBody()
+             </main>
+        </div>
+   
+
+   
+        <!-- Footer -->
+        <partial name="footer" />
   
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

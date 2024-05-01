@@ -390,3 +390,43 @@ body {
 
 }
 }
+.wp-content {
+    display: flex;
+}
+.ratings{
+    flex-basis:15%;
+    background-color:aqua;
+}
+#carouselExampleIndicators{
+    flex-basis:70%;
+}
+.slider {
+    flex-basis: 15%;
+    background-color: aqua;
+}
+#square-buttons {
+    width: 10px;
+    height: 10px;
+    border-radius: 100%
+}
+.love {
+    padding: 5px;
+    height:400px;
+
+}
+.lovenameandlike > p {
+    margin: inherit;
+    padding: 0px 5px
+}
+.loveall {
+    display: flex;
+    padding: 4px 5px;
+}
+img.d-block.w-100 {
+    padding: 20px;
+}
+
+.wp-content h2 {
+    font-size: small;
+    text-align: center;
+}

@@ -1,6 +1,7 @@
 ﻿@model WebBanHang.Models.Product
 <h2>@Model.Name</h2>
 <div>
+<h3>@Model.author</h3>
 <h3>Price: @Model.Price</h3>
 <p>@Model.Description</p>
 @if (!string.IsNullOrEmpty(Model.ImageUrl))

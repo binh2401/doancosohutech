@@ -23,6 +23,7 @@
 <thead>
 <tr>
 <th>Name</th>
+<th>author</th>
 <th>Price</th>
 <th>Description</th>
 <th>Category</th>
@@ -35,10 +36,11 @@
 {
 <tr>
 <td>@product.Name</td>
+<td>@product.author</td>
 <td>@product.Price</td>
 <td>@product.Description</td>
 <td>@product.Category?.Name</td>
-                <td><img src="@product.ImageUrl" style="max-width:200px;" /></td>
+<td><img src="@product.ImageUrl" style="max-width:200px;" /></td>
 <td>
 
 <a asp-action="Display" asp-route-id="@product.Id">View</a> |
