@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "idh2KZ0H12bJhAKTGcRP/GGkwxnEA+KnyHfHPll6tlo=",
+  "Hash": "2TFEGu7jaBrdQ2L3EFH+TDBA3RcZLKI2mK4QO5BwuOc=",
   "Source": "WebBanHang",
   "BasePath": "_content/WebBanHang",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "WebBanHang\\wwwroot",
       "Source": "WebBanHang",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "Pattern": "**"
     }
@@ -1157,10 +1157,10 @@
       "OriginalItemSpec": "C:\\Users\\PC\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\8.0.3\\staticwebassets\\V5\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebBanHang.styles.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebBanHang.styles.css",
       "SourceId": "WebBanHang",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\obj\\Debug\\net8.0\\scopedcss\\bundle\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "WebBanHang.styles.css",
       "AssetKind": "All",
@@ -1173,13 +1173,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\web\\WebBanHang\\WebBanHang\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebBanHang.styles.css"
+      "OriginalItemSpec": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\obj\\Debug\\net8.0\\scopedcss\\bundle\\WebBanHang.styles.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanHang.bundle.scp.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanHang.bundle.scp.css",
       "SourceId": "WebBanHang",
       "SourceType": "Computed",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "WebBanHang.bundle.scp.css",
       "AssetKind": "All",
@@ -1192,13 +1192,32 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "D:\\web\\WebBanHang\\WebBanHang\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanHang.bundle.scp.css"
+      "OriginalItemSpec": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanHang.bundle.scp.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\css\\site.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\css\\footer.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "BasePath": "_content/WebBanHang",
+      "RelativePath": "css/footer.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\footer.css"
+    },
+    {
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\css\\site.css",
+      "SourceId": "WebBanHang",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1214,10 +1233,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\favicon.ico",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\favicon.ico",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -1233,10 +1252,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\1796973.png",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\1796973.png",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/1796973.png",
       "AssetKind": "All",
@@ -1252,10 +1271,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1796973.png"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\1ea1061c5cea3c6c3f86eb323e6c4b55.gif",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\1ea1061c5cea3c6c3f86eb323e6c4b55.gif",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/1ea1061c5cea3c6c3f86eb323e6c4b55.gif",
       "AssetKind": "All",
@@ -1271,10 +1290,10 @@
       "OriginalItemSpec": "wwwroot\\images\\1ea1061c5cea3c6c3f86eb323e6c4b55.gif"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\2905_hinh-nen-may-tinh-anime-chill-cuc-net.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\2905_hinh-nen-may-tinh-anime-chill-cuc-net.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/2905_hinh-nen-may-tinh-anime-chill-cuc-net.jpg",
       "AssetKind": "All",
@@ -1290,10 +1309,10 @@
       "OriginalItemSpec": "wwwroot\\images\\2905_hinh-nen-may-tinh-anime-chill-cuc-net.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\417431712_341767128637629_8850778687356688901_n.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\417431712_341767128637629_8850778687356688901_n.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/417431712_341767128637629_8850778687356688901_n.jpg",
       "AssetKind": "All",
@@ -1309,10 +1328,10 @@
       "OriginalItemSpec": "wwwroot\\images\\417431712_341767128637629_8850778687356688901_n.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\429972683_363258073276373_4594974242640871390_n.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\429972683_363258073276373_4594974242640871390_n.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/429972683_363258073276373_4594974242640871390_n.jpg",
       "AssetKind": "All",
@@ -1328,10 +1347,29 @@
       "OriginalItemSpec": "wwwroot\\images\\429972683_363258073276373_4594974242640871390_n.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\aspdotnet.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\5d0e59a2db83248ce4073db079f4d7b9.jpg.webp",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "BasePath": "_content/WebBanHang",
+      "RelativePath": "images/5d0e59a2db83248ce4073db079f4d7b9.jpg.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\5d0e59a2db83248ce4073db079f4d7b9.jpg.webp"
+    },
+    {
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\aspdotnet.jpg",
+      "SourceId": "WebBanHang",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/aspdotnet.jpg",
       "AssetKind": "All",
@@ -1347,10 +1385,10 @@
       "OriginalItemSpec": "wwwroot\\images\\aspdotnet.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\Bản Đồ.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Bản Đồ.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/Bản Đồ.jpg",
       "AssetKind": "All",
@@ -1366,10 +1404,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Bản Đồ.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\book2.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\book2.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/book2.jpg",
       "AssetKind": "All",
@@ -1385,10 +1423,10 @@
       "OriginalItemSpec": "wwwroot\\images\\book2.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\book7.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\book7.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/book7.jpg",
       "AssetKind": "All",
@@ -1404,10 +1442,10 @@
       "OriginalItemSpec": "wwwroot\\images\\book7.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\book8.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\book8.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/book8.jpg",
       "AssetKind": "All",
@@ -1423,10 +1461,10 @@
       "OriginalItemSpec": "wwwroot\\images\\book8.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\bookstore.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\bookstore.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/bookstore.jpg",
       "AssetKind": "All",
@@ -1442,10 +1480,10 @@
       "OriginalItemSpec": "wwwroot\\images\\bookstore.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\Chiến Tranh Tiền Tệ - Tập 4.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Chiến Tranh Tiền Tệ - Tập 4.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/Chiến Tranh Tiền Tệ - Tập 4.jpg",
       "AssetKind": "All",
@@ -1461,10 +1499,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Chiến Tranh Tiền Tệ - Tập 4.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\Chuyện Con Mèo Dạy Hải Âu Bay (Tái Bản 2019).jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Chuyện Con Mèo Dạy Hải Âu Bay (Tái Bản 2019).jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/Chuyện Con Mèo Dạy Hải Âu Bay (Tái Bản 2019).jpg",
       "AssetKind": "All",
@@ -1480,10 +1518,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Chuyện Con Mèo Dạy Hải Âu Bay (Tái Bản 2019).jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\Chuyện Kỳ Lạ Ở Tiệm Sách Cũ Tanabe.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Chuyện Kỳ Lạ Ở Tiệm Sách Cũ Tanabe.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/Chuyện Kỳ Lạ Ở Tiệm Sách Cũ Tanabe.jpg",
       "AssetKind": "All",
@@ -1499,10 +1537,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Chuyện Kỳ Lạ Ở Tiệm Sách Cũ Tanabe.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\cover3.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\cover3.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/cover3.jpg",
       "AssetKind": "All",
@@ -1518,10 +1556,10 @@
       "OriginalItemSpec": "wwwroot\\images\\cover3.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\Giã Từ Thơ Ngây.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Giã Từ Thơ Ngây.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/Giã Từ Thơ Ngây.jpg",
       "AssetKind": "All",
@@ -1537,10 +1575,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Giã Từ Thơ Ngây.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\Hoàng Tử Bé (Tái Bản 2019).jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Hoàng Tử Bé (Tái Bản 2019).jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/Hoàng Tử Bé (Tái Bản 2019).jpg",
       "AssetKind": "All",
@@ -1556,10 +1594,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Hoàng Tử Bé (Tái Bản 2019).jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\Hội Chứng E.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Hội Chứng E.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/Hội Chứng E.jpg",
       "AssetKind": "All",
@@ -1575,10 +1613,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Hội Chứng E.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\Kinh Doanh Thời Trang - 8 Bước Xây Dựng, Vận Hành Và Phát Triển Shop Quần Áo Của Bạn.png",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Kinh Doanh Thời Trang - 8 Bước Xây Dựng, Vận Hành Và Phát Triển Shop Quần Áo Của Bạn.png",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/Kinh Doanh Thời Trang - 8 Bước Xây Dựng, Vận Hành Và Phát Triển Shop Quần Áo Của Bạn.png",
       "AssetKind": "All",
@@ -1594,10 +1632,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Kinh Doanh Thời Trang - 8 Bước Xây Dựng, Vận Hành Và Phát Triển Shop Quần Áo Của Bạn.png"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\Lịch Sử Thế Giới Qua Truyện Tranh.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Lịch Sử Thế Giới Qua Truyện Tranh.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/Lịch Sử Thế Giới Qua Truyện Tranh.jpg",
       "AssetKind": "All",
@@ -1613,10 +1651,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Lịch Sử Thế Giới Qua Truyện Tranh.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\Suy Nghĩ Thống Kê Trong Đời Thường.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Suy Nghĩ Thống Kê Trong Đời Thường.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/Suy Nghĩ Thống Kê Trong Đời Thường.jpg",
       "AssetKind": "All",
@@ -1632,10 +1670,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Suy Nghĩ Thống Kê Trong Đời Thường.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\Tam Thể 1 (Tái Bản).jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Tam Thể 1 (Tái Bản).jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/Tam Thể 1 (Tái Bản).jpg",
       "AssetKind": "All",
@@ -1651,10 +1689,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Tam Thể 1 (Tái Bản).jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\Tiền & Luật Hấp Dẫn.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Tiền & Luật Hấp Dẫn.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/Tiền & Luật Hấp Dẫn.jpg",
       "AssetKind": "All",
@@ -1670,10 +1708,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Tiền & Luật Hấp Dẫn.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\Utopia - Địa đàng trần gian (Tái Bản 2020).jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Utopia - Địa đàng trần gian (Tái Bản 2020).jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/Utopia - Địa đàng trần gian (Tái Bản 2020).jpg",
       "AssetKind": "All",
@@ -1689,10 +1727,10 @@
       "OriginalItemSpec": "wwwroot\\images\\Utopia - Địa đàng trần gian (Tái Bản 2020).jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\images\\z5327485759423_45af75c9e421fcf6dea36cbd441d30d7.jpg",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\z5327485759423_45af75c9e421fcf6dea36cbd441d30d7.jpg",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "images/z5327485759423_45af75c9e421fcf6dea36cbd441d30d7.jpg",
       "AssetKind": "All",
@@ -1708,10 +1746,10 @@
       "OriginalItemSpec": "wwwroot\\images\\z5327485759423_45af75c9e421fcf6dea36cbd441d30d7.jpg"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\js\\d.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\js\\d.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "js/d.js",
       "AssetKind": "All",
@@ -1727,10 +1765,10 @@
       "OriginalItemSpec": "wwwroot\\js\\d.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\js\\site.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\js\\site.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "js/site.js",
       "AssetKind": "All",
@@ -1746,10 +1784,10 @@
       "OriginalItemSpec": "wwwroot\\js\\site.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css",
       "AssetKind": "All",
@@ -1765,10 +1803,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.css.map",
       "AssetKind": "All",
@@ -1784,10 +1822,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css",
       "AssetKind": "All",
@@ -1803,10 +1841,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -1822,10 +1860,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css",
       "AssetKind": "All",
@@ -1841,10 +1879,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.css.map",
       "AssetKind": "All",
@@ -1860,10 +1898,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css",
       "AssetKind": "All",
@@ -1879,10 +1917,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap.rtl.min.css.map",
       "AssetKind": "All",
@@ -1898,10 +1936,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css",
       "AssetKind": "All",
@@ -1917,10 +1955,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.css.map",
       "AssetKind": "All",
@@ -1936,10 +1974,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css",
       "AssetKind": "All",
@@ -1955,10 +1993,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.min.css.map",
       "AssetKind": "All",
@@ -1974,10 +2012,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css",
       "AssetKind": "All",
@@ -1993,10 +2031,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.css.map",
       "AssetKind": "All",
@@ -2012,10 +2050,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css",
       "AssetKind": "All",
@@ -2031,10 +2069,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-grid.rtl.min.css.map",
       "AssetKind": "All",
@@ -2050,10 +2088,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css",
       "AssetKind": "All",
@@ -2069,10 +2107,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.css.map",
       "AssetKind": "All",
@@ -2088,10 +2126,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css",
       "AssetKind": "All",
@@ -2107,10 +2145,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.min.css.map",
       "AssetKind": "All",
@@ -2126,10 +2164,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css",
       "AssetKind": "All",
@@ -2145,10 +2183,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.css.map",
       "AssetKind": "All",
@@ -2164,10 +2202,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css",
       "AssetKind": "All",
@@ -2183,10 +2221,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-reboot.rtl.min.css.map",
       "AssetKind": "All",
@@ -2202,10 +2240,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css",
       "AssetKind": "All",
@@ -2221,10 +2259,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.css.map",
       "AssetKind": "All",
@@ -2240,10 +2278,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css",
       "AssetKind": "All",
@@ -2259,10 +2297,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.min.css.map",
       "AssetKind": "All",
@@ -2278,10 +2316,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css",
       "AssetKind": "All",
@@ -2297,10 +2335,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.css.map",
       "AssetKind": "All",
@@ -2316,10 +2354,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css",
       "AssetKind": "All",
@@ -2335,10 +2373,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/css/bootstrap-utilities.rtl.min.css.map",
       "AssetKind": "All",
@@ -2354,10 +2392,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js",
       "AssetKind": "All",
@@ -2373,10 +2411,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.js.map",
       "AssetKind": "All",
@@ -2392,10 +2430,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js",
       "AssetKind": "All",
@@ -2411,10 +2449,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.bundle.min.js.map",
       "AssetKind": "All",
@@ -2430,10 +2468,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js",
       "AssetKind": "All",
@@ -2449,10 +2487,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.js.map",
       "AssetKind": "All",
@@ -2468,10 +2506,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js",
       "AssetKind": "All",
@@ -2487,10 +2525,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.esm.min.js.map",
       "AssetKind": "All",
@@ -2506,10 +2544,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js",
       "AssetKind": "All",
@@ -2525,10 +2563,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.js.map",
       "AssetKind": "All",
@@ -2544,10 +2582,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js",
       "AssetKind": "All",
@@ -2563,10 +2601,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/dist/js/bootstrap.min.js.map",
       "AssetKind": "All",
@@ -2582,10 +2620,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\LICENSE",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/bootstrap/LICENSE",
       "AssetKind": "All",
@@ -2601,10 +2639,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\bootstrap\\LICENSE"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/jquery/dist/jquery.js",
       "AssetKind": "All",
@@ -2620,10 +2658,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/jquery/dist/jquery.min.js",
       "AssetKind": "All",
@@ -2639,10 +2677,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/jquery/dist/jquery.min.map",
       "AssetKind": "All",
@@ -2658,10 +2696,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\dist\\jquery.min.map"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/jquery/LICENSE.txt",
       "AssetKind": "All",
@@ -2677,10 +2715,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.js",
       "AssetKind": "All",
@@ -2696,10 +2734,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/jquery-validation/dist/additional-methods.min.js",
       "AssetKind": "All",
@@ -2715,10 +2753,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.js",
       "AssetKind": "All",
@@ -2734,10 +2772,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/jquery-validation/dist/jquery.validate.min.js",
       "AssetKind": "All",
@@ -2753,10 +2791,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/jquery-validation/LICENSE.md",
       "AssetKind": "All",
@@ -2772,10 +2810,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js",
       "AssetKind": "All",
@@ -2791,10 +2829,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js",
       "AssetKind": "All",
@@ -2810,10 +2848,10 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Identity": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
-      "ContentRoot": "D:\\web\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
       "BasePath": "_content/WebBanHang",
       "RelativePath": "lib/jquery-validation-unobtrusive/LICENSE.txt",
       "AssetKind": "All",
