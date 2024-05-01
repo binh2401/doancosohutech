@@ -1,0 +1,126 @@
+﻿@model ShoppingCart
+
+<h4>Giỏ Hàng</h4>
+<div class="container">
+    <div class="row">
+        <div class="col-xl-8">
+            @if (Model.Items.Count > 0)
+            {
+                foreach (var item in Model.Items)
+                {
+                    <div class="card border shadow-none mb-3">
+                        <div class="card-body">
+                            <div class="d-flex align-items-start border-bottom pb-3">
+                                <div class="flex-grow-1 align-self-center overflow-hidden">
+                                    <div>
+                                        <h5 class="text-truncate font-size-18"><a href="#" class="text-dark">@item.Name</a></h5>
+                                    </div>
+                                </div>
+                                <div class="flex-shrink-0 ms-2">
+                                    <ul class="list-inline mb-0 font-size-16">
+                                        <li class="list-inline-item">
+                                            <form asp-action="Increase" asp-controller="ShoppingCart" method="post">
+                                                <input type="hidden" name="productId" value="@item.ProductId" />
+                                                <button type="submit" class="btn btn-primary btn-sm">+</button>
+                                            </form>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <form asp-action="Decrease" asp-controller="ShoppingCart" method="post">
+                                                <input type="hidden" name="productId" value="@item.ProductId" />
+                                                <button type="submit" class="btn btn-primary btn-sm">-</button>
+                                            </form>
+                                        </li>
+                                        <li class="list-inline-item">
+                                            <form asp-action="RemoveFromCart" asp-controller="ShoppingCart" method="post">
+                                                <input type="hidden" name="productId" value="@item.ProductId" />
+                                                <button type="submit" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i></button>
+                                            </form>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="mt-3">
+                                        <p class="text-muted mb-2">Gía</p>
+                                        <h5 class="mb-0 mt-2">$@item.Price</h5>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mt-3">
+                                        <p class="text-muted mb-2">Số lượng</p>
+                                        <input type="text" class="form-control" name="quantity" value="@item.Quantity" autocomplete="off" size="2" readonly>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mt-3">
+                                        <p class="text-muted mb-2">Tổng</p>
+                                        <h5 class="mb-0 mt-2">$@(item.Price * item.Quantity)</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <h4>Giỏ hàng của bạn rỗng</h4>
+            }
+            <!-- end card -->
+            <div class="row my-4">
+                <div class="col-sm-6">
+                    @if (Model.Items.Count > 0)
+                    {
+                        <form asp-action="ClearCart" asp-controller="ShoppingCart" method="post">
+                            <button type="submit" class="btn btn-danger">
+                                <i class="mdi mdi-trash-can-outline"></i> Xóa gói sản phẩm
+                            </button>
+                        </form>
+                    }
+                    else
+                    {
+                        <div></div>
+                    }
+                </div> <!-- end col -->
+                <div class="col-sm-6">
+                    <div class="text-sm-end mt-2 mt-sm-0">
+                        <a class="btn btn-success" asp-action="Checkout" asp-controller="ShoppingCart">
+                            <i class="mdi mdi-cart-outline me-1"></i> Thanh toán
+                        </a>
+                    </div>
+                </div> <!-- end col -->
+            </div> <!-- end row-->
+        </div>
+
+        <div class="col-xl-4">
+            <div class="mt-5 mt-lg-0">
+                <div class="card border shadow-none">
+                    <div class="card-header bg-transparent border-bottom py-3 px-4">
+                        <h5 class="font-size-16 mb-0">Tóm tắt hóa đợn<span class="float-end"></span></h5>
+                    </div>
+                    <div class="card-body p-4 pt-2">
+
+                        <div class="table-responsive">
+                            <table class="table mb-0">
+                                <tbody>
+                                    <tr>
+                                        <td>Tổng chi phí :</td>
+                                        <td class="text-end">
+                                            @* $@foreach (var item in Model.Items)
+                                            {
+                                            @Model.Items.Where(x => x.ProductId == item.ProductId).Sum(x => x.Quantity * x.Price).ToString()
+                                            } *@
+                                            $@Model.Items.Sum(item => item.Price * item.Quantity)
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <!-- end table-responsive -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

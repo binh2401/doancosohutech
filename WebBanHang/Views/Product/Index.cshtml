@@ -1,0 +1,54 @@
+﻿@model IEnumerable<WebBanHang.Models.Product>
+<h2>Products</h2>
+<a asp-controller="Product" asp-action="Add">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="black" class="bi bi-folder-plus" viewBox="0 0 16 16">
+        <path d="m.5 3 .04.87a2 2 0 0 0-.342 1.311l.637 7A2 2 0 0 0 2.826 14H9v-1H2.826a1 1 0 0 1-.995-.91l-.637-7A1 1 0 0 1 2.19 4h11.62a1 1 0 0 1 .996 1.09L14.54 8h1.005l.256-2.819A2 2 0 0 0 13.81 3H9.828a2 2 0 0 1-1.414-.586l-.828-.828A2 2 0 0 0 6.172 1H2.5a2 2 0 0 0-2 2m5.672-1a1 1 0 0 1 .707.293L7.586 3H2.19q-.362.002-.683.12L1.5 2.98a1 1 0 0 1 1-.98z" />
+        <path d="M13.5 9a.5.5 0 0 1 .5.5V11h1.5a.5.5 0 1 1 0 1H14v1.5a.5.5 0 1 1-1 0V12h-1.5a.5.5 0 0 1 0-1H13V9.5a.5.5 0 0 1 .5-.5" />
+    </svg>
+</a>
+<div>
+    <a asp-controller="Product" asp-action="SortByPriceAsc" method="post">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="black" class="bi bi-sort-up" viewBox="0 0 16 16">
+            <path d="M3.5 12.5a.5.5 0 0 1-1 0V3.707L1.354 4.854a.5.5 0 1 1-.708-.708l2-1.999.007-.007a.5.5 0 0 1 .7.006l2 2a.5.5 0 1 1-.707.708L3.5 3.707zm3.5-9a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z" />
+        </svg>
+        <p>                                                                </p>
+    </a>
+    <a asp-controller="Product" asp-action="giamPriceAsc" method="post">
+        <svg xmlns="http://www.w3.org/2000/svg" width="40px" height="40px" fill="black" class="bi bi-sort-down" viewBox="0 0 16 16">
+            <path d="M3.5 2.5a.5.5 0 0 0-1 0v8.793l-1.146-1.147a.5.5 0 0 0-.708.708l2 1.999.007.007a.497.497 0 0 0 .7-.006l2-2a.5.5 0 0 0-.707-.708L3.5 11.293zm3.5 1a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5M7.5 6a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h3a.5.5 0 0 0 0-1zm0 3a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z" />
+        </svg>
+    </a>
+<table class="table">
+
+<thead>
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Description</th>
+<th>Category</th>
+            <th>Images</th>
+<th>Actions</th>
+</tr>
+</thead>
+<tbody>
+@foreach (var product in Model)
+{
+<tr>
+<td>@product.Name</td>
+<td>@product.Price</td>
+<td>@product.Description</td>
+<td>@product.Category?.Name</td>
+                <td><img src="@product.ImageUrl" style="max-width:200px;" /></td>
+<td>
+
+<a asp-action="Display" asp-route-id="@product.Id">View</a> |
+
+<a asp-action="Update" asp-route-id="@product.Id">Edit</a> |
+
+<a asp-action="Delete" asp-route-id="@product.Id">Delete</a>
+
+</td>
+</tr>
+}
+</tbody>
+</table>
