@@ -35,6 +35,31 @@
         <label asp-for="ImageUrl">Product Image</label>
         <input type="file" asp-for="ImageUrl" class="form-control" id="imageInput" onchange="previewImage()" />
     </div>
+    <div class="form-group">
+        <label asp-for="nhasanxuat"></label>
+        <textarea asp-for="nhasanxuat" class="form-control"></textarea>
+        <span asp-validation-for="nhasanxuat" class="text-danger"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="sotrang"></label>
+        <textarea asp-for="sotrang" class="form-control"></textarea>
+        <span asp-validation-for="sotrang" class="text-danger"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="congtyphathanh"></label>
+        <textarea asp-for="congtyphathanh" class="form-control"></textarea>
+        <span asp-validation-for="congtyphathanh" class="text-danger"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="loaibia"></label>
+        <textarea asp-for="loaibia" class="form-control"></textarea>
+        <span asp-validation-for="loaibia" class="text-danger"></span>
+
+    </div>
+
     <div id="imagePreview" style="max-width:200px;"></div>
     <button type="submit" class="btn btn-primary">Add</button>
 </form>

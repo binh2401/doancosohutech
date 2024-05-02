@@ -15,6 +15,10 @@ namespace WebBanHang.Models
         public string Description { get; set; }
         public string? ImageUrl { get; set; }
         public int like { get; set; }
+        public string nhasanxuat { get; set; }
+        public string congtyphathanh { get; set; }
+        public string loaibia { get; set; }
+        public int sotrang { get; set; }
         public int countbuy { get; set; }
         public List<ProductImage>? Images { get; set; }
         public int CategoryId { get; set; }

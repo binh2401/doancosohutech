@@ -48,6 +48,24 @@ namespace WebBanHang.Controllers
             // Chuyển hướng về trang chi tiết sản phẩm
             return Ok();
         }
+        public async Task<IActionResult> countbuy(int id)
+        {
+            // Lấy sản phẩm từ cơ sở dữ liệu bằng productId
+            var product = await _productRepository.GetByIdAsync(id);
+
+            if (product != null)
+            {
+                // Tăng số lượng "Like" của sản phẩm
+                product.countbuy++;
+                await _productRepository.UpdateAsync(product); // Lưu thay đổi vào cơ sở dữ liệu
+            }
+            else
+            {
+                return NotFound();
+            }
+            // Chuyển hướng về trang chi tiết sản phẩm
+            return Ok();
+        }
         public async Task<IActionResult> Detail(int id)
         {
             var product = await _productRepository.GetByIdAsync(id);

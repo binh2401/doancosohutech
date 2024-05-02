@@ -395,14 +395,14 @@ body {
 }
 .ratings{
     flex-basis:15%;
-    background-color:aqua;
+    background-color:#F1ECEB;
 }
 #carouselExampleIndicators{
     flex-basis:70%;
 }
 .slider {
     flex-basis: 15%;
-    background-color: aqua;
+    background-color: #F1ECEB;
 }
 #square-buttons {
     width: 10px;
@@ -430,3 +430,5 @@ img.d-block.w-100 {
     font-size: small;
     text-align: center;
 }
+
+. 

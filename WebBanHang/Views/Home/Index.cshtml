@@ -6,7 +6,16 @@
 
 <div class="wp-content">
     <div class="ratings">
-        <h2>sách được mua nhiều nhất</h2>
+        <div>
+            <h2>Thể loại</h2>
+            @foreach (var categoryName in Model.Where(n => n.Category != null && n.Category.Name != null)
+            .Select(n => n.Category.Name)
+            .Distinct())
+            {
+                <h2>@categoryName</h2>
+            }
+        </div>
+       
     </div>
 <div id="carouselExampleIndicators" data-mdb-carousel-init class="carousel slide" data-mdb-ride="carousel">
     <div class="carousel-indicators">
@@ -47,15 +56,17 @@
 
             @foreach (var item in Model.OrderByDescending(p => p.like).Take(4))
             {
+                <a asp-controller="Home" asp-action="Detail" class="lovedetail" asp-route-id="@item.Id">
                 <div class="loveall">
                 <div class="loveimg">
-                    <img src="@item.ImageUrl" width="50px" height="50px">
+                  <img src="@item.ImageUrl" width="50px" height="50px">
                 </div>
                 <div class="lovenameandlike">
                     <p>@item.Name</p>
                     <p>Like: @item.like</p>
                 </div>
                 </div>
+                </a>
             }
 
         </div>
@@ -94,4 +105,3 @@ content-center">
             }
         </div>
     </div>
-</section>

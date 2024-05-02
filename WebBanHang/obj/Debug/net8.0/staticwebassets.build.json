@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Jt54JRYBAlGQdS/hY8ZC9EhL3oLONZMFLXVvA8X83FM=",
+  "Hash": "DdJs+YuKTWIACQeK0jrNxJLuX09TyWtVRDIpzsVl+As=",
   "Source": "WebBanHang",
   "BasePath": "_content/WebBanHang",
   "Mode": "Default",
@@ -1461,6 +1461,25 @@
       "OriginalItemSpec": "wwwroot\\images\\6daae98383337ec7095bcc77d1139fcf.jpg.webp"
     },
     {
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\73748dab6db5be69a2b052d27ece07c8.jpg.webp",
+      "SourceId": "WebBanHang",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "BasePath": "_content/WebBanHang",
+      "RelativePath": "images/73748dab6db5be69a2b052d27ece07c8.jpg.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\73748dab6db5be69a2b052d27ece07c8.jpg.webp"
+    },
+    {
       "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\7c48a0e134d985f72b84f63727d6a09d.jpg.webp",
       "SourceId": "WebBanHang",
       "SourceType": "Discovered",
@@ -1478,6 +1497,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\7c48a0e134d985f72b84f63727d6a09d.jpg.webp"
+    },
+    {
+      "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\7dafc5262657832cdd11aa46b32ba027.jpg.webp",
+      "SourceId": "WebBanHang",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\",
+      "BasePath": "_content/WebBanHang",
+      "RelativePath": "images/7dafc5262657832cdd11aa46b32ba027.jpg.webp",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\7dafc5262657832cdd11aa46b32ba027.jpg.webp"
     },
     {
       "Identity": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\aspdotnet.jpg",

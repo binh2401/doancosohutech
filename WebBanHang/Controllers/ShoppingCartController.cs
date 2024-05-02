@@ -29,7 +29,9 @@ namespace WebBanHang.Controllers
             {
                 ProductId = productId,
                 Name = product.Name,
+                ImageUrl = product.ImageUrl,
                 Price = product.Price,
+
                 Quantity = quantity
             };
 
