@@ -22,8 +22,10 @@ namespace WebBanHang.Models
         public int countbuy { get; set; }
         public List<ProductImage>? Images { get; set; }
         public int CategoryId { get; set; }
+        public int Catagorytong { get; set; }
         public Category? Category { get; set; }
         public OrderDetail? OrderDetail { get; set; }   
         public Order? Order { get; set; }
+     
     }
 }

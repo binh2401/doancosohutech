@@ -3,7 +3,41 @@
     ViewData["Title"] = "Home Page";
     int numOfQuantity = 1;
 }
+<div>
+    <div class="menu">
+        <ul id="menu">
+            <li><a href="#">Trang chủ</a></li>
+            <li>
+                <a href="#">Danh mục 1</a>
+                <ul id="submenu">
+                    <li>
+                        <a href="#">Danh mục con 1.1</a>
+                        <ul id="sub-submenu">
+                            <li>
+                                <a href="#">Mục con 1.1.1</a>
+                                <ul id="sub-sub-submenu">
+                                    <li><a href="#">Mục con 1.1.1.1</a></li>
+                                    <li><a href="#">Mục con 1.1.1.2</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Mục con 1.1.2</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Danh mục con 1.2</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="#">Danh mục 2</a>
+                <ul id="submenu">
+                    <li><a href="#">Danh mục con 2.1</a></li>
+                    <li><a href="#">Danh mục con 2.2</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Liên hệ</a></li>
+        </ul>
 
+
+    </div>
 <div class="wp-content">
     <div class="ratings">
         <div>
@@ -15,7 +49,6 @@
                 <h2>@categoryName</h2>
             }
         </div>
-       
     </div>
 <div id="carouselExampleIndicators" data-mdb-carousel-init class="carousel slide" data-mdb-ride="carousel">
     <div class="carousel-indicators">
@@ -73,9 +106,10 @@
     </div>
     </div>
     <div class="container px-4 px-lg-5 mt-5">
-
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-
 content-center">
+
+
             @foreach (var item in Model)
             {
                 <div class="col mb-5">
@@ -105,3 +139,4 @@ content-center">
             }
         </div>
     </div>
+</div>

@@ -391,7 +391,8 @@ body {
 }
 }
 .wp-content {
-    display: flex;
+    z-index:-1;
+    display: inline-flex;
 }
 .ratings{
     flex-basis:15%;

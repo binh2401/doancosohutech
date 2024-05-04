@@ -41,6 +41,26 @@ danger"></span>
         <label asp-for="ImageUrl">Product Image</label>
         <input type="file" asp-for="ImageUrl" class="form-control" />
     </div>
+    <div class="form-group">
+        <label asp-for="nhasanxuat"></label>
+        <input asp-for="nhasanxuat" class="form-control" />
+        <span asp-validation-for="nhasanxuat" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="nhasanxuat"></label>
+        <input asp-for="nhasanxuat" class="form-control" />
+        <span asp-validation-for="nhasanxuat" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="sotrang"></label>
+        <input asp-for="sotrang" class="form-control" />
+        <span asp-validation-for="sotrang" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="loaibia"></label>
+        <input asp-for="loaibia" class="form-control" />
+        <span asp-validation-for="loaibia" class="text-danger"></span>
+    </div>
     <div class="col-8">
         <img src="@Model.ImageUrl" alt="Product Image" style="max-width:200px;"
              id="previewImage" />

@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace WebBanHang.Migrations
 {
     /// <inheritdoc />
-    public partial class dulieu : Migration
+    public partial class duliu : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -208,6 +208,10 @@ namespace WebBanHang.Migrations
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     like = table.Column<int>(type: "int", nullable: false),
+                    nhasanxuat = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    congtyphathanh = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    loaibia = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    sotrang = table.Column<int>(type: "int", nullable: false),
                     countbuy = table.Column<int>(type: "int", nullable: false),
                     CategoryId = table.Column<int>(type: "int", nullable: false),
                     OrderId = table.Column<int>(type: "int", nullable: true)

@@ -1593,4 +1593,69 @@ select {
         }
 }
 
- 
+/*menuda cap*/
+#menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 999; /* Đặt z-index cao hơn */
+}
+
+    #menu li {
+        float: left;
+        position: relative;
+    }
+
+        #menu li a {
+            display: block;
+            padding: 8px 12px;
+            text-decoration: none;
+            color: #333;
+        }
+
+        #menu li:hover > a {
+            background: #f0f0f0;
+        }
+
+#submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+    #submenu li {
+        float: none;
+    }
+
+#menu li:hover #submenu {
+    display: block;
+}
+
+#sub-submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+#submenu li:hover #sub-submenu {
+    display: block;
+}
+
+#sub-sub-submenu {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background: #fff;
+    border: 1px solid #ccc;
+}
+
+#sub-submenu li:hover #sub-sub-submenu {
+    display: block;
+}

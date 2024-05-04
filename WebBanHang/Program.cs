@@ -34,6 +34,7 @@ builder.Services.AddScoped<IProductRepository, EFProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
 
 
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
