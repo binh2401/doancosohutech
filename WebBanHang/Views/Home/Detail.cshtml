@@ -7,28 +7,58 @@
 <h1>Sản Phẩm</h1>
 
 <div class="container">
-    <div class="row">
-        <div class="col-md-4">
+    <div class="detail">
+        <div class="img-detail">
             @if (!string.IsNullOrEmpty(Model.ImageUrl))
             {
                 <img src="@Model.ImageUrl" class="img-fluid" alt="Product Image">
             }
         </div>
-        <div class="col-md-8">
-            <h2>@Model.Name</h2>
+        <div class="deatil-all">
+            <div class="detail-book">
+            <p>Tác giả @Model.author</p>
+            <h4>@Model.Name</h4>
             <p><strong>Giá:</strong> @Model.Description</p>
-            <p><strong>Giá:</strong> @Model.Price.ToString("C")</p>
             <p><strong>Số lượt thích:</strong> @Model.like</p>
+            <p><strong>Giá:</strong> @Model.Price.ToString("C")</p>
+          
             <p><strong>Loại sản phẩm:</strong> @Model.Category.Name</p>
+            <h5>Thông tin sản phẩm</h5>
+          ` <table>
 
-            <!-- Nút thêm vào giỏ hàng -->
-            <form asp-controller="ShoppingCart" asp-action="AddToCart" method="post">
-                <input type="hidden" name="productId" value="@Model.Id" />
-                <label for="quantity">Số lượng:</label>
-                <input type="number" id="quantity" name="quantity" value="1" min="1" />
-                <button type="submit" class="btn btn-primary">Thêm vào giỏ hàng</button>
-            </form>
-
+              <tr>
+                  <td>Công ty phát hành</td>
+                  <td>@Model.congtyphathanh</td>
+              </tr>
+              <tr>
+                  <td>Tác giả </td>
+                  <td>@Model.author</td>
+              </tr>
+              <tr>
+                  <td>Loại bìa</td>
+                  <td>@Model.loaibia</td>
+              </tr>
+              <tr>
+                  <td>Số trang</td>
+                  <td>@Model.sotrang</td>
+              </tr>
+              <tr>
+                  <td>Nhà sản xuất</td>
+                  <td>@Model.nhasanxuat</td>
+              </tr>
+          </table>
+            </div>
+            <h5>Mô tả sản phẩm</h5>
+           <p>@Model.Description</p>
+        </div>
+        <!-- Nút thêm vào giỏ hàng -->
+        <div class="btn-add">
+        <form asp-controller="ShoppingCart" asp-action="AddToCart" method="post">
+            <input type="hidden" name="productId" value="@Model.Id" />
+            <label for="quantity">Số lượng:</label>
+            <input type="number" id="quantity" name="quantity" value="1" min="1" />
+            <button type="submit" class="btn btn-primary">Thêm vào giỏ hàng</button>
+        </form>
             <button class="btn btn-primary" id="like-button" onclick="updateLike()">
                 like: <span id="like-count">@Model.like</span>
             </button>

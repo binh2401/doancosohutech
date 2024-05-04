@@ -1,0 +1,12 @@
+﻿.detail {
+    display: flex;
+}
+.img-detail {
+    flex-basis: 30%;
+}
+.deatil-all {
+    flex-basis: 60%;
+}
+.btn-add {
+    flex-basis: 10%;
+}

@@ -42,12 +42,13 @@
     <div class="ratings">
         <div>
             <h2>Thể loại</h2>
-            @foreach (var categoryName in Model.Where(n => n.Category != null && n.Category.Name != null)
-            .Select(n => n.Category.Name)
-            .Distinct())
-            {
-                <h2>@categoryName</h2>
-            }
+                @foreach (var categoryName in Model.Where(n => n.Category != null && n.Category.menu != null && n.Category.menu.Name != null)
+                .Select(n => n.Category.menu.Name)
+                .Distinct())
+                {
+                    <h2>@categoryName</h2>
+                }
+
         </div>
     </div>
 <div id="carouselExampleIndicators" data-mdb-carousel-init class="carousel slide" data-mdb-ride="carousel">

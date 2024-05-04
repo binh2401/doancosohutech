@@ -2,13 +2,11 @@
 
 namespace WebBanHang.Models
 {
-    public class Category
+    public class Menu
     {
         public int Id { get; set; }
         [Required, StringLength(50)]
         public string Name { get; set; }
-        public int menuid { get; set; }
-        public Menu? menu { get; set; }
-        public List<Product>? Products { get; set; }
+        public List<Category>? Categorys { get; set; }
     }
 }

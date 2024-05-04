@@ -1,14 +1,14 @@
-﻿@model IEnumerable<WebBanHang.Models.Category>
+﻿@model IEnumerable<WebBanHang.Models.Menu>
 
 @{
-    ViewData["Title"] = "Categories";
+    ViewData["Title"] = "Menus";
 }
 
 <h2>Categories</h2>
 
 <p>
-    <a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="Add">Add Category</a>
-    <a asp-action="Add">Thêm thể loại</a>
+    <a class="nav-link text-dark" asp-area="" asp-controller="Menu" asp-action="Add">Add menu</a>
+    <a asp-action="Add"></a>
 </p>
 
 <table class="table">
@@ -18,7 +18,7 @@
                 @Html.DisplayNameFor(model => model.Name)
             </th>
             <th>
-             
+
             </th>
         </tr>
     </thead>
@@ -28,9 +28,6 @@
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.Name)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.menu.Name)
                 </td>
                 <td>
                     <a asp-action="Update" asp-route-id="@item.Id">Edit</a> |

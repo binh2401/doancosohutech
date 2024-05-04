@@ -27,7 +27,8 @@
 <th>Price</th>
 <th>Description</th>
 <th>Category</th>
-            <th>Images</th>
+<th>the loai tong</th>
+ <th>Images</th>
 <th>Actions</th>
 </tr>
 </thead>
@@ -40,6 +41,9 @@
 <td>@product.Price</td>
 <td>@product.Description</td>
 <td>@product.Category?.Name</td>
+                    
+                    <td>@(product.Category?.menu?.Name ?? "Unknown")</td>
+
 <td><img src="@product.ImageUrl" style="max-width:200px;" /></td>
 <td>
 

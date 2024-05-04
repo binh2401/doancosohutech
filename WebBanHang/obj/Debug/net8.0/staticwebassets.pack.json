@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\WebBanHang.bundle.scp.css"
     },
     {
+      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\css\\detail.css",
+      "PackagePath": "staticwebassets\\css\\detail.css"
+    },
+    {
       "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\css\\footer.css",
       "PackagePath": "staticwebassets\\css\\footer.css"
     },

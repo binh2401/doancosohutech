@@ -11,6 +11,10 @@
         <input asp-for="Name" class="form-control" />
         <span asp-validation-for="Name" class="text-danger"></span>
     </div>
-
+    <div class="form-group">
+        <label asp-for="menuid">Thể loại Tổng </label>
+        <select asp-for="menuid" asp-items="@ViewBag.Menus"
+                class="form-control"></select>
+    </div>
     <button type="submit" class="btn btn-primary">Update</button>
 </form>

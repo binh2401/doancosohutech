@@ -32,7 +32,7 @@ builder.Services.AddControllersWithViews();
 
 builder.Services.AddScoped<IProductRepository, EFProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
-
+builder.Services.AddScoped<IMenu, EFMenu>();
 
 
 var app = builder.Build();
