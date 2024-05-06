@@ -1,0 +1,44 @@
+﻿@model IEnumerable<WebBanHang.Models.Product>
+@{
+    ViewData["Title"] = "menu";
+    var uniqueCategories = new HashSet<string>();
+}
+<div class="menu">
+    <ul id="menu">
+        <li><a href="#">Trang chủ</a></li>
+        <li>
+            <a href="#">Danh mục 1</a>
+            <ul id="submenu">
+             
+                    @foreach (var item in Model.Where(p => p.Category != null && p.Category.menu != null && p.Category.menu.Name != null)) 
+                    {
+
+                        var categoryName = item.Category.menu.Name;
+                        if (!uniqueCategories.Contains(categoryName))
+                        {
+                        uniqueCategories.Add(categoryName);
+                        <li>
+                         <a href="#">@categoryName</a>
+                  
+                        <ul id="sub-submenu">
+                            
+                            @foreach (var subItem in item.Category.menu.Categorys)
+                            {
+                                    <li>
+                                
+                                    <a href="#">@subItem.Name</a>
+                                    </li>
+                            }
+                       
+                        </ul>
+                         </li>
+                    
+                        }
+                        }
+               
+            </ul>
+        </li>
+      </ul>             
+
+
+</div>

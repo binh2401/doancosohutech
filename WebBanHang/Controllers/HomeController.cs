@@ -1,16 +1,22 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using WebBanHang.Models;
+using WebBanHang.Repositories;
 
 namespace WebBanHang.Controllers
 {
     public class HomeController : Controller
     {
         private readonly IProductRepository _productRepository;
+      
+        public readonly ApplicationDbContext _context;
 
-        public HomeController(IProductRepository productRepository)
+        public HomeController(IProductRepository productRepository, ApplicationDbContext context )
         {
             _productRepository = productRepository;
+            _context = context;
+
         }
 
         // Hi?n th? danh sách s?n ph?m
@@ -74,6 +80,12 @@ namespace WebBanHang.Controllers
                 return NotFound();
             }
             return View(product);
+        }
+        public async Task<IActionResult> MenuPartial()
+        {
+            var listmenu= _context.Menus.ToList();
+
+            return PartialView();
         }
     }
 }

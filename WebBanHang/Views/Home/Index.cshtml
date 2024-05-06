@@ -3,51 +3,14 @@
     ViewData["Title"] = "Home Page";
     int numOfQuantity = 1;
 }
+    
 <div>
-    <div class="menu">
-        <ul id="menu">
-            <li><a href="#">Trang chủ</a></li>
-            <li>
-                <a href="#">Danh mục 1</a>
-                <ul id="submenu">
-                    <li>
-                        <a href="#">Danh mục con 1.1</a>
-                        <ul id="sub-submenu">
-                            <li>
-                                <a href="#">Mục con 1.1.1</a>
-                                <ul id="sub-sub-submenu">
-                                    <li><a href="#">Mục con 1.1.1.1</a></li>
-                                    <li><a href="#">Mục con 1.1.1.2</a></li>
-                                </ul>
-                            </li>
-                            <li><a href="#">Mục con 1.1.2</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Danh mục con 1.2</a></li>
-                </ul>
-            </li>
-            <li>
-                <a href="#">Danh mục 2</a>
-                <ul id="submenu">
-                    <li><a href="#">Danh mục con 2.1</a></li>
-                    <li><a href="#">Danh mục con 2.2</a></li>
-                </ul>
-            </li>
-            <li><a href="#">Liên hệ</a></li>
-        </ul>
-
-
-    </div>
+    <partial name="MenuPartial" />
 <div class="wp-content">
     <div class="ratings">
         <div>
             <h2>Thể loại</h2>
-                @foreach (var categoryName in Model.Where(n => n.Category != null && n.Category.menu != null && n.Category.menu.Name != null)
-                .Select(n => n.Category.menu.Name)
-                .Distinct())
-                {
-                    <h2>@categoryName</h2>
-                }
+              
 
         </div>
     </div>

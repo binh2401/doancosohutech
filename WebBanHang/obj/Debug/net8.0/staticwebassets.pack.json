@@ -1,395 +1,415 @@
 {
   "Files": [
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanHang.bundle.scp.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\WebBanHang.bundle.scp.css",
       "PackagePath": "staticwebassets\\WebBanHang.bundle.scp.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\css\\detail.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\css\\detail.css",
       "PackagePath": "staticwebassets\\css\\detail.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\css\\footer.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\css\\footer.css",
       "PackagePath": "staticwebassets\\css\\footer.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\css\\site.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\favicon.ico",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\01b59749b201fc629e107267d2c7bb6f.jpg.webp",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\01b59749b201fc629e107267d2c7bb6f.jpg.webp",
       "PackagePath": "staticwebassets\\images\\01b59749b201fc629e107267d2c7bb6f.jpg.webp"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\1796973.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\1796973.png",
       "PackagePath": "staticwebassets\\images\\1796973.png"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\1ea1061c5cea3c6c3f86eb323e6c4b55.gif",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\1ea1061c5cea3c6c3f86eb323e6c4b55.gif",
       "PackagePath": "staticwebassets\\images\\1ea1061c5cea3c6c3f86eb323e6c4b55.gif"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\2905_hinh-nen-may-tinh-anime-chill-cuc-net.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\2905_hinh-nen-may-tinh-anime-chill-cuc-net.jpg",
       "PackagePath": "staticwebassets\\images\\2905_hinh-nen-may-tinh-anime-chill-cuc-net.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\2eacb9f887fc28779b15cf9ab6d0bf79.jpg.webp",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\2eacb9f887fc28779b15cf9ab6d0bf79.jpg.webp",
       "PackagePath": "staticwebassets\\images\\2eacb9f887fc28779b15cf9ab6d0bf79.jpg.webp"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\417431712_341767128637629_8850778687356688901_n.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\417431712_341767128637629_8850778687356688901_n.jpg",
       "PackagePath": "staticwebassets\\images\\417431712_341767128637629_8850778687356688901_n.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\429972683_363258073276373_4594974242640871390_n.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\429972683_363258073276373_4594974242640871390_n.jpg",
       "PackagePath": "staticwebassets\\images\\429972683_363258073276373_4594974242640871390_n.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\5cc8e87f8d5274eb791f194fb101dbd0.jpg.webp",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\5cc8e87f8d5274eb791f194fb101dbd0.jpg.webp",
       "PackagePath": "staticwebassets\\images\\5cc8e87f8d5274eb791f194fb101dbd0.jpg.webp"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\5d0e59a2db83248ce4073db079f4d7b9.jpg.webp",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\5d0e59a2db83248ce4073db079f4d7b9.jpg.webp",
       "PackagePath": "staticwebassets\\images\\5d0e59a2db83248ce4073db079f4d7b9.jpg.webp"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\5fb480bf1126ed128d745683ca25e0a1.jpg.webp",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\5fb480bf1126ed128d745683ca25e0a1.jpg.webp",
       "PackagePath": "staticwebassets\\images\\5fb480bf1126ed128d745683ca25e0a1.jpg.webp"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\6daae98383337ec7095bcc77d1139fcf.jpg.webp",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\6daae98383337ec7095bcc77d1139fcf.jpg.webp",
       "PackagePath": "staticwebassets\\images\\6daae98383337ec7095bcc77d1139fcf.jpg.webp"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\73748dab6db5be69a2b052d27ece07c8.jpg.webp",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\73748dab6db5be69a2b052d27ece07c8.jpg.webp",
       "PackagePath": "staticwebassets\\images\\73748dab6db5be69a2b052d27ece07c8.jpg.webp"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\7c48a0e134d985f72b84f63727d6a09d.jpg.webp",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\7c48a0e134d985f72b84f63727d6a09d.jpg.webp",
       "PackagePath": "staticwebassets\\images\\7c48a0e134d985f72b84f63727d6a09d.jpg.webp"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\7dafc5262657832cdd11aa46b32ba027.jpg.webp",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\7dafc5262657832cdd11aa46b32ba027.jpg.webp",
       "PackagePath": "staticwebassets\\images\\7dafc5262657832cdd11aa46b32ba027.jpg.webp"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Bản Đồ.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Bản Đồ.jpg",
       "PackagePath": "staticwebassets\\images\\Bản Đồ.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Chiến Tranh Tiền Tệ - Tập 4.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Chiến Tranh Tiền Tệ - Tập 4.jpg",
       "PackagePath": "staticwebassets\\images\\Chiến Tranh Tiền Tệ - Tập 4.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Chuyện Con Mèo Dạy Hải Âu Bay (Tái Bản 2019).jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Chuyện Con Mèo Dạy Hải Âu Bay (Tái Bản 2019).jpg",
       "PackagePath": "staticwebassets\\images\\Chuyện Con Mèo Dạy Hải Âu Bay (Tái Bản 2019).jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Chuyện Kỳ Lạ Ở Tiệm Sách Cũ Tanabe.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Chuyện Kỳ Lạ Ở Tiệm Sách Cũ Tanabe.jpg",
       "PackagePath": "staticwebassets\\images\\Chuyện Kỳ Lạ Ở Tiệm Sách Cũ Tanabe.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Giã Từ Thơ Ngây.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Giã Từ Thơ Ngây.jpg",
       "PackagePath": "staticwebassets\\images\\Giã Từ Thơ Ngây.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Hoàng Tử Bé (Tái Bản 2019).jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Hoàng Tử Bé (Tái Bản 2019).jpg",
       "PackagePath": "staticwebassets\\images\\Hoàng Tử Bé (Tái Bản 2019).jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Hội Chứng E.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Hội Chứng E.jpg",
       "PackagePath": "staticwebassets\\images\\Hội Chứng E.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Kinh Doanh Thời Trang - 8 Bước Xây Dựng, Vận Hành Và Phát Triển Shop Quần Áo Của Bạn.png",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Kinh Doanh Thời Trang - 8 Bước Xây Dựng, Vận Hành Và Phát Triển Shop Quần Áo Của Bạn.png",
       "PackagePath": "staticwebassets\\images\\Kinh Doanh Thời Trang - 8 Bước Xây Dựng, Vận Hành Và Phát Triển Shop Quần Áo Của Bạn.png"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Lịch Sử Thế Giới Qua Truyện Tranh.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Lịch Sử Thế Giới Qua Truyện Tranh.jpg",
       "PackagePath": "staticwebassets\\images\\Lịch Sử Thế Giới Qua Truyện Tranh.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Suy Nghĩ Thống Kê Trong Đời Thường.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Screenshot 2024-03-21 180811.png",
+      "PackagePath": "staticwebassets\\images\\Screenshot 2024-03-21 180811.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Screenshot 2024-03-21 190728.png",
+      "PackagePath": "staticwebassets\\images\\Screenshot 2024-03-21 190728.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Screenshot 2024-03-23 203911.png",
+      "PackagePath": "staticwebassets\\images\\Screenshot 2024-03-23 203911.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Screenshot 2024-03-26 124110.png",
+      "PackagePath": "staticwebassets\\images\\Screenshot 2024-03-26 124110.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Screenshot 2024-03-26 161558.png",
+      "PackagePath": "staticwebassets\\images\\Screenshot 2024-03-26 161558.png"
+    },
+    {
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Suy Nghĩ Thống Kê Trong Đời Thường.jpg",
       "PackagePath": "staticwebassets\\images\\Suy Nghĩ Thống Kê Trong Đời Thường.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Tam Thể 1 (Tái Bản).jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Tam Thể 1 (Tái Bản).jpg",
       "PackagePath": "staticwebassets\\images\\Tam Thể 1 (Tái Bản).jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Tiền & Luật Hấp Dẫn.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Tiền & Luật Hấp Dẫn.jpg",
       "PackagePath": "staticwebassets\\images\\Tiền & Luật Hấp Dẫn.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\Utopia - Địa đàng trần gian (Tái Bản 2020).jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\Utopia - Địa đàng trần gian (Tái Bản 2020).jpg",
       "PackagePath": "staticwebassets\\images\\Utopia - Địa đàng trần gian (Tái Bản 2020).jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\aspdotnet.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\aspdotnet.jpg",
       "PackagePath": "staticwebassets\\images\\aspdotnet.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\book2.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\book2.jpg",
       "PackagePath": "staticwebassets\\images\\book2.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\book7.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\book7.jpg",
       "PackagePath": "staticwebassets\\images\\book7.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\book8.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\book8.jpg",
       "PackagePath": "staticwebassets\\images\\book8.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\bookstore.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\bookstore.jpg",
       "PackagePath": "staticwebassets\\images\\bookstore.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\cover3.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\cover3.jpg",
       "PackagePath": "staticwebassets\\images\\cover3.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\images\\z5327485759423_45af75c9e421fcf6dea36cbd441d30d7.jpg",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\images\\z5327485759423_45af75c9e421fcf6dea36cbd441d30d7.jpg",
       "PackagePath": "staticwebassets\\images\\z5327485759423_45af75c9e421fcf6dea36cbd441d30d7.jpg"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\js\\d.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\js\\d.js",
       "PackagePath": "staticwebassets\\js\\d.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\js\\site.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\js\\site.js",
       "PackagePath": "staticwebassets\\js\\site.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\LICENSE",
       "PackagePath": "staticwebassets\\lib\\bootstrap"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
       "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\jquery\\LICENSE.txt",
       "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\WebBanHang\\WebBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "Id": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
     },
     {

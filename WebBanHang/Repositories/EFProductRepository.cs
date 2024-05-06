@@ -13,17 +13,19 @@ public class EFProductRepository : IProductRepository
     }
     public async Task<IEnumerable<Product>> GetAllAsync()
     {
-        // return await _context.Products.ToListAsync();
         return await _context.Products
-        .Include(p => p.Category) // Include thông tin về category
-        .ToListAsync();
+         .Include(p => p.Category) // Bao gồm thông tin về danh mục (category)
+             .ThenInclude(c => c.menu) // Bao gồm thông tin về menu
+         .ToListAsync();
     }
     public async Task<Product> GetByIdAsync(int id)
     {
         // return await _context.Products.FindAsync(id);
         // lấy thông tin kèm theo category
-        return await _context.Products.Include(p =>
-       p.Category).FirstOrDefaultAsync(p => p.Id == id);
+        return await _context.Products
+         .Include(p => p.Category) // Bao gồm thông tin về category
+         .ThenInclude(c => c.menu) // Bao gồm thông tin về menu
+         .FirstOrDefaultAsync(p => p.Id == id);
     }
     public async Task AddAsync(Product product)
     {

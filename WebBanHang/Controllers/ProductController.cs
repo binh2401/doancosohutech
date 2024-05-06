@@ -113,7 +113,7 @@ public async Task<IActionResult> Display(int id)
             }
             // Cập nhật các thông tin khác của sản phẩm
         
-existingProduct.Name = product.Name;
+            existingProduct.Name = product.Name;
             existingProduct.Price = product.Price;
             existingProduct.Description = product.Description;
             existingProduct.CategoryId = product.CategoryId;
