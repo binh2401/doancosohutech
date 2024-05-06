@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\WebBanHang.csproj": {}
+    "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\WebBanHang.csproj": {}
   },
   "projects": {
-    "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\WebBanHang.csproj": {
+    "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\WebBanHang.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\WebBanHang.csproj",
+        "projectUniqueName": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\WebBanHang.csproj",
         "projectName": "WebBanHang",
-        "projectPath": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\WebBanHang.csproj",
+        "projectPath": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\WebBanHang.csproj",
         "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\PC\\OneDrive\\Máy tính\\test\\doancosohutech\\WebBanHang\\obj\\",
+        "outputPath": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",

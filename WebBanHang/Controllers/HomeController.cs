@@ -87,5 +87,14 @@ namespace WebBanHang.Controllers
 
             return PartialView();
         }
+        public async Task<IActionResult> ProductsByCategory(int categoryId)
+        {
+            // Lấy danh sách sản phẩm thuộc thể loại categoryId từ cơ sở dữ liệu
+            var productsInCategory = await _context.Products
+                .Where(p => p.CategoryId == categoryId)
+                .ToListAsync();
+
+            return View(productsInCategory);
+        }
     }
 }
