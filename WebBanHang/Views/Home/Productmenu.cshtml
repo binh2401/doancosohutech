@@ -1,17 +1,16 @@
-﻿@model IEnumerable<WebBanHang.Models.Product>
+﻿@model List<Product>
 @{
     // Group products by category
     int numOfQuantity = 1;
-    var productsByCategory = Model.GroupBy(p => p.Category?.menu?.Name).Take(4);
 }
 
-@foreach (var group in productsByCategory)
-{
-    <h2 class="name-category">@group.Key</h2>
+<ul>
     <div class="container px-4 px-lg-5 mt-5">
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-            @foreach (var item in group)
+            @foreach (var item in Model)
             {
+
+
                 <div class="col mb-5">
                     <div class="card gap-3" style="width: 18rem">
                         <img src="@item.ImageUrl" class="card-img-top" alt="..." style="height: 300px">
@@ -30,8 +29,8 @@
                         </div>
                     </div>
                 </div>
+
             }
         </div>
     </div>
-    <p class="contine"> xem tiep</p>
-}
+</ul>

@@ -18,20 +18,21 @@
                         {
                         uniqueCategories.Add(categoryName);
                         <li>
-                         <a href="#">@categoryName</a>
-                  
+                            <a asp-controller="Home" asp-action="Productmenu" class="btn btn-primary font-control" asp-route-menuId="@item.Id">
+                                @categoryName
+                            </a>
                         <ul id="sub-submenu">
                             
                             @foreach (var subItem in item.Category.menu.Categorys)
                             {
                                     <li>
-                                
-                                    <a href="#">@subItem.Name</a>
+                                        <a asp-controller="Home" asp-action="Productcategory" class="btn btn-primary font-control" asp-route-categoryId="@subItem.Id">@subItem.Name</a>
+
                                     </li>
                             }
                        
                         </ul>
-                         </li>
+                        </li>
                     
                         }
                         }

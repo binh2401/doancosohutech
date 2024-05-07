@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using WebBanHang.Data;
 using WebBanHang.Models;
 using WebBanHang.Repositories;
 

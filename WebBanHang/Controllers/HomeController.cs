@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using WebBanHang.Data;
 using WebBanHang.Models;
 using WebBanHang.Repositories;
 
@@ -87,14 +88,45 @@ namespace WebBanHang.Controllers
 
             return PartialView();
         }
-        public async Task<IActionResult> ProductsByCategory(int categoryId)
+        public async Task<IActionResult> ProductsByCategory(int mainCategoryId)
         {
-            // Lấy danh sách sản phẩm thuộc thể loại categoryId từ cơ sở dữ liệu
-            var productsInCategory = await _context.Products
-                .Where(p => p.CategoryId == categoryId)
+            var categoriesInMainCategory = await _context.Categories
+         .Where(c => c.menuid == mainCategoryId)
+         .ToListAsync();
+
+            // Lấy danh sách sản phẩm thuộc các danh mục thuộc thể loại lớn
+            var productsInMainCategory = await _context.Products
+                .Where(p => categoriesInMainCategory.Any(c => c.Id == p.CategoryId))
                 .ToListAsync();
 
+            return View(productsInMainCategory);
+        }
+        public async Task<IActionResult> Productcategory(int categoryId)
+        {
+            // Truy vấn cơ sở dữ liệu để lấy các sản phẩm thuộc danh mục có ID là categoryId
+            var productsInCategory = await _context.Products
+                                                .Where(p => p.CategoryId == categoryId)
+                                                .ToListAsync();
+
+            // Trả về view và truyền danh sách sản phẩm tới view
             return View(productsInCategory);
         }
+        public async Task<IActionResult> Productmenu(int categoryId)
+        {
+            // Lấy danh sách các danh mục thuộc thể loại lớn (categoryId) từ cơ sở dữ liệu
+            var categoriesInMainCategory = await _context.Categories
+                                                .Where(c => c.menuid == categoryId)
+                                                .Select(c => c.Id)
+                                                .ToListAsync();
+
+            // Lấy danh sách sản phẩm thuộc các danh mục trong danh sách danh mục đã lấy được
+            var productsInMainCategory = await _context.Products
+                                                      .Where(p => categoriesInMainCategory.Contains(p.CategoryId))
+                                                      .ToListAsync();
+
+            // Trả về view và truyền danh sách sản phẩm tới view
+            return View(productsInMainCategory);
+        }
+
     }
 }

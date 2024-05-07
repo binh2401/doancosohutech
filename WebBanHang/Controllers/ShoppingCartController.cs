@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using WebBanHang.Data;
 using WebBanHang.Extensions;
 using WebBanHang.Models;
 

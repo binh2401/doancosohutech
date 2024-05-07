@@ -3,6 +3,7 @@
 using WebBanHang.Repositories;
 
 using WebBanHang.Models;
+using WebBanHang.Data;
 
 public class EFProductRepository : IProductRepository
 {
