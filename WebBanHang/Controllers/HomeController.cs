@@ -79,6 +79,16 @@ namespace WebBanHang.Controllers
             {
                 return NotFound();
             }
+            var productCategory = await _productRepository.GetByIdAsync(product.CategoryId);
+
+            if (productCategory == null)
+            {
+                return NotFound("Product category not found");
+            }
+
+            // Sử dụng ViewBag để truyền thông tin loại sản phẩm vào view
+            ViewBag.ProductCategory = productCategory;
+
             return View(product);
         }
         public async Task<IActionResult> MenuPartial()
