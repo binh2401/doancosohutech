@@ -13,15 +13,17 @@ namespace WebBanHang.Areas.Admin.Controllers
     {
         private readonly IProductRepository _productRepository;
         private readonly ICategoryRepository _categoryRepository;
+        private readonly IMenu _imenu;
         public CategoriesController(IProductRepository productRepository, ICategoryRepository
-        categoryRepository)
+        categoryRepository, IMenu imenu)
         {
             _productRepository = productRepository;
             _categoryRepository = categoryRepository;
+            _imenu = imenu;
         }
         public async Task<IActionResult> Index()
         {
-        var category = await _categoryRepository.GetAllAsync();
+            var category = await _categoryRepository.GetAllAsync();
             return View(category);
         }
         public async Task<IActionResult> Display(int id)
@@ -33,8 +35,10 @@ namespace WebBanHang.Areas.Admin.Controllers
             }
             return View(category);
         }
-        public IActionResult Add()
+        public async Task<IActionResult> Add()
         {
+            var categories = await _imenu.GetAllAsync();
+            ViewBag.Menus = new SelectList(categories, "Id", "Name");
             return View();
         }
         [HttpPost]
@@ -44,7 +48,10 @@ namespace WebBanHang.Areas.Admin.Controllers
             {
                 await _categoryRepository.AddAsync(category);
                 return RedirectToAction(nameof(Index));
+
             }
+            var categories = await _imenu.GetAllAsync();
+            ViewBag.Menus = new SelectList(categories, "Id", "Name");
             return View(category);
         }
         public async Task<IActionResult> Update(int id)
@@ -72,8 +79,8 @@ namespace WebBanHang.Areas.Admin.Controllers
             return View(category);
         }
         public async Task<IActionResult> Delete(int id)
-        {    
-var category = await _categoryRepository.GetByIdAsync(id);
+        {
+            var category = await _categoryRepository.GetByIdAsync(id);
             if (category == null)
             {
                 return NotFound();
@@ -90,5 +97,6 @@ var category = await _categoryRepository.GetByIdAsync(id);
             }
             return RedirectToAction(nameof(Index));
         }
+
     }
 }

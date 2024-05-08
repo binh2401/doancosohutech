@@ -158,7 +158,7 @@ public async Task<IActionResult> Display(int id)
             sortedProducts = sortedProducts.OrderBy(p => p.Name);
             return View("Index", sortedProducts);
         }
-
+        // tăng dần và giảm dần 
         public async Task<IActionResult> SortByPriceAsc()
         {
             var sortedProducts = await _productRepository.GetAllAsync();
@@ -173,5 +173,5 @@ public async Task<IActionResult> Display(int id)
         }
 
     }
-    }
+}
 

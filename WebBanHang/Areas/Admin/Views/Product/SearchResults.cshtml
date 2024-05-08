@@ -1,0 +1,47 @@
+﻿@model IEnumerable<WebBanHang.Models.Product>
+@{
+    ViewData["Title"] = "SearchResults";
+    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+}
+
+<h2>SearchResults</h2>
+<table class="table">
+
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>author</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Category</th>
+            <th>the loai tong</th>
+            <th>Images</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var product in Model)
+        {
+            <tr>
+                <td>@product.Name</td>
+                <td>@product.author</td>
+                <td>@product.Price</td>
+                <td>@product.Description</td>
+                <td>@product.Category?.Name</td>
+                <td>@(product.Category?.menu?.Name ?? "Unknown")</td>
+
+                <td><img src="@product.ImageUrl" style="max-width:200px;" /></td>
+                <td>
+
+                    <a asp-action="Display" asp-route-id="@product.Id">View</a> |
+
+                    <a asp-action="Update" asp-route-id="@product.Id">Edit</a> |
+
+                    <a asp-action="Delete" asp-route-id="@product.Id">Delete</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+

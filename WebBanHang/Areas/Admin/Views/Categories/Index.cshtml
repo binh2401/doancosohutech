@@ -7,6 +7,7 @@
 <h2>Categories</h2>
 
 <p>
+    <a class="nav-link text-dark" asp-area="" asp-controller="Categories" asp-action="Add">Add Category</a>
     <a asp-action="Add">Thêm thể loại</a>
 </p>
 
@@ -15,8 +16,11 @@
         <tr>
             <th>
                 @Html.DisplayNameFor(model => model.Name)
+
             </th>
-            <th></th>
+            <th>
+                @Html.DisplayNameFor(p => p.menu.Name)
+            </th>
         </tr>
     </thead>
     <tbody>
@@ -25,6 +29,9 @@
             <tr>
                 <td>
                     @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.menu.Name)
                 </td>
                 <td>
                     <a asp-action="Update" asp-route-id="@item.Id">Edit</a> |

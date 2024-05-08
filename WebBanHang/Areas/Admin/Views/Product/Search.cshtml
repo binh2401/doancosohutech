@@ -1,0 +1,11 @@
+﻿@model string
+
+<h2>Search Products</h2>
+
+<form asp-controller="Product" asp-action="Search" method="post">
+    <div class="form-group">
+        <label for="searchTerm">Search Term:</label>
+        <input type="text" id="searchTerm" name="searchTerm" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary">Search</button>
+</form>

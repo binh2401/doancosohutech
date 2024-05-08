@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "/VmTfnSRDGYA/wHtgUaJPfF3HpBq+fiH/7bBeoXENsI=",
+  "Hash": "9Y9g10bLbO0ud2Ik/HFL/DcvyhPhrHlA2WE4HQR1Go0=",
   "Source": "WebBanHang",
   "BasePath": "_content/WebBanHang",
   "Mode": "Default",
@@ -1687,6 +1687,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\banner.png"
+    },
+    {
+      "Identity": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\wwwroot\\images\\bình cc.jpg",
+      "SourceId": "WebBanHang",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\wwwroot\\",
+      "BasePath": "_content/WebBanHang",
+      "RelativePath": "images/bình cc.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\bình cc.jpg"
     },
     {
       "Identity": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\wwwroot\\js\\bootstrap.min.js",

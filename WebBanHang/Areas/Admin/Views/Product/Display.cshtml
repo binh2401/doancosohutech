@@ -1,0 +1,17 @@
+﻿@model WebBanHang.Models.Product
+<h2>@Model.Name</h2>
+<div>
+    <h3>@Model.author</h3>
+    <h3>Price: @Model.Price</h3>
+    <p>@Model.Description</p>
+    <p>công ty phát hành:  @Model.congtyphathanh</p>
+    <p>nhà sản xuất: @Model.nhasanxuat</p>
+    <p>loại bìa: @Model.loaibia</p>
+    <p>số trang:  @Model.sotrang</p>
+    @if (!string.IsNullOrEmpty(Model.ImageUrl))
+    {
+        <img src="@Model.ImageUrl" alt="Product Image" style="max-width:
+200px;" />
+    }
+</div>
+<a asp-action="Index">Back to List</a>

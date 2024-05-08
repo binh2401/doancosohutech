@@ -109,6 +109,10 @@
       "PackagePath": "staticwebassets\\images\\banner.png"
     },
     {
+      "Id": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\wwwroot\\images\\bình cc.jpg",
+      "PackagePath": "staticwebassets\\images\\bình cc.jpg"
+    },
+    {
       "Id": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\wwwroot\\js\\bootstrap.min.js",
       "PackagePath": "staticwebassets\\js\\bootstrap.min.js"
     },
