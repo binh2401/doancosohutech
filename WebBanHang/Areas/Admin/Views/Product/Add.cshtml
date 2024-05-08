@@ -1,53 +1,88 @@
 ﻿@model WebBanHang.Models.Product
-
+@using Microsoft.AspNetCore.Mvc.Rendering
 @{
-    ViewData["Title"] = "Add";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Add Product";
 }
-
-<h1>Add</h1>
-
-<h4>Product</h4>
-<hr />
-<div class="row">
-    <div class="col-md-4">
-        <form asp-action="Add">
-            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-            <div class="form-group">
-                <label asp-for="Name" class="control-label"></label>
-                <input asp-for="Name" class="form-control" />
-                <span asp-validation-for="Name" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Price" class="control-label"></label>
-                <input asp-for="Price" class="form-control" />
-                <span asp-validation-for="Price" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="Description" class="control-label"></label>
-                <input asp-for="Description" class="form-control" />
-                <span asp-validation-for="Description" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="ImageUrl" class="control-label"></label>
-                <input asp-for="ImageUrl" class="form-control" />
-                <span asp-validation-for="ImageUrl" class="text-danger"></span>
-            </div>
-            <div class="form-group">
-                <label asp-for="CategoryId" class="control-label"></label>
-                <select asp-for="CategoryId" class ="form-control" asp-items="ViewBag.CategoryId"></select>
-            </div>
-            <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
-            </div>
-        </form>
+<h2>Add Product</h2>
+<form asp-action="Add" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name" class="text-danger"></span>
     </div>
-</div>
+    <div class="form-group">
+        <label asp-for="author"></label>
+        <input asp-for="author" class="form-control" />
+        <span asp-validation-for="author" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Price"></label>
+        <input asp-for="Price" class="form-control" />
+        <span asp-validation-for="Price" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
 
-<div>
-    <a asp-action="Index">Back to List</a>
-</div>
+    </div>
 
-@section Scripts {
-    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
-}
+    <div class="form-group">
+        <label asp-for="CategoryId">Category</label>
+        <select asp-for="CategoryId" asp-items="ViewBag.Categories"
+                class="form-control"></select>
+    </div>
+    <div class="form-group">
+        <label asp-for="ImageUrl">Product Image</label>
+        <input type="file" asp-for="ImageUrl" class="form-control" id="imageInput" onchange="previewImage()" />
+    </div>
+    <div class="form-group">
+        <label asp-for="nhasanxuat"></label>
+        <textarea asp-for="nhasanxuat" class="form-control"></textarea>
+        <span asp-validation-for="nhasanxuat" class="text-danger"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="sotrang"></label>
+        <textarea asp-for="sotrang" class="form-control"></textarea>
+        <span asp-validation-for="sotrang" class="text-danger"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="congtyphathanh"></label>
+        <textarea asp-for="congtyphathanh" class="form-control"></textarea>
+        <span asp-validation-for="congtyphathanh" class="text-danger"></span>
+
+    </div>
+    <div class="form-group">
+        <label asp-for="loaibia"></label>
+        <textarea asp-for="loaibia" class="form-control"></textarea>
+        <span asp-validation-for="loaibia" class="text-danger"></span>
+
+    </div>
+
+    <div id="imagePreview" style="max-width:200px;"></div>
+    <button type="submit" class="btn btn-primary">Add</button>
+</form>
+
+<script>
+    function previewImage() {
+        var preview = document.getElementById("imagePreview");
+        var file = document.getElementById("imageInput").files[0];
+        var reader = new FileReader();
+
+        reader.onloadend = function () {
+            var img = new Image();
+            img.src = reader.result;
+            img.style.maxWidth = "200px";
+            preview.innerHTML = "";
+            preview.appendChild(img);
+        }
+
+        if (file) {
+            reader.readAsDataURL(file);
+        } else {
+            preview.innerHTML = "";
+        }
+    }
+</script>

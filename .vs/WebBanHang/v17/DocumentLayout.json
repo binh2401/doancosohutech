@@ -3,11 +3,59 @@
   "WorkspaceRootPath": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|d:\\hoctap\\doancoso\\doancosohutech\\webbanhang\\areas\\admin\\views\\ad\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\ad\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\controllers\\adcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\controllers\\adcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\categories\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\categories\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\categories\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\categories\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\categories\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\categories\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\controllers\\menucontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|d:\\hoctap\\doancoso\\doancosohutech\\webbanhang\\views\\shared\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\views\\shared\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\views\\shared\\footer.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
@@ -19,28 +67,8 @@
       "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\views\\ad\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\views\\ad\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\controllers\\adcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\controllers\\adcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\ad\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\ad\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\controllers\\categoriescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\controllers\\adcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\controllers\\adcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\views\\menu\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -57,34 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\views\\menu\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\views\\menu\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\product\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\product\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\categories\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\categories\\add.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\categories\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\categories\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\categories\\display.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\categories\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\views\\home\\detail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -250,10 +250,6 @@
       "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\views\\categories\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\views\\categories\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\areas\\admin\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A33C2C6B-2812-4631-9CA4-9F71CCE91A04}|WebBanHang\\WebBanHang.csproj|solutionrelative:webbanhang\\areas\\admin\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -274,6 +270,14 @@
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF\\webbanhang\\webbanhang\\migrations\\20240411080608_t.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\views\\ad\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webbanhang\\views\\ad\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\hoctap\\DoAnCoSo\\doancosohutech\\webbanhang\\controllers\\adcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:webbanhang\\controllers\\adcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -287,10 +291,6 @@
           "Children": [
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
             },
             {
@@ -299,129 +299,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "footer.cshtml",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Shared\\footer.cshtml",
-              "RelativeDocumentMoniker": "WebBanHang\\Views\\Shared\\footer.cshtml",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Shared\\footer.cshtml",
-              "RelativeToolTip": "WebBanHang\\Views\\Shared\\footer.cshtml",
-              "ViewState": "AQIAAAsAAAAAAAAAAAAuwBwAAAAuAAAA",
+              "DocumentIndex": 3,
+              "Title": "Display.cshtml",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-01T11:13:02.222Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-04-08T13:47:11.894Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Menu\\Update.cshtml",
-              "RelativeDocumentMoniker": "WebBanHang\\Views\\Menu\\Update.cshtml",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Menu\\Update.cshtml",
-              "RelativeToolTip": "WebBanHang\\Views\\Menu\\Update.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAMAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-07T10:41:43.673Z"
+              "WhenOpened": "2024-04-08T13:47:12.652Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "CategoriesController.cs",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Controllers\\CategoriesController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-08T13:44:24.887Z"
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Update.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Update.cshtml",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Update.cshtml",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Update.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T13:47:15.652Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Product\\Index.cshtml",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAB8AAAANAAAA",
+              "DocumentIndex": 7,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Product\\Add.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Product\\Add.cshtml",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Product\\Add.cshtml",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Product\\Add.cshtml",
+              "ViewState": "AQIAAA0AAAAAAAAAAADwv1MAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T20:58:43.087Z"
+              "WhenOpened": "2024-04-08T14:00:39.612Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebBanHang\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "WebBanHang\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAAMAAAAYAAAA",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Product\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-03T04:09:19.759Z"
+              "WhenOpened": "2024-04-08T20:58:43.087Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Ad\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Ad\\Index.cshtml",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Ad\\Index.cshtml",
-              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Ad\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAEAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-07T10:54:00.187Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-07T09:14:22.998Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_Layout.cshtml.css",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeDocumentMoniker": "WebBanHang\\Views\\Shared\\_Layout.cshtml.css",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Shared\\_Layout.cshtml.css",
-              "RelativeToolTip": "WebBanHang\\Views\\Shared\\_Layout.cshtml.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-05-07T11:05:14.56Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Ad\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebBanHang\\Views\\Ad\\Index.cshtml",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Ad\\Index.cshtml",
-              "RelativeToolTip": "WebBanHang\\Views\\Ad\\Index.cshtml",
-              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAQAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-05-07T10:50:33.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "WebBanHang\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "WebBanHang\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAGAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-03T04:02:13.176Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 1,
               "Title": "AdController.cs",
               "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Controllers\\AdController.cs",
               "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Controllers\\AdController.cs",
@@ -433,7 +371,164 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoriesController.cs",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Controllers\\CategoriesController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBEAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-08T13:44:24.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Ad\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Ad\\Index.cshtml",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Ad\\Index.cshtml",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Ad\\Index.cshtml",
+              "ViewState": "AQIAAAsBAAAAAAAAAAAAAP0AAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-07T10:54:00.187Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T13:47:11.282Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "Add.cshtml",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Add.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Add.cshtml",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Add.cshtml",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Add.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-08T13:47:10.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MenuController.cs",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Controllers\\MenuController.cs",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Controllers\\MenuController.cs",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Controllers\\MenuController.cs",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Controllers\\MenuController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-08T18:55:47.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABkAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-07T09:14:22.998Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Ad\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\Ad\\Index.cshtml",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Ad\\Index.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\Ad\\Index.cshtml",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAAAAQAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-07T10:50:33.722Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "_Layout.cshtml.css",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\Shared\\_Layout.cshtml.css",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Shared\\_Layout.cshtml.css",
+              "RelativeToolTip": "WebBanHang\\Views\\Shared\\_Layout.cshtml.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-07T11:05:14.56Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAAAAMAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T04:09:19.759Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Controllers\\ProductController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-03T03:57:27.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Update.cshtml",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Menu\\Update.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\Menu\\Update.cshtml",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Menu\\Update.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\Menu\\Update.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-07T10:41:43.673Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "footer.cshtml",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Shared\\footer.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\Shared\\footer.cshtml",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Shared\\footer.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\Shared\\footer.cshtml",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAuwBwAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-01T11:13:02.222Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "WebBanHang\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "WebBanHang\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABgAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-04-03T04:02:13.176Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
               "Title": "AdController.cs",
               "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Controllers\\AdController.cs",
               "RelativeDocumentMoniker": "WebBanHang\\Controllers\\AdController.cs",
@@ -445,19 +540,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Product\\Add.cshtml",
-              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Product\\Add.cshtml",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Product\\Add.cshtml",
-              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Product\\Add.cshtml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAADIAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T14:00:39.612Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 19,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Menu\\Delete.cshtml",
               "RelativeDocumentMoniker": "WebBanHang\\Views\\Menu\\Delete.cshtml",
@@ -469,7 +552,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 17,
               "Title": "Add.cshtml",
               "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Menu\\Add.cshtml",
               "RelativeDocumentMoniker": "WebBanHang\\Views\\Menu\\Add.cshtml",
@@ -481,7 +564,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 18,
               "Title": "Index.cshtml",
               "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Views\\Menu\\Index.cshtml",
               "RelativeDocumentMoniker": "WebBanHang\\Views\\Menu\\Index.cshtml",
@@ -490,54 +573,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-07T10:41:44.153Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "Display.cshtml",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
-              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
-              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Display.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T13:47:11.894Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "ProductController.cs",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Controllers\\ProductController.cs",
-              "ViewState": "AQIAAG8AAAAAAAAAAAAgwJMAAAAFAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-04-03T03:57:27.171Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
-              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
-              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Delete.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T13:47:11.282Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Add.cshtml",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Add.cshtml",
-              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Add.cshtml",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Add.cshtml",
-              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Add.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T13:47:10.372Z"
             },
             {
               "$type": "Document",
@@ -550,18 +585,6 @@
               "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-05-07T10:16:19.571Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T13:47:12.652Z"
             },
             {
               "$type": "Document",
@@ -685,7 +708,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 67,
               "Title": "Privacy.cshtml",
               "DocumentMoniker": "D:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF\\WebBanHang\\WebBanHang\\Views\\Home\\Privacy.cshtml",
               "RelativeDocumentMoniker": "..\\..\\..\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF\\WebBanHang\\WebBanHang\\Views\\Home\\Privacy.cshtml",
@@ -733,7 +756,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 68,
               "Title": "20240411080608_t.cs",
               "DocumentMoniker": "D:\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF\\WebBanHang\\WebBanHang\\Migrations\\20240411080608_t.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\\u0111\u1ED3 \u00E1n c\u01A1 s\u1EDF\\WebBanHang\\WebBanHang\\Migrations\\20240411080608_t.cs",
@@ -1081,18 +1104,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 63,
-              "Title": "Update.cshtml",
-              "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Update.cshtml",
-              "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Update.cshtml",
-              "ToolTip": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\Views\\Categories\\Update.cshtml",
-              "RelativeToolTip": "WebBanHang\\Areas\\Admin\\Views\\Categories\\Update.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-04-08T13:47:15.652Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 64,
               "Title": "_ViewImports.cshtml",
               "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Admin\\_ViewImports.cshtml",
               "RelativeDocumentMoniker": "WebBanHang\\Areas\\Admin\\_ViewImports.cshtml",
@@ -1104,7 +1115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 65,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "WebBanHang\\Areas\\Identity\\Pages\\_ValidationScriptsPartial.cshtml",
@@ -1116,7 +1127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 64,
               "Title": "Register.cshtml",
               "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
               "RelativeDocumentMoniker": "WebBanHang\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
@@ -1128,7 +1139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 66,
               "Title": "Register.cshtml.cs",
               "DocumentMoniker": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
               "RelativeDocumentMoniker": "WebBanHang\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
