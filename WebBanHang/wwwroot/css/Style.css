@@ -1,0 +1,48 @@
+﻿ul.Admin-grow-1 {
+    display: inline-flex;
+}
+.Admin-layout {
+    background-color: #f8f9fa; /* Màu nền của navbar */
+    padding: 10px; /* Khoảng cách giữa navbar và nội dung bên trong */
+}
+
+.Admin-grow-1 {
+    display: flex; /* Hiển thị các mục cùng một hàng ngang */
+    list-style: none; /* Loại bỏ dấu chấm đầu dòng của danh sách */
+}
+
+    .Admin-grow-1 li {
+        margin-right: 10px; /* Khoảng cách giữa các mục */
+    }
+
+        .Admin-grow-1 li:last-child {
+            margin-right: 0; /* Không có margin phải cho mục cuối cùng */
+        }
+
+.Admin a {
+    color: #343a40; /* Màu chữ cho các liên kết */
+    text-decoration: none; /* Loại bỏ gạch chân của các liên kết */
+    padding: 5px 10px; /* Khoảng cách bên trong các mục */
+}
+
+    .Admin a:hover {
+        color: #007bff; /* Màu chữ khi hover */
+    }
+
+/* CSS cho các mục cụ thể */
+.Admin-home a,
+.Admin-Product a,
+.Admin-Category a,
+.Admin-Menu a {
+    padding: 10px 15px; /* Khoảng cách lớn hơn cho các mục đặc biệt */
+    background-color: #007bff; /* Màu nền của các mục đặc biệt */
+    color: white; /* Màu chữ của các mục đặc biệt */
+    border-radius: 5px; /* Góc cong cho các mục đặc biệt */
+}
+
+    .Admin-home a:hover,
+    .Admin-Product a:hover,
+    .Admin-Category a:hover,
+    .Admin-Menu a:hover {
+        background-color: #0056b3; /* Màu nền khi hover của các mục đặc biệt */
+    }

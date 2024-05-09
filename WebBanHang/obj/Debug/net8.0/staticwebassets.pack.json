@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\WebBanHang.bundle.scp.css"
     },
     {
+      "Id": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\wwwroot\\css\\Style.css",
+      "PackagePath": "staticwebassets\\css\\Style.css"
+    },
+    {
       "Id": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\wwwroot\\css\\bootstrap-social.css",
       "PackagePath": "staticwebassets\\css\\bootstrap-social.css"
     },
@@ -107,6 +111,10 @@
     {
       "Id": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\wwwroot\\images\\banner.png",
       "PackagePath": "staticwebassets\\images\\banner.png"
+    },
+    {
+      "Id": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\wwwroot\\images\\bình cc.jpg",
+      "PackagePath": "staticwebassets\\images\\bình cc.jpg"
     },
     {
       "Id": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\wwwroot\\js\\bootstrap.min.js",

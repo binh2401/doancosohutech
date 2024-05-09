@@ -1,0 +1,13 @@
+﻿@model List<Category> 
+@foreach(var category in Model)
+{
+    <h2>@category.Name</h2>
+    
+    
+    <ul>
+        @foreach(var product in category.Products)
+        {
+            <li>@product.Name</li>
+        }
+    </ul>
+}
