@@ -4,6 +4,7 @@ using WebBanHang.Models;
 using WebBanHang.Repositories;
 using WebBanHang.Repositories;
 using WebBanHang.Data;
+using WebBanHang.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,6 +34,7 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IProductRepository, EFProductRepository>();
 builder.Services.AddScoped<ICategoryRepository, EFCategoryRepository>();
 builder.Services.AddScoped<IMenu, EFMenu>();
+builder.Services.AddSingleton<IVnPayService, VnPayService>();
 
 
 var app = builder.Build();
