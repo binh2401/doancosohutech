@@ -46,3 +46,15 @@
     .Admin-Menu a:hover {
         background-color: #0056b3; /* Màu nền khi hover của các mục đặc biệt */
     }
+#messenger-icon {
+    position: fixed;
+    bottom: 20px; /* Khoảng cách từ biểu tượng đến đáy màn hình */
+    right: 20px; /* Khoảng cách từ biểu tượng đến cạnh phải màn hình */
+    z-index: 9999; /* Đảm bảo biểu tượng hiển thị trên tất cả các phần tử khác */
+}
+
+    #messenger-icon img {
+        width: 50px; /* Độ rộng của biểu tượng */
+        height: auto; /* Chiều cao tự động tính dựa trên tỷ lệ */
+        cursor: pointer; /* Biểu tượng sẽ hiển thị dạng con trỏ khi rê chuột qua */
+    }

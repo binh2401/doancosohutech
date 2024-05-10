@@ -6,6 +6,7 @@ using WebBanHang.Models;
 using WebBanHang.Repositories;
 using System.Linq;
 using System.Threading.Tasks;
+using WebBanHang.Data;
 
 
 namespace WebBanHang.Areas.Admin.Controllers

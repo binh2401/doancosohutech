@@ -2,8 +2,8 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebBanHang.Models;
 using WebBanHang.Repositories;
-using WebBanHang.Models;
 using WebBanHang.Repositories;
+using WebBanHang.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 

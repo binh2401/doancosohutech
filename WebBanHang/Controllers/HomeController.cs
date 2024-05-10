@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
+using WebBanHang.Data;
 using WebBanHang.Models;
 using WebBanHang.Repositories;
 
