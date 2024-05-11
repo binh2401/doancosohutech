@@ -7,14 +7,13 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebBanHang.Data;
 
-
 #nullable disable
 
 namespace WebBanHang.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240506135325_duliu")]
-    partial class duliu
+    [Migration("20240511201822_duli")]
+    partial class duli
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -247,10 +246,6 @@ namespace WebBanHang.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("nvarchar(50)");
 
-                    b.Property<string>("SubItems")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<int>("menuid")
                         .HasColumnType("int");
 
@@ -339,9 +334,6 @@ namespace WebBanHang.Migrations
 
                     b.HasIndex("OrderId");
 
-                    b.HasIndex("ProductId")
-                        .IsUnique();
-
                     b.ToTable("OrderDetail");
                 });
 
@@ -367,6 +359,9 @@ namespace WebBanHang.Migrations
                         .IsRequired()
                         .HasMaxLength(100)
                         .HasColumnType("nvarchar(100)");
+
+                    b.Property<int?>("OrderDetailId")
+                        .HasColumnType("int");
 
                     b.Property<int?>("OrderId")
                         .HasColumnType("int");
@@ -402,6 +397,8 @@ namespace WebBanHang.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
+
+                    b.HasIndex("OrderDetailId");
 
                     b.HasIndex("OrderId");
 
@@ -511,15 +508,7 @@ namespace WebBanHang.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("WebBanHang.Models.Product", "Product")
-                        .WithOne("OrderDetail")
-                        .HasForeignKey("WebBanHang.Models.OrderDetail", "ProductId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.Navigation("Order");
-
-                    b.Navigation("Product");
                 });
 
             modelBuilder.Entity("WebBanHang.Models.Product", b =>
@@ -530,6 +519,10 @@ namespace WebBanHang.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("WebBanHang.Models.OrderDetail", "OrderDetail")
+                        .WithMany("Product")
+                        .HasForeignKey("OrderDetailId");
+
                     b.HasOne("WebBanHang.Models.Order", "Order")
                         .WithMany()
                         .HasForeignKey("OrderId");
@@ -537,6 +530,8 @@ namespace WebBanHang.Migrations
                     b.Navigation("Category");
 
                     b.Navigation("Order");
+
+                    b.Navigation("OrderDetail");
                 });
 
             modelBuilder.Entity("WebBanHang.Models.ProductImage", b =>
@@ -565,11 +560,14 @@ namespace WebBanHang.Migrations
                     b.Navigation("OrderDetails");
                 });
 
+            modelBuilder.Entity("WebBanHang.Models.OrderDetail", b =>
+                {
+                    b.Navigation("Product");
+                });
+
             modelBuilder.Entity("WebBanHang.Models.Product", b =>
                 {
                     b.Navigation("Images");
-
-                    b.Navigation("OrderDetail");
                 });
 #pragma warning restore 612, 618
         }

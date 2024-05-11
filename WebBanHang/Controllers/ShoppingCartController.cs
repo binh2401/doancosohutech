@@ -70,19 +70,34 @@ namespace WebBanHang.Controllers
 		[HttpPost]
 		public async Task<IActionResult> Checkout(Order order, string payment = "COD")
 		{
-			if (payment == "Thanh toán VNPay")
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+            if (payment == "Thanh toán VNPay")
 			{
 				var vnPayModel = new VnPaymentRequestModel
 				{
-					Amount = 10000,
+					Amount = cart.Items.Sum(i=> (double)i.Price *i.Quantity),
 					CreatedDate = DateTime.Now,
-					Description = $"{order.UserId} {order.Notes}",
-					FullName = order.UserId,
-					OrderId = new Random().Next(1000, 100000)
+					Description =order.Notes ,
+					FullName = order.ShippingAddress,
+					OrderId = order.Id
 				};
-				return Redirect(_vnPayservice.CreatePaymentUrl(HttpContext, vnPayModel));
+                var ser = await _userManager.GetUserAsync(User);
+                order.UserId = ser.Id;
+                order.OrderDate = DateTime.UtcNow;
+                order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+                order.OrderDetails = cart.Items.Select(i => new OrderDetail
+                {
+                    ProductId = i.ProductId,
+                    Quantity = i.Quantity,
+                    Price = i.Price
+                }).ToList();
+
+                _context.Orders.Add(order);
+                await _context.SaveChangesAsync();
+                HttpContext.Session.Remove("Cart");
+                return Redirect(_vnPayservice.CreatePaymentUrl(HttpContext, vnPayModel));
 			}
-			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+		
 			if (cart == null || !cart.Items.Any())
 			{
 				// Xử lý giỏ hàng trống...
