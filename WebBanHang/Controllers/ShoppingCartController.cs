@@ -85,7 +85,10 @@ namespace WebBanHang.Controllers
                 order.UserId = ser.Id;
                 order.OrderDate = DateTime.UtcNow;
                 order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+                int totalCount = cart.Items.Sum(i => i.Quantity);
+                order.count = totalCount;
                 order.OrderDetails = cart.Items.Select(i => new OrderDetail
+				
                 {
                     ProductId = i.ProductId,
                     Quantity = i.Quantity,
@@ -108,7 +111,9 @@ namespace WebBanHang.Controllers
 			order.UserId = user.Id;
 			order.OrderDate = DateTime.UtcNow;
 			order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
-			order.OrderDetails = cart.Items.Select(i => new OrderDetail
+            int otalCount = cart.Items.Sum(i => i.Quantity);
+            order.count = otalCount;
+            order.OrderDetails = cart.Items.Select(i => new OrderDetail
 			{
 				ProductId = i.ProductId,
 				Quantity = i.Quantity,
