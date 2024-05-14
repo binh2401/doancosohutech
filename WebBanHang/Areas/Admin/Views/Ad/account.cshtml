@@ -1,0 +1,31 @@
+﻿@model List<AccountViewModel>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User List</title>
+</head>
+<body>
+    <h1>User List</h1>
+    <table>
+        <tr>
+            <th>Email</th>
+            <th>Username</th>
+            <th>Roles</th>
+            <th>Action</th> <!-- Thêm cột Action -->
+        </tr>
+        @foreach (var userViewModel in Model)
+        {
+            <tr>
+                <td>@userViewModel.User.Email</td>
+                <td>@userViewModel.User.UserName</td>
+                <td>@string.Join(", ", userViewModel.Roles)</td>
+                <td>
+                    <a asp-controller="Ad"  asp-action="EditUserRole" asp-route-id="@userViewModel.User.Id">Edit</a> <!-- Di chuyển thẻ <a> vào trong thẻ <td> -->
+                </td>
+                
+            </tr>
+        }
+    </table>
+</body>
+</html>

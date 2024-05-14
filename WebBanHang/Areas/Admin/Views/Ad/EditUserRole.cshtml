@@ -1,0 +1,31 @@
+﻿@model EditUserRoleViewModel
+
+<form asp-action="EditUserRole" method="post">
+    <div class="form-group">
+        <label asp-for="UserId">ID Người Dùng</label>
+        <input asp-for="UserId" class="form-control" readonly />
+    </div>
+    <div class="form-group">
+        <label>Vai Trò Hiện Tại</label>
+        <ul>
+            @foreach (var role in Model.UserRoles)
+            {
+                <li>@role</li>
+            }
+        </ul>
+    </div>
+    <div class="form-group">
+        <label>Vai Trò Có Sẵn</label>
+        <select asp-for="SelectedRoles" class="form-control" multiple>
+            @foreach (var role in Model.Roles)
+            {
+                <option value="@role">@role</option>
+            }
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Lưu</button>
+    <a asp-controller="Ad" asp-action="Account" class="btn btn-secondary">Quay về</a>
+
+</form>
+
+
