@@ -55,14 +55,14 @@ namespace WebBanHang.Controllers
             // Chuyển hướng về trang chi tiết sản phẩm
             return Ok();
         }
-        public async Task<IActionResult> countbuy(int id)
+        public async Task<IActionResult> CountBuy(int id)
         {
             // Lấy sản phẩm từ cơ sở dữ liệu bằng productId
             var product = await _productRepository.GetByIdAsync(id);
 
             if (product != null)
             {
-                // Tăng số lượng "Like" của sản phẩm
+                // Tăng số lượng "CountBuy" của sản phẩm
                 product.countbuy++;
                 await _productRepository.UpdateAsync(product); // Lưu thay đổi vào cơ sở dữ liệu
             }
@@ -110,7 +110,8 @@ namespace WebBanHang.Controllers
         public async Task<IActionResult> Productcategory(int categoryId)
         {
             // Truy vấn cơ sở dữ liệu để lấy các sản phẩm thuộc danh mục có ID là categoryId
-            var productsInCategory = await _context.Products
+            var productsInCategory = await _productRepository.GetAllAsync();
+           productsInCategory = await _context.Products
                                                 .Where(p => p.CategoryId == categoryId)
                                                 .ToListAsync();
 

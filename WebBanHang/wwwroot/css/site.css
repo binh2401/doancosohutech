@@ -426,11 +426,46 @@ body {
 img.d-block.w-100 {
     padding: 20px;
 }
-
-.wp-content h2 {
-    font-size: small;
-    text-align: center;
+.menuincatecory {
+    display: grid;
 }
 
 
-. 
+
+a.Admin.text-dark {
+    padding: 20px;
+    background: aliceblue;
+}
+
+
+p.tieude {
+    font-size: x-large;
+    color: black;
+    text-align: center; /* Canh gi?a vãn b?n */
+}
+.divider {
+    border: none; /* Xóa vi?n */
+    border-top: 1px solid black; /* T?o d?ng k? ngang */
+    width: 50%; /* Ð?t chi?u r?ng c?a ðý?ng k? */
+    margin: 0 auto; /* Canh gi?a */
+}
+.card-title {
+    color:black;
+    overflow: hidden; /* ?n ph?n dý th?a c?a vãn b?n */
+    white-space: nowrap; /* Ngãn vãn b?n xu?ng d?ng */
+    text-overflow: ellipsis; /* Thay th? ph?n dý th?a c?a vãn b?n b?ng d?u ... */
+}
+.text-black {
+    color: black; /* Ð?t màu ch? là ðen */
+}
+
+.bookyeuthci {
+    display: inline-block;
+}
+.product-link {
+    text-decoration: none; /* Lo?i b? ðý?ng g?ch chân c?a liên k?t */
+}
+
+.col.mb-4 {
+    margin-bottom: 20px; /* Ð?t margin bottom thành 20px */
+}

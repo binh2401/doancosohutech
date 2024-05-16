@@ -2,4 +2,27 @@
     <a href="https://www.messenger.com/t/318485548011660/?messaging_source=source%3Apages%3Amessage_shortlink&source_id=1441792&recurring_notification=0" target="_blank">
         <img src="~/banner/logo-removebg-preview.png" alt="Messenger Icon">
     </a>
+    <p class="messenger-text">Tôi có thể giúp gì cho bạn?</p>
 </div>
+<style>
+    #messenger-icon {
+        
+        position: fixed;
+        bottom: 20px; /* Cách bottom 20px */
+        right: 20px; /* Cách right 20px */
+        z-index: 999; /* Đảm bảo nó hiển thị trên các phần tử khác */
+    }
+
+        #messenger-icon img {
+            width: 50px; /* Thiết lập chiều rộng */
+            height: auto; /* Để tỷ lệ chiều cao tự động điều chỉnh theo chiều rộng */
+        }
+
+        #messenger-icon .messenger-text {
+            display: none; /* Ẩn văn bản mặc định */
+        }
+
+        #messenger-icon:hover .messenger-text {
+            display: block; /* Hiển thị văn bản khi di chuột qua */
+        }
+</style>

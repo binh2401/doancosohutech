@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.CodeAnalysis;
 using WebBanHang.Data;
 using WebBanHang.Extensions;
 using WebBanHang.Models;
@@ -75,7 +76,7 @@ namespace WebBanHang.Controllers
 			{
 				var vnPayModel = new VnPaymentRequestModel
 				{
-					Amount = cart.Items.Sum(i=> (double)i.Price *i.Quantity),
+					Amount = cart.Items.Sum(i=> (double)(i.Price*1000) *i.Quantity),
 					CreatedDate = DateTime.Now,
 					Description =order.Notes ,
 					FullName = order.ShippingAddress,
@@ -119,8 +120,7 @@ namespace WebBanHang.Controllers
 				Quantity = i.Quantity,
 				Price = i.Price
 			}).ToList();
-
-			_context.Orders.Add(order);
+            _context.Orders.Add(order);
 			await _context.SaveChangesAsync();
 			HttpContext.Session.Remove("Cart");
 
