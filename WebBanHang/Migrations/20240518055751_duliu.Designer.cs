@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using WebBanHang.Data;
 
@@ -11,9 +12,11 @@ using WebBanHang.Data;
 namespace WebBanHang.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20240518055751_duliu")]
+    partial class duliu
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -352,8 +355,8 @@ namespace WebBanHang.Migrations
                     b.Property<string>("ImageUrl")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("IsLiked")
-                        .HasColumnType("bit");
+                    b.Property<int?>("MenuId")
+                        .HasColumnType("int");
 
                     b.Property<string>("Name")
                         .IsRequired()
@@ -368,9 +371,6 @@ namespace WebBanHang.Migrations
 
                     b.Property<decimal>("Price")
                         .HasColumnType("decimal(18,2)");
-
-                    b.Property<int>("TotalLikes")
-                        .HasColumnType("int");
 
                     b.Property<string>("author")
                         .IsRequired()
@@ -397,6 +397,8 @@ namespace WebBanHang.Migrations
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
+
+                    b.HasIndex("MenuId");
 
                     b.HasIndex("OrderDetailId");
 
@@ -438,21 +440,24 @@ namespace WebBanHang.Migrations
                     b.Property<string>("ApplicationUserId")
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<bool>("IsLiked")
-                        .HasColumnType("bit");
-
-                    b.Property<int>("ProductId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId")
+                    b.Property<string>("Userid")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("like1")
+                        .HasColumnType("bit");
+
+                    b.Property<int>("productid")
+                        .HasColumnType("int");
+
+                    b.Property<int>("totallike")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
                     b.HasIndex("ApplicationUserId");
 
-                    b.HasIndex("ProductId");
+                    b.HasIndex("productid");
 
                     b.ToTable("Likes");
                 });
@@ -549,6 +554,10 @@ namespace WebBanHang.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("WebBanHang.Models.Menu", null)
+                        .WithMany("Products")
+                        .HasForeignKey("MenuId");
+
                     b.HasOne("WebBanHang.Models.OrderDetail", "OrderDetail")
                         .WithMany("Product")
                         .HasForeignKey("OrderDetailId");
@@ -581,15 +590,15 @@ namespace WebBanHang.Migrations
                         .WithMany()
                         .HasForeignKey("ApplicationUserId");
 
-                    b.HasOne("WebBanHang.Models.Product", "Product")
+                    b.HasOne("WebBanHang.Models.Product", "product")
                         .WithMany("Likes")
-                        .HasForeignKey("ProductId")
+                        .HasForeignKey("productid")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("ApplicationUser");
 
-                    b.Navigation("Product");
+                    b.Navigation("product");
                 });
 
             modelBuilder.Entity("WebBanHang.Models.Category", b =>
@@ -600,6 +609,8 @@ namespace WebBanHang.Migrations
             modelBuilder.Entity("WebBanHang.Models.Menu", b =>
                 {
                     b.Navigation("Categorys");
+
+                    b.Navigation("Products");
                 });
 
             modelBuilder.Entity("WebBanHang.Models.Order", b =>

@@ -14,7 +14,8 @@ namespace WebBanHang.Models
         public string author { get; set; }
         public string Description { get; set; }
         public string? ImageUrl { get; set; }
-        public int like { get; set; }
+        public int TotalLikes { get; set; }
+
         public string nhasanxuat { get; set; }
         public string congtyphathanh { get; set; }
         public string loaibia { get; set; }
@@ -25,6 +26,8 @@ namespace WebBanHang.Models
         public Category? Category { get; set; }
         public OrderDetail? OrderDetail { get; set; }   
         public Order? Order { get; set; }
-     
+        public bool IsLiked { get; set; }
+        public ICollection<like> Likes { get; set; } = new List<like>();
+
     }
 }

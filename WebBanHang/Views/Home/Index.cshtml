@@ -44,14 +44,15 @@
 
     </div>
     <div class="yeuthich">
-    <p class="tieude">Sách yêu thich</p>
+    <div class="headdertieude"></div>
+        <a asp-controller="Home" asp-action="love" > <p class="tieude">Sách yêu thich</p></a>
     <hr class="divider">
 
 
         <ul>
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                    @foreach (var item in Model.OrderByDescending(p => p.like))
+                    @foreach (var item in Model.OrderByDescending(p => p.TotalLikes))
                     {
 
 
@@ -78,7 +79,7 @@
                 </div>
             </div>
         </ul>
-
+      
 
     </div>
     <partial name="ProductsByCategory" />

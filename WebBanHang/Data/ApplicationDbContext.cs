@@ -18,9 +18,10 @@ namespace WebBanHang.Data
         public DbSet<Menu> Menus { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<OrderDetail> OrderDetails { get; set; }
+        public DbSet<like> Likes { get; set; }
 
         private readonly ApplicationDbContext _context;
 
-
+      
     }
 }

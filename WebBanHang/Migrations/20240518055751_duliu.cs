@@ -249,7 +249,6 @@ namespace WebBanHang.Migrations
                     author = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Description = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    like = table.Column<int>(type: "int", nullable: false),
                     nhasanxuat = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     congtyphathanh = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     loaibia = table.Column<string>(type: "nvarchar(max)", nullable: false),
@@ -257,7 +256,8 @@ namespace WebBanHang.Migrations
                     countbuy = table.Column<int>(type: "int", nullable: false),
                     CategoryId = table.Column<int>(type: "int", nullable: false),
                     OrderDetailId = table.Column<int>(type: "int", nullable: true),
-                    OrderId = table.Column<int>(type: "int", nullable: true)
+                    OrderId = table.Column<int>(type: "int", nullable: true),
+                    MenuId = table.Column<int>(type: "int", nullable: true)
                 },
                 constraints: table =>
                 {
@@ -269,6 +269,11 @@ namespace WebBanHang.Migrations
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
+                        name: "FK_Products_Menus_MenuId",
+                        column: x => x.MenuId,
+                        principalTable: "Menus",
+                        principalColumn: "Id");
+                    table.ForeignKey(
                         name: "FK_Products_OrderDetail_OrderDetailId",
                         column: x => x.OrderDetailId,
                         principalTable: "OrderDetail",
@@ -278,6 +283,34 @@ namespace WebBanHang.Migrations
                         column: x => x.OrderId,
                         principalTable: "Order",
                         principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Likes",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    like1 = table.Column<bool>(type: "bit", nullable: false),
+                    totallike = table.Column<int>(type: "int", nullable: false),
+                    Userid = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    productid = table.Column<int>(type: "int", nullable: false),
+                    ApplicationUserId = table.Column<string>(type: "nvarchar(450)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Likes", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Likes_AspNetUsers_ApplicationUserId",
+                        column: x => x.ApplicationUserId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id");
+                    table.ForeignKey(
+                        name: "FK_Likes_Products_productid",
+                        column: x => x.productid,
+                        principalTable: "Products",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -345,6 +378,16 @@ namespace WebBanHang.Migrations
                 column: "menuid");
 
             migrationBuilder.CreateIndex(
+                name: "IX_Likes_ApplicationUserId",
+                table: "Likes",
+                column: "ApplicationUserId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Likes_productid",
+                table: "Likes",
+                column: "productid");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Order_UserId",
                 table: "Order",
                 column: "UserId");
@@ -363,6 +406,11 @@ namespace WebBanHang.Migrations
                 name: "IX_Products_CategoryId",
                 table: "Products",
                 column: "CategoryId");
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Products_MenuId",
+                table: "Products",
+                column: "MenuId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Products_OrderDetailId",
@@ -392,6 +440,9 @@ namespace WebBanHang.Migrations
 
             migrationBuilder.DropTable(
                 name: "AspNetUserTokens");
+
+            migrationBuilder.DropTable(
+                name: "Likes");
 
             migrationBuilder.DropTable(
                 name: "ProductImages");

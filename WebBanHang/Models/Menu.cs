@@ -8,5 +8,6 @@ namespace WebBanHang.Models
         [Required, StringLength(50)]
         public string Name { get; set; }
         public List<Category>? Categorys { get; set; }
+      
     }
 }
