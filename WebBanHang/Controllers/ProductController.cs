@@ -117,8 +117,15 @@ public async Task<IActionResult> Display(int id)
             existingProduct.Price = product.Price;
             existingProduct.Description = product.Description;
             existingProduct.CategoryId = product.CategoryId;
-                existingProduct.Category.menuid = product.Category.menuid;
             existingProduct.ImageUrl = product.ImageUrl;
+            existingProduct.author=product.author;
+            existingProduct.nhasanxuat= product.nhasanxuat; 
+            existingProduct.congtyphathanh= product.congtyphathanh;
+            existingProduct.loaibia= product.loaibia;   
+            existingProduct.sotrang= product.sotrang;
+            existingProduct.SoLuongBanRa= product.SoLuongBanRa;
+            existingProduct.LuongTonKho= product.LuongTonKho;
+            existingProduct.TotalLikes= product.TotalLikes;
             await _productRepository.UpdateAsync(existingProduct);
             return RedirectToAction(nameof(Index));
         }

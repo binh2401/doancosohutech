@@ -2,39 +2,48 @@
 @{
     // Group products by category
     int numOfQuantity = 1;
-    var productsByCategory = Model.GroupBy(p => p.Category?.Name).Take(4);
+    var productsByCategory = Model.GroupBy(p => p.Category?.Name);
 }
-
 @foreach (var group in productsByCategory)
 {
-    <a asp-controller="Home" asp-action="Productcategory" >
+    // Kiểm tra xem danh mục có sản phẩm có số lượng tồn kho lớn hơn 0 không
+    if (group.Any(item => item.LuongTonKho > 0))
+    {
+        <p class="tieude">@group.Key</p>
+        @foreach (var view in group.Take(1))
+        {
 
-    <p class="tieude">@group.Key</p>
-    </a>
-    <hr class="divider">
-    <div class="container px-4 px-lg-5 mt-5">
-        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-            @foreach (var item in group)
-            {
-                <div class="col mb-5">
-                    <div class="card gap-3" style="width: 18rem">
-                        <img src="@item.ImageUrl" class="card-img-top" alt="..." style="height: 300px">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                @Html.DisplayFor(modelItem => item.Name)
-                            </h5>
-                            <div class="d-flex">
-                                <span>Price: </span>
-                                <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
+
+            <a asp-controller="Home" asp-action="Productcategory" asp-route-categoryId="@view.CategoryId">
+                <p>view</p>
+
+            </a>
+        }
+        <hr class="divider">
+        <div class="container px-4 px-lg-5 mt-5">
+            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
+                @foreach (var item in group.Where(item => item.LuongTonKho > 0).Take(4))
+                {
+                    <div class="col mb-5">
+                        <div class="card gap-3" style="width: 18rem">
+                            <img src="@item.ImageUrl" class="card-img-top" alt="..." style="height: 300px">
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    @Html.DisplayFor(modelItem => item.Name)
+                                </h5>
+                                <div class="d-flex">
+                                    <span>Price: </span>
+                                    <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
+                                </div>
+                                <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
+                                    <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i></button>
+                                </a>
+                                <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">chi tiết</a>
                             </div>
-                            <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
-                                <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i></button>
-                            </a>
-                            <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">chi tiết</a>
                         </div>
                     </div>
-                </div>
-            }
+                }
+            </div>
         </div>
-    </div>
+    }
 }

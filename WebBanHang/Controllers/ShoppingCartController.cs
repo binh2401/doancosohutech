@@ -69,19 +69,25 @@ namespace WebBanHang.Controllers
 		}
 
 		[HttpPost]
-		public async Task<IActionResult> Checkout(Order order, string payment = "COD")
-		{
+        public async Task<IActionResult> Checkout(Order order, string payment = "COD")
+        {
             var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+            if (cart == null || !cart.Items.Any())
+            {
+                // Xử lý giỏ hàng trống...
+                return RedirectToAction("Index");
+            }
+
             if (payment == "Thanh toán VNPay")
-			{
-				var vnPayModel = new VnPaymentRequestModel
-				{
-					Amount = cart.Items.Sum(i=> (double)(i.Price*1000) *i.Quantity),
-					CreatedDate = DateTime.Now,
-					Description =order.Notes ,
-					FullName = order.ShippingAddress,
-					OrderId = order.Id
-				};
+            {
+                var vnPayModel = new VnPaymentRequestModel
+                {
+                    Amount = cart.Items.Sum(i => (double)(i.Price * 1000) * i.Quantity),
+                    CreatedDate = DateTime.Now,
+                    Description = order.Notes,
+                    FullName = order.ShippingAddress,
+                    OrderId = order.Id
+                };
                 var ser = await _userManager.GetUserAsync(User);
                 order.UserId = ser.Id;
                 order.OrderDate = DateTime.UtcNow;
@@ -89,7 +95,6 @@ namespace WebBanHang.Controllers
                 int totalCount = cart.Items.Sum(i => i.Quantity);
                 order.count = totalCount;
                 order.OrderDetails = cart.Items.Select(i => new OrderDetail
-				
                 {
                     ProductId = i.ProductId,
                     Quantity = i.Quantity,
@@ -98,36 +103,55 @@ namespace WebBanHang.Controllers
 
                 _context.Orders.Add(order);
                 await _context.SaveChangesAsync();
+
+                // Cập nhật số lượng sản phẩm
+                foreach (var item in cart.Items)
+                {
+                    var product = await _context.Products.FindAsync(item.ProductId);
+                    if (product != null)
+                    {
+                        product.UpdateStock(item.Quantity);
+                    }
+                }
+                await _context.SaveChangesAsync();
+
                 HttpContext.Session.Remove("Cart");
                 return Redirect(_vnPayservice.CreatePaymentUrl(HttpContext, vnPayModel));
-			}
-		
-			if (cart == null || !cart.Items.Any())
-			{
-				// Xử lý giỏ hàng trống...
-				return RedirectToAction("Index");
-			}
+            }
 
-			var user = await _userManager.GetUserAsync(User);
-			order.UserId = user.Id;
-			order.OrderDate = DateTime.UtcNow;
-			order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
+            var user = await _userManager.GetUserAsync(User);
+            order.UserId = user.Id;
+            order.OrderDate = DateTime.UtcNow;
+            order.TotalPrice = cart.Items.Sum(i => i.Price * i.Quantity);
             int otalCount = cart.Items.Sum(i => i.Quantity);
             order.count = otalCount;
             order.OrderDetails = cart.Items.Select(i => new OrderDetail
-			{
-				ProductId = i.ProductId,
-				Quantity = i.Quantity,
-				Price = i.Price
-			}).ToList();
+            {
+                ProductId = i.ProductId,
+                Quantity = i.Quantity,
+                Price = i.Price
+            }).ToList();
             _context.Orders.Add(order);
-			await _context.SaveChangesAsync();
-			HttpContext.Session.Remove("Cart");
+            await _context.SaveChangesAsync();
 
-			return View("OrderCompleted", order.Id); // Trang xác nhận hoàn thành đơn hàng
-		}
+            // Cập nhật số lượng sản phẩm
+            foreach (var item in cart.Items)
+            {
+                var product = await _context.Products.FindAsync(item.ProductId);
+                if (product != null)
+                {
+                    product.UpdateStock(item.Quantity);
+                }
+            }
+            await _context.SaveChangesAsync();
 
-		public IActionResult RemoveFromCart(int productId)
+            HttpContext.Session.Remove("Cart");
+
+            return View("OrderCompleted", order.Id); // Trang xác nhận hoàn thành đơn hàng
+        }
+
+
+        public IActionResult RemoveFromCart(int productId)
 		{
 			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
 

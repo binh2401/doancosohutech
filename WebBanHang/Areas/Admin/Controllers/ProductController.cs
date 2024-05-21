@@ -126,13 +126,15 @@ namespace WebBanHang.Areas.Admin.Controllers
                 existingProduct.Price = product.Price;
                 existingProduct.Description = product.Description;
                 existingProduct.CategoryId = product.CategoryId;
+                existingProduct.ImageUrl = product.ImageUrl;
                 existingProduct.author = product.author;
+                existingProduct.nhasanxuat = product.nhasanxuat;
                 existingProduct.congtyphathanh = product.congtyphathanh;
                 existingProduct.loaibia = product.loaibia;
                 existingProduct.sotrang = product.sotrang;
-                existingProduct.nhasanxuat = product.nhasanxuat;
-                
-                existingProduct.ImageUrl = product.ImageUrl;
+                existingProduct.SoLuongBanRa = product.SoLuongBanRa;
+                existingProduct.LuongTonKho = product.LuongTonKho;
+                existingProduct.TotalLikes = product.TotalLikes;
                 await _productRepository.UpdateAsync(existingProduct);
                 return RedirectToAction(nameof(Index));
             }

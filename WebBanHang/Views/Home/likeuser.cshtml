@@ -3,9 +3,10 @@
     // Group products by category
     int numOfQuantity = 1;
 }
-<div class="menuincatecory">
-    <partial name="MenuPartial" />
+<h1>Các sản phẩm bạn đã thích</h1>
 
+@if (Model.Any())
+{
     <ul>
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -36,4 +37,8 @@
             </div>
         </div>
     </ul>
-</div>
+}
+else
+{
+    <p>Hiện tại bạn chưa thích bất kỳ sản phẩm nào.</p>
+}

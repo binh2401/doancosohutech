@@ -6,7 +6,7 @@
 
 <div class="menu">
     <ul id="menu">
-        <li><a href="#">Trang chủ</a></li>
+        <li><a asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
         <li>
             <a href="#">Thể loại</a>
             <ul id="submenu">
@@ -20,7 +20,7 @@
                         {
                             uniqueCategories.Add(categoryName);
                             <li>
-                                <a>
+                                <a asp-controller="Home" asp-action="ProductcategoryByMenu" asp-route-menuId="@item.Category.menu.Id">
                                     @categoryName
                                 </a>
 
@@ -39,11 +39,13 @@
 
             </ul>
         </li>
-          @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
+        
+        <li><a asp-area="" asp-controller="Home" asp-action="likeuser">sách bạn đã thích</a></li>
+        @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
         {
             <li class="nav-item">
                 <a class="nav-link text-dark" asp-area="Admin" asp-controller="Ad" asp-action="Index">Admin</a>
-                    </li>
+            </li>
         }
     </ul>
 </div>

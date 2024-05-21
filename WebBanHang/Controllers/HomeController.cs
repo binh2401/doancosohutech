@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using System.Security.Claims;
@@ -14,11 +15,13 @@ namespace WebBanHang.Controllers
 
         public readonly ApplicationDbContext _context;
 
-        public HomeController(IProductRepository productRepository, ApplicationDbContext context)
+        private readonly UserManager<ApplicationUser> _userManager;
+
+        public HomeController(IProductRepository productRepository, ApplicationDbContext context, UserManager<ApplicationUser> userManager)
         {
             _productRepository = productRepository;
             _context = context;
-
+            _userManager = userManager;
         }
 
         // Hi?n th? danh sách s?n ph?m
@@ -37,24 +40,6 @@ namespace WebBanHang.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
-        }
-        public async Task<IActionResult> CountBuy(int id)
-        {
-            // Lấy sản phẩm từ cơ sở dữ liệu bằng productId
-            var product = await _productRepository.GetByIdAsync(id);
-
-            if (product != null)
-            {
-                // Tăng số lượng "CountBuy" của sản phẩm
-                product.countbuy++;
-                await _productRepository.UpdateAsync(product); // Lưu thay đổi vào cơ sở dữ liệu
-            }
-            else
-            {
-                return NotFound();
-            }
-            // Chuyển hướng về trang chi tiết sản phẩm
-            return Ok();
         }
         public async Task<IActionResult> Detail(int id)
         {
@@ -100,22 +85,6 @@ namespace WebBanHang.Controllers
 
             // Trả về view và truyền danh sách sản phẩm tới view
             return View(productsInCategory);
-        }
-        public async Task<IActionResult> Productmenu(int categoryId)
-        {
-            // Lấy danh sách các danh mục thuộc thể loại lớn (categoryId) từ cơ sở dữ liệu
-            var categoriesInMainCategory = await _context.Categories
-                                                .Where(c => c.menuid == categoryId)
-                                                .Select(c => c.Id)
-                                                .ToListAsync();
-
-            // Lấy danh sách sản phẩm thuộc các danh mục trong danh sách danh mục đã lấy được
-            var productsInMainCategory = await _context.Products
-                                                      .Where(p => categoriesInMainCategory.Contains(p.CategoryId))
-                                                      .ToListAsync();
-
-            // Trả về view và truyền danh sách sản phẩm tới view
-            return View(productsInMainCategory);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -199,6 +168,32 @@ namespace WebBanHang.Controllers
 
     return Json(new { success = false, message = "User has not liked this product." });
 }
+        public async Task<IActionResult> likeuser()
+        {
+            var user = await _userManager.GetUserAsync(User);
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            // Truy vấn cơ sở dữ liệu để lấy danh sách các sản phẩm mà người dùng đã thích
+            var likedProducts = await _context.Likes
+                .Where(l => l.UserId == user.Id)
+                .Select(l => l.Product)
+                .ToListAsync();
+
+            return View(likedProducts);
+        }
+         public async Task<IActionResult> ProductcategoryByMenu(int menuId)
+    {
+        // Truy vấn cơ sở dữ liệu để lấy các sản phẩm thuộc menu có ID là menuId
+        var productsInMenu = await _context.Products
+            .Where(p => p.Category.menu.Id == menuId && p.LuongTonKho > 0)
+            .ToListAsync();
+
+        // Trả về view và truyền danh sách sản phẩm tới view
+        return View(productsInMenu);
+    }
 
 
     }
