@@ -19,6 +19,14 @@ public class EFProductRepository : IProductRepository
              .ThenInclude(c => c.menu) // Bao gồm thông tin về menu
          .ToListAsync();
     }
+    public async Task<Product> GetProductByIdAsync(int productId)
+    {
+        var product = await _context.Products
+            .Include(p => p.Category) // Bao gồm cả category
+            .FirstOrDefaultAsync(p => p.Id == productId);
+
+        return product; // Trả về sản phẩm, kể cả khi không có category
+    }
     public async Task<Product> GetByIdAsync(int id)
     {
         // return await _context.Products.FindAsync(id);

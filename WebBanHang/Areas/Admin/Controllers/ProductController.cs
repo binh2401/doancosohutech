@@ -197,6 +197,11 @@ namespace WebBanHang.Areas.Admin.Controllers
 
             return View(categoriesWithProducts);
         }
+        public async Task<IActionResult> kho()
+        {
+            var products = await _productRepository.GetAllAsync();
+            return View(products);
+        }
 
     }
 }

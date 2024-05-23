@@ -26,7 +26,7 @@
                                     <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
                                 </div>
                                 <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
-                                    <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i> Add to Cart </button>
+                                    <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i> </button>
                                 </a>
                                 <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">chi tiết</a>
                             </div>

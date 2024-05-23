@@ -58,6 +58,8 @@ namespace WebBanHang.Controllers
             {
                 return NotFound();
             }
+            var categories = await _imenu.GetAllAsync();
+            ViewBag.Menus = new SelectList(categories, "Id", "Name");
             return View(category);
         }
         [HttpPost]

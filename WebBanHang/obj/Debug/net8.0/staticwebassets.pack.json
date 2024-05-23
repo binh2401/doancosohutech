@@ -13,32 +13,12 @@
       "PackagePath": "staticwebassets\\css\\Style.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\css\\bootstrap-social.css",
-      "PackagePath": "staticwebassets\\css\\bootstrap-social.css"
-    },
-    {
-      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\css\\bootstrap-theme.min.css",
-      "PackagePath": "staticwebassets\\css\\bootstrap-theme.min.css"
-    },
-    {
       "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\css\\dataTables\\dataTables.bootstrap.css",
-      "PackagePath": "staticwebassets\\css\\dataTables\\dataTables.bootstrap.css"
-    },
-    {
-      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\css\\dataTables\\dataTables.responsive.css",
-      "PackagePath": "staticwebassets\\css\\dataTables\\dataTables.responsive.css"
-    },
-    {
       "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\css\\detail.css",
       "PackagePath": "staticwebassets\\css\\detail.css"
-    },
-    {
-      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\css\\font-awesome.min.css",
-      "PackagePath": "staticwebassets\\css\\font-awesome.min.css"
     },
     {
       "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\css\\footer.css",
@@ -49,20 +29,8 @@
       "PackagePath": "staticwebassets\\css\\metisMenu.min.css"
     },
     {
-      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\css\\morris.css",
-      "PackagePath": "staticwebassets\\css\\morris.css"
-    },
-    {
       "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
-    },
-    {
-      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\css\\startmin.css",
-      "PackagePath": "staticwebassets\\css\\startmin.css"
-    },
-    {
-      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\css\\timeline.css",
-      "PackagePath": "staticwebassets\\css\\timeline.css"
     },
     {
       "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\favicon.ico",
@@ -151,6 +119,10 @@
     {
       "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\images\\bình cc.jpg",
       "PackagePath": "staticwebassets\\images\\bình cc.jpg"
+    },
+    {
+      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\images\\f8febe599485707c8235a45183f8d76d.jpg.webp",
+      "PackagePath": "staticwebassets\\images\\f8febe599485707c8235a45183f8d76d.jpg.webp"
     },
     {
       "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\images\\pngtree-bird-book-tree-small-fresh-poster-banner-image_125954 (1).jpg",

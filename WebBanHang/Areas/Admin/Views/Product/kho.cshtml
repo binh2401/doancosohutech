@@ -1,0 +1,43 @@
+﻿@model IEnumerable<WebBanHang.Models.Product>
+@{
+    var uniqueCategories = Model.Select(p => p.Category?.Name).Where(name => !string.IsNullOrEmpty(name)).Distinct();
+}
+<h2>kho</h2>
+
+    @foreach (var categoryName in uniqueCategories)
+    {
+        <a asp-controller="Product" asp-action="ProductCategory"><p>@categoryName</p></a>
+    }
+    <table class="table">
+
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>author</th>
+                <th>Price</th>
+                 <th>Số lượng bán ra</th>
+                <th>Số lượn tồn kho</th>
+                <th>Actions</th>
+
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var product in Model)
+            {
+                <tr>
+                    <td>@product.Name</td>
+                    <td>@product.author</td>
+                    <td>@product.Price</td>
+                    <td>@product.SoLuongBanRa</td>
+                    <td>@product.LuongTonKho</td>
+                    <td><img src="@product.ImageUrl" style="max-width:200px;" /></td>
+                    <td>
+
+                     
+
+                        <a asp-action="Update" asp-route-id="@product.Id">Edit</a> 
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>

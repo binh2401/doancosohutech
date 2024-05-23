@@ -1540,7 +1540,7 @@ select {
     .cart_icon {
         width: 17px;
     }
-
+   
     .cart_count {
         width: 21px;
         height: 21px;
@@ -1658,4 +1658,12 @@ select {
 
 #sub-submenu li:hover #sub-sub-submenu {
     display: block;
+}
+img.card-img-top {
+    width: 200px;
+}
+@media (min-width: 768px) {
+    .col.mb-5 {
+        width: 25%;
+    }
 }
