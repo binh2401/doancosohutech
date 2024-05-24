@@ -264,6 +264,25 @@ namespace WebBanHang.Controllers
 
             await _context.SaveChangesAsync();
         }
+		public async Task<IActionResult> useroder()
+		{
+            var user = await _userManager.GetUserAsync(User);
+
+            if (user == null)
+            {
+                // Xử lý khi người dùng không tồn tại
+                return NotFound();
+            }
+
+            // Truy vấn cơ sở dữ liệu để lấy danh sách các đơn hàng của người dùng
+            var orders = await _context.Orders
+    .Where(o => o.UserId == user.Id)
+    .Include(o => o.OrderDetails)
+    .ThenInclude(od => od.Product) // Load dữ liệu sản phẩm
+    .ToListAsync();
+
+            return View(orders);
+        }
     }
 
 }

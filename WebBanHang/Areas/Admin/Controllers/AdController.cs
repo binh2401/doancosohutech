@@ -149,7 +149,24 @@ namespace WebBanHang.Areas.Admin.Controllers
 
             return View(viewModel);
         }
-      
+        public async Task<IActionResult> listoder()
+        {
+            var user = await _userManager.GetUserAsync(User);
+
+            if (user == null)
+            {
+                // Xử lý khi người dùng không tồn tại
+                return NotFound();
+            }
+
+            // Truy vấn cơ sở dữ liệu để lấy danh sách các đơn hàng của người dùng
+            var orders = await _context.Orders
+                .Where(o => o.UserId == user.Id)
+                .OrderByDescending(o => o.OrderDate) // Sắp xếp theo ngày đặt hàng mới nhất
+                .ToListAsync();
+
+            return View(orders);
+        }
 
 
 }

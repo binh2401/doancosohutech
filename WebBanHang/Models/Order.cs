@@ -14,6 +14,7 @@ namespace WebBanHang.Models
         public int count { get; set; }
         public decimal TotalPrice { get; set; }
         public string ShippingAddress { get; set; }
+        public string name { get; set; }
 
         [Required(ErrorMessage = "Notes is required")]
         public string Notes { get; set; }

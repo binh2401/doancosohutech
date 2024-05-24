@@ -33,6 +33,11 @@
                 <h2 class="mb-4">Checkout</h2>
                 <form asp-action="Checkout" method="post">
                     <div class="form-group">
+                        <label asp-for="name" class="text-dark">Ten nhan hang</label>
+                        <input asp-for="name" class="form-control" />
+                        <span asp-validation-for="name" class="text-danger"></span> <!-- Hiển thị thông báo lỗi -->
+                    </div>
+                    <div class="form-group">
                         <label asp-for="ShippingAddress" class="text-dark">Shipping Address</label>
                         <input asp-for="ShippingAddress" class="form-control" />
                         <span asp-validation-for="ShippingAddress" class="text-danger"></span> <!-- Hiển thị thông báo lỗi -->
