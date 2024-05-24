@@ -74,15 +74,42 @@
                                     <td>Nhà sản xuất</td>
                                     <td>@Model.nhasanxuat</td>
                                 </tr>
-
+                                <h3>Product Reviews</h3>
+                              
+                    </div>
+                 
                             </tbody>
                         </table>
                     </div>
                 </div>
             </div>
         </div>
+    @foreach (var review in ViewBag.Reviews)
+    {
+        <div>
+            <p>@review.name: @review.Rating</p>
+            <p>Comment: @review.ReviewText</p>
+        </div>
+    }
+    <h3>Add Review</h3>
+    <form action="@Url.Action("AddReview", "Home")" method="post">
+        @Html.AntiForgeryToken()
+        <div class="form-group">
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" name="rating" class="form-control" min="1" max="5" required>
+        </div>
+
+        <div class="form-group">
+            <label for="reviewText">Comment:</label>
+            <textarea id="reviewText" name="reviewText" class="form-control" rows="4" required></textarea>
+        </div>
+
+        <input type="hidden" name="productId" value="@Model.Id" />
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
     </div>
-</div>
+
 
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>

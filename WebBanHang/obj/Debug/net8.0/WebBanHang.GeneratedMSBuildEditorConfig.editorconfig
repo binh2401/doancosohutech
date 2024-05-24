@@ -17,307 +17,307 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = WebBanHang
 build_property.RootNamespace = WebBanHang
-build_property.ProjectDir = D:\đồ án cơ sở\doancosohutech\WebBanHang\
+build_property.ProjectDir = D:\hoctap\DoAnCoSo\doancosohutech\WebBanHang\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\đồ án cơ sở\doancosohutech\WebBanHang
+build_property.MSBuildProjectDirectory = D:\hoctap\DoAnCoSo\doancosohutech\WebBanHang
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Ad/account.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Ad/account.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRcYWNjb3VudC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Ad/danhthu.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Ad/danhthu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRcZGFuaHRodS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Ad/EditUserRole.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Ad/EditUserRole.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRcRWRpdFVzZXJSb2xlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Ad/Index.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Ad/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Ad/listoder.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Ad/listoder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRcbGlzdG9kZXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Categories/Add.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Categories/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Categories/Delete.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Categories/Display.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Categories/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xEaXNwbGF5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Categories/Index.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Categories/Update.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Categories/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQ2F0ZWdvcmllc1xVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Menu/Add.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Menu/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVudVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Menu/Delete.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Menu/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVudVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Menu/Index.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Menu/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVudVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Menu/Update.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Menu/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcTWVudVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Product/Add.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Product/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Product/Delete.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Product/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Product/Display.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Product/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxEaXNwbGF5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Product/Index.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Product/kho.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Product/kho.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxraG8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Product/ProductCategory.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Product/ProductCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxQcm9kdWN0Q2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Product/Search.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Product/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Product/SearchResults.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Product/SearchResults.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxTZWFyY2hSZXN1bHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Product/Update.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Product/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/_ViewImports.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/_ViewStart.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Identity/Pages/Account/Login.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Identity/Pages/Account/Logout.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Identity/Pages/Account/Register.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Identity/Pages/_ViewImports.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Identity/Pages/_ViewStart.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Pages/Error.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Pages/_Layout.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Pages/_ViewImports.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Pages/_ViewStart.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Categories/Add.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Categories/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Categories/Delete.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Categories/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Categories/Display.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Categories/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xEaXNwbGF5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Categories/Index.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Categories/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Categories/Update.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Categories/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmllc1xVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Home/Detail.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Home/Detail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxEZXRhaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Home/Index.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Home/likeuser.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Home/likeuser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxsaWtldXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Home/Productcategory.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Home/Productcategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0Y2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Home/ProductcategoryByMenu.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Home/ProductcategoryByMenu.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0Y2F0ZWdvcnlCeU1lbnUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Home/ProductsByCategory.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Home/ProductsByCategory.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcm9kdWN0c0J5Q2F0ZWdvcnkuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Menu/Add.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Menu/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Menu/Delete.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Menu/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Menu/Index.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Menu/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Menu/Update.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Menu/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVudVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Product/Add.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Product/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Product/Delete.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Product/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Product/Display.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Product/Display.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxEaXNwbGF5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Product/Index.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Product/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Product/Search.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Product/Search.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxTZWFyY2guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Product/SearchResults.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Product/SearchResults.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxTZWFyY2hSZXN1bHRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Product/Update.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Product/Update.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvZHVjdFxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Shared/chatbox.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Shared/chatbox.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXGNoYXRib3guY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Shared/footer.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Shared/footer.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXGZvb3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Shared/header.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Shared/header.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXGhlYWRlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Shared/MenuPartial.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Shared/MenuPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE1lbnVQYXJ0aWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Shared/_LoginPartial.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Shared/_ValidationScriptsPartial.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/ShoppingCart/Checkout.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/ShoppingCart/Checkout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XENoZWNrb3V0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/ShoppingCart/Index.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/ShoppingCart/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/ShoppingCart/OrderCompleted.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/ShoppingCart/OrderCompleted.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XE9yZGVyQ29tcGxldGVkLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/ShoppingCart/PaymentFail.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/ShoppingCart/PaymentFail.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XFBheW1lbnRGYWlsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/ShoppingCart/Success.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/ShoppingCart/Success.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XFN1Y2Nlc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/ShoppingCart/useroder.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/ShoppingCart/useroder.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XHVzZXJvZGVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/_ViewImports.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/_ViewStart.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Shared/_Layout.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Areas/Admin/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-bs9xlazm2q
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/Shared/_Layout.cshtml]
+[D:/hoctap/DoAnCoSo/doancosohutech/WebBanHang/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-ojic8umssh

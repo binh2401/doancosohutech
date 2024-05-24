@@ -48,18 +48,27 @@ namespace WebBanHang.Controllers
             {
                 return NotFound();
             }
-            var productCategory = await _productRepository.GetByIdAsync(product.CategoryId);
 
+            var productCategory = await _productRepository.GetByIdAsync(product.CategoryId);
             if (productCategory == null)
             {
                 return NotFound("Product category not found");
             }
 
-            // Sử dụng ViewBag để truyền thông tin loại sản phẩm vào view
+            // Lấy danh sách đánh giá của sản phẩm
+            var reviews = await _context.comments
+                                            .Where(r => r.ProductId == id)
+                                            .ToListAsync();
+
+            // Truyền danh sách đánh giá vào ViewBag để hiển thị trong view
+            ViewBag.Reviews = reviews;
+
+            // Truyền thông tin loại sản phẩm vào ViewBag
             ViewBag.ProductCategory = productCategory;
 
             return View(product);
         }
+
         public async Task<IActionResult> MenuPartial()
         {
             var listmenu = _context.Menus.ToList();
@@ -194,6 +203,35 @@ namespace WebBanHang.Controllers
         // Trả về view và truyền danh sách sản phẩm tới view
         return View(productsInMenu);
     }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddReview(int productId, int rating, string reviewText)
+        {
+            if (!User.Identity.IsAuthenticated)
+            {
+                // Người dùng chưa đăng nhập, bạn có thể xử lý điều này tại đây
+                return RedirectToAction("Login", "Account");
+            }
+
+            var userId = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var userName = HttpContext.User.Identity.Name; // Lấy tên người dùng
+
+            // Tạo một đối tượng Review mới
+            var review = new comment
+            {
+                ProductId = productId,
+                name= userName,
+                Rating = rating,
+                ReviewText = reviewText,
+                UserId = userId
+            };
+
+            // Thêm đánh giá vào cơ sở dữ liệu
+            _context.comments.Add(review);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Detail", new { id = productId });
+        }
 
 
     }

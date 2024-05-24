@@ -3174,3 +3174,4 @@ D:\hoctap\DoAnCoSo\test admin\doancosohutech\WebBanHang\obj\Debug\net8.0\WebBanH
 D:\hoctap\DoAnCoSo\test admin\doancosohutech\WebBanHang\obj\Debug\net8.0\WebBanHang.genruntimeconfig.cache
 D:\hoctap\DoAnCoSo\test admin\doancosohutech\WebBanHang\obj\Debug\net8.0\ref\WebBanHang.dll
 D:\đồ án cơ sở\doancosohutech\WebBanHang\bin\Debug\net8.0\bundleconfig.json
+D:\hoctap\DoAnCoSo\doancosohutech\WebBanHang\bin\Debug\net8.0\bundleconfig.json
