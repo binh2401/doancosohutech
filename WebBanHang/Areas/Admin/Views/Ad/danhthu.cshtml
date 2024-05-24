@@ -1,0 +1,59 @@
+﻿@model WebBanHang.Models.RevenueStatisticsViewModel
+
+@{
+    ViewData["Title"] = "Thống kê doanh thu";
+    var dates = Model.RevenueData.Select(x => x.Date.ToString("dd/MM/yyyy")).ToArray();
+    var revenues = Model.RevenueData.Select(x => x.Revenue).ToArray();
+}
+
+<h1>Thống kê doanh thu</h1>
+
+<form method="get">
+    <div>
+        <label for="startDate">Từ ngày:</label>
+        <input type="date" id="startDate" name="startDate" value="@Model.StartDate?.ToString("yyyy-MM-dd")" />
+    </div>
+    <div>
+        <label for="endDate">Đến ngày:</label>
+        <input type="date" id="endDate" name="endDate" value="@Model.EndDate?.ToString("yyyy-MM-dd")" />
+    </div>
+    <button type="submit">Lọc</button>
+</form>
+
+<canvas id="revenueChart" width="400" height="200"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script>
+    var ctx = document.getElementById('revenueChart').getContext('2d');
+    var chart = new Chart(ctx, {
+        type: 'line',
+        data: {
+            labels: @Html.Raw(Json.Serialize(dates)),
+            datasets: [{
+                label: 'Doanh thu',
+                backgroundColor: 'rgba(0, 123, 255, 0.5)',
+                borderColor: 'rgba(0, 123, 255, 1)',
+                data: @Html.Raw(Json.Serialize(revenues))
+            }]
+        },
+        options: {
+            responsive: true,
+            scales: {
+                x: {
+                    display: true,
+                    title: {
+                        display: true,
+                        text: 'Ngày'
+                    }
+                },
+                y: {
+                    display: true,
+                    title: {
+                        display: true,
+                        text: 'Doanh thu'
+                    }
+                }
+            }
+        }
+    });
+</script>

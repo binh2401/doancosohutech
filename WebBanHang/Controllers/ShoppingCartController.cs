@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
+using Microsoft.EntityFrameworkCore;
 using WebBanHang.Data;
 using WebBanHang.Extensions;
 using WebBanHang.Models;
@@ -103,7 +104,9 @@ namespace WebBanHang.Controllers
 
                 _context.Orders.Add(order);
                 await _context.SaveChangesAsync();
-
+               
+                    // Cập nhật doanh thu sau khi thanh toán thành công
+                  
                 // Cập nhật số lượng sản phẩm
                 foreach (var item in cart.Items)
                 {
@@ -114,6 +117,7 @@ namespace WebBanHang.Controllers
                     }
                 }
                 await _context.SaveChangesAsync();
+                await UpdateRevenueStatistics(order.TotalPrice); // Sử dụng giá trị TotalPrice từ đơn hàng
 
                 HttpContext.Session.Remove("Cart");
                 return Redirect(_vnPayservice.CreatePaymentUrl(HttpContext, vnPayModel));
@@ -146,7 +150,7 @@ namespace WebBanHang.Controllers
             await _context.SaveChangesAsync();
 
             HttpContext.Session.Remove("Cart");
-
+            await UpdateRevenueStatistics(order.TotalPrice); // Sử dụng giá trị TotalPrice từ đơn hàng
             return View("OrderCompleted", order.Id); // Trang xác nhận hoàn thành đơn hàng
         }
 
@@ -236,5 +240,30 @@ namespace WebBanHang.Controllers
 		{
 			return View();
 		}
-	}
+        private async Task UpdateRevenueStatistics(decimal amount)
+        {
+            var today = DateTime.Today;
+
+            var existingRevenue = await _context.revenueStatistics
+                .FirstOrDefaultAsync(r => r.Date == today);
+
+            if (existingRevenue != null)
+            {
+                existingRevenue.Revenue += amount;
+                _context.Update(existingRevenue);
+            }
+            else
+            {
+                var newRevenue = new RevenueStatistics
+                {
+                    Date = today,
+                    Revenue = amount
+                };
+                _context.revenueStatistics.Add(newRevenue);
+            }
+
+            await _context.SaveChangesAsync();
+        }
+    }
+
 }

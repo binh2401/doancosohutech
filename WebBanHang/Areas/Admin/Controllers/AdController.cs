@@ -98,7 +98,7 @@ namespace WebBanHang.Areas.Admin.Controllers
                 {
                     ModelState.AddModelError("", "Failed to remove user roles");
                     return View(model);
-                }
+                } 
 
                 // Add the selected roles
                 var addResult = await _userManager.AddToRolesAsync(user, model.SelectedRoles);
@@ -117,9 +117,40 @@ namespace WebBanHang.Areas.Admin.Controllers
             model.UserRoles = (await _userManager.GetRolesAsync(await _userManager.FindByIdAsync(model.UserId))).ToList();
             return View(model);
         }
+        public async Task<IActionResult> danhthu(DateTime? startDate, DateTime? endDate)
+        {
+            var query = _context.revenueStatistics.AsQueryable();
+
+            if (startDate.HasValue)
+            {
+                query = query.Where(r => r.Date >= startDate.Value);
+            }
+
+            if (endDate.HasValue)
+            {
+                query = query.Where(r => r.Date <= endDate.Value);
+            }
+
+            var revenueData = await query
+                .GroupBy(r => r.Date)
+                .Select(g => new RevenueStatistics
+                {
+                    Date = g.Key,
+                    Revenue = g.Sum(r => r.Revenue)
+                })
+                .ToListAsync();
+
+            var viewModel = new RevenueStatisticsViewModel
+            {
+                RevenueData = revenueData,
+                StartDate = startDate,
+                EndDate = endDate
+            };
+
+            return View(viewModel);
+        }
+      
 
 
-
-
-    }
+}
 }
