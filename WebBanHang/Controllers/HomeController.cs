@@ -201,7 +201,7 @@ namespace WebBanHang.Controllers
             .ToListAsync();
 
         // Trả về view và truyền danh sách sản phẩm tới view
-        return View(productsInMenu);
+        return View("Productcategory",productsInMenu);
     }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -232,7 +232,33 @@ namespace WebBanHang.Controllers
 
             return RedirectToAction("Detail", new { id = productId });
         }
-
+        public async Task<IActionResult> SortByPriceAsc()
+        {
+            var sortedProducts = await _productRepository.GetAllAsync();
+            sortedProducts = sortedProducts.OrderBy(p => p.Price);
+            return View("Productcategory", sortedProducts);
+        }
+        public async Task<IActionResult> giamPriceAsc()
+        {
+            var sortedProducts = await _productRepository.GetAllAsync();
+            sortedProducts = sortedProducts.OrderByDescending(p => p.Price);
+            return View("Productcategory", sortedProducts);
+        }
+        public async Task< IActionResult> FilterByLetter(char letter)
+        {
+            var products = _context.Products
+                                   .Where(p => p.Name.StartsWith(letter.ToString()))
+                                   .ToList();
+            return View("Productcategory", products);
+        }
+        public async Task <IActionResult> FilterByLetterztoa(char letter)
+        {
+            var products = _context.Products
+                           .Where(p => p.Name.StartsWith(letter.ToString()))
+                           .OrderByDescending(p => p.Name) // Sắp xếp theo thứ tự giảm dần của tên
+                           .ToList();
+            return View("Productcategory", products);
+        }
 
     }
 }

@@ -5,6 +5,26 @@
 }
 <div class="menuincatecory">
     <partial name="MenuPartial" />
+    <div>
+        <h3>Lọc sản phẩm</h3>
+        <div class="filter-container">
+            <button class="btn btn-primary filter-button" onclick="toggleSortOptions()">Lọc</button>
+            <div id="sortOptions" class="sort-options">
+                <a class="btn btn-link sort-option" asp-controller="Home" asp-action="SortByPriceAsc" method="get">
+                    Giá từ thấp lên cao
+                </a>
+                <a class="btn btn-link sort-option" asp-controller="Home" asp-action="giamPriceAsc" method="get">
+                    Giá từ cao xuống thấp
+                </a>
+                <a class="btn btn-link sort-option" asp-controller="Home" asp-action="FilterByLetter" asp-route-letter="A" method="get">
+                    A đến Z
+                </a>
+                <a class="btn btn-link sort-option" asp-controller="Home" asp-action="FilterByLetter" asp-route-letter="Z" method="get">
+                   Từ Z đến A
+                </a>
+            </div>
+        </div>
+    </div>
 
 <ul>
  
@@ -36,3 +56,47 @@
     </div>
 </ul>
 </div>
+<style>
+    .card-img-top {
+        height: 300px;
+        width: 100%;
+        object-fit: cover; /* Đảm bảo hình ảnh giữ tỉ lệ khung hình và lấp đầy khung */
+        transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi mượt mà */
+    }
+
+        .card-img-top:hover {
+            transform: scale(1.1); /* Phóng to hình ảnh khi đưa chuột vào */
+        }
+</style>
+<style>
+    .filter-container {
+        margin: 20px 0;
+    }
+
+    .filter-button {
+        margin-bottom: 10px;
+    }
+
+    .sort-options {
+        display: none;
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        background-color: #f9f9f9;
+    }
+
+    .sort-option {
+        display: block;
+        margin: 5px 0;
+    }
+</style>
+<script>
+    function toggleSortOptions() {
+        var sortOptions = document.getElementById('sortOptions');
+        if (sortOptions.style.display === 'none' || sortOptions.style.display === '') {
+            sortOptions.style.display = 'block';
+        } else {
+            sortOptions.style.display = 'none';
+        }
+    }
+</script>

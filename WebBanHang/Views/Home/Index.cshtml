@@ -126,3 +126,15 @@
     </div>
     <partial name="ProductsByCategory" />
 </div>
+<style>
+    .card-img-top {
+        height: 300px;
+        width: 100%;
+        object-fit: cover; /* Đảm bảo hình ảnh giữ tỉ lệ khung hình và lấp đầy khung */
+        transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi mượt mà */
+    }
+
+        .card-img-top:hover {
+            transform: scale(1.1); /* Phóng to hình ảnh khi đưa chuột vào */
+        }
+</style>
