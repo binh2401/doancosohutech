@@ -3179,3 +3179,5 @@ D:\hoctap\DoAnCoSo\doancosohutech\WebBanHang\bin\Debug\net8.0\X.PagedList.dll
 D:\hoctap\DoAnCoSo\doancosohutech\WebBanHang\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
 D:\đồ án cơ sở\doancosohutech\WebBanHang\bin\Debug\net8.0\X.PagedList.dll
 D:\đồ án cơ sở\doancosohutech\WebBanHang\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
+D:\đồ án cơ sở\doancosohutech\WebBanHang\bin\Debug\net8.0\PagedList.dll
+D:\đồ án cơ sở\doancosohutech\WebBanHang\bin\Debug\net8.0\PagedList.Mvc.dll

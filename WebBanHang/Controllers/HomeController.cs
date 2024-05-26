@@ -10,6 +10,8 @@ using WebBanHang.Models;
 using WebBanHang.Repositories;
 using X.PagedList;
 
+
+
 namespace WebBanHang.Controllers
 {
     public class HomeController : Controller
@@ -255,17 +257,19 @@ namespace WebBanHang.Controllers
 
             return RedirectToAction("Detail", new { id = productId });
         }
-        public async Task<IActionResult> SortByPriceAsc()
+        public async Task<IActionResult> SortByPriceAsc(int? page)
         {
-            var sortedProducts = await _productRepository.GetAllAsync();
-            sortedProducts = sortedProducts.OrderBy(p => p.Price);
-            return View("Productcategory", sortedProducts);
+            var products = _context.Products.OrderBy(p => p.Price).ToList();
+            int pageSize = 10;
+            int pageNumber = (page ?? 1);
+            return View("Productcategory", products.ToPagedList(pageNumber, pageSize));
         }
-        public async Task<IActionResult> giamPriceAsc()
+        public async Task<IActionResult> giamPriceAsc(int? page)
         {
-            var sortedProducts = await _productRepository.GetAllAsync();
-            sortedProducts = sortedProducts.OrderByDescending(p => p.Price);
-            return View("Productcategory", sortedProducts);
+            var products = _context.Products.OrderByDescending(p => p.Price).ToList();
+            int pageSize = 10;
+            int pageNumber = (page ?? 1);
+            return View("Productcategory", products.ToPagedList(pageNumber, pageSize));
         }
         public async Task< IActionResult> FilterByLetter(char letter)
         {
@@ -281,6 +285,24 @@ namespace WebBanHang.Controllers
                            .OrderByDescending(p => p.Name) // Sắp xếp theo thứ tự giảm dần của tên
                            .ToList();
             return View("Productcategory", products);
+        }
+        public async Task< IActionResult> BestSellingProducts()
+        {
+            var bestSellingProducts = _context.Products
+                .OrderByDescending(p => p.SoLuongBanRa)
+                .Take(10) // Lấy 10 sản phẩm bán chạy nhất
+                .ToList();
+
+            return View(bestSellingProducts);
+        }
+        public async Task< IActionResult> MostLikedProducts()
+        {
+            var mostLikedProducts = _context.Products
+                .OrderByDescending(p => p.TotalLikes)
+                .Take(10) // Lấy 10 sản phẩm được yêu thích nhất
+                .ToList();
+
+            return View("BestSellingProducts",mostLikedProducts);
         }
 
     }

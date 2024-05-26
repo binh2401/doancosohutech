@@ -60,14 +60,14 @@
     </div>
 </ul>
 </div>
-<script>
-    function zoomIn(element) {
-        element.style.transform = "scale(1.1)"; // Phóng to khung
-    }
+<<script>
+     function zoomIn(element) {
+         element.style.transform = "scale(1.1)"; // Phóng to khung
+     }
 
-    function zoomOut(element) {
-        element.style.transform = "scale(1)"; // Thu nhỏ khung khi di chuột ra khỏi
-    }
+     function zoomOut(element) {
+         element.style.transform = "scale(1)"; // Thu nhỏ khung khi di chuột ra khỏi
+     }
 </script>
 <style>
     .card-img-wrapper {
@@ -87,6 +87,7 @@
         object-fit: cover; /* Đảm bảo tỉ lệ hình ảnh không bị biến dạng */
     }
 </style>
+
 <script>
     function toggleSortOptions() {
         var sortOptions = document.getElementById('sortOptions');
@@ -107,5 +108,11 @@ else if (showMenuPagination)
 {
     <div>
         @Html.PagedListPager(Model, page => Url.Action("ProductcategoryByMenu", new { page, menuId = ViewBag.MenuId }))
+    </div>
+}
+else
+{
+    <div>
+        @Html.PagedListPager(Model, page => Url.Action("MostLikedProducts", new { page }))
     </div>
 }

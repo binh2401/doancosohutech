@@ -10,3 +10,15 @@
 .btn-add {
     flex-basis: 10%;
 }
+
+
+.view-link {
+    display: flex; /* Sử dụng flexbox để căn chỉnh phần tử con */
+    justify-content: center; /* Căn nội dung theo chiều ngang (trục X) */
+    align-items: center; /* Căn nội dung theo chiều dọc (trục Y) */
+    height: 100%; /* Thiết lập chiều cao của phần tử để điều chỉnh căn giữa */
+}
+
+    .view-link p {
+        margin: 0; /* Loại bỏ margin mặc định của thẻ p */
+    }

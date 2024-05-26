@@ -10,16 +10,8 @@
     if (group.Any(item => item.LuongTonKho > 0))
     {
         <p class="tieude">@group.Key</p>
-        @foreach (var view in group.Take(1))
-        {
-
-
-            <a asp-controller="Home" asp-action="Productcategory" asp-route-categoryId="@view.CategoryId">
-                <p>view</p>
-
-            </a>
-        }
         <hr class="divider">
+
         <div class="container px-4 px-lg-5 mt-5">
             <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
                 @foreach (var item in group.Where(item => item.LuongTonKho > 0).Take(4))
@@ -45,19 +37,41 @@
                         </div>
                     </div>
                 }
+
             </div>
         </div>
+        @foreach (var view in group.Take(1))
+        {
+            <a asp-controller="Home" asp-action="Productcategory" asp-route-categoryId="@view.CategoryId" class="view-link">
+                <p>view</p>
+            </a>
+        }
     }
 }
+<script>
+    function zoomIn(element) {
+        element.style.transform = "scale(1.1)"; // Phóng to khung
+    }
+
+    function zoomOut(element) {
+        element.style.transform = "scale(1)"; // Thu nhỏ khung khi di chuột ra khỏi
+    }
+</script>
 <style>
-    .card-img-top {
+    .card-img-wrapper {
         height: 300px;
-        width: 100%;
-        object-fit: cover; /* Đảm bảo hình ảnh giữ tỉ lệ khung hình và lấp đầy khung */
+        width: 18rem;
+        overflow: hidden;
         transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi mượt mà */
     }
 
-        .card-img-top:hover {
-            transform: scale(1.1); /* Phóng to hình ảnh khi đưa chuột vào */
+        .card-img-wrapper:hover {
+            transform: scale(1.1); /* Phóng to khung khi di chuột vào */
         }
+
+    .card-img-top {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; /* Đảm bảo tỉ lệ hình ảnh không bị biến dạng */
+    }
 </style>

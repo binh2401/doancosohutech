@@ -47,10 +47,12 @@
     </div>
     <div>
         <div class="noibat">
-            <div class="headdertieude"></div>
-            <a asp-controller="Home" asp-action="love"> <p class="tieude">Sách nổi bật</p></a>
-            <hr class="divider">
-
+            <div class="headdertieude">
+                <p class="tieude">Sách nổi bật</p>
+            
+                <hr class="divider">
+            </div>
+        </div>
 
             <ul>
                 <div class="container px-4 px-lg-5 mt-5">
@@ -81,20 +83,26 @@
                                     </div>
                                 </div>
                             }
+                      
                         }
-                    </div>
+                  
                 </div>
             </ul>
+        <a asp-controller="Home" asp-action="BestSellingProducts" class="view-link"><p>view</p></a>
+    </div>
         </div>
     </div>
    <div>
     <div class="yeuthich">
-    <div class="headdertieude"></div>
-        <a asp-controller="Home" asp-action="love" > <p class="tieude">Sách yêu thich</p></a>
-    <hr class="divider">
+        <div class="headdertieude">
+            <a><p class="tieude">Sách yêu thích</p></a>
+         
+            <hr class="divider">
+        </div>
+    </div>
 
 
-        <ul>
+            <ul>
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
@@ -123,13 +131,16 @@
                                     </div>
                                 </div>
                             }
+                   
                         }
+             
 
 
 
                 </div>
             </div>
         </ul>
+    <a asp-controller="Home" asp-action="MostLikedProducts" class="view-link"><p>view</p></a>
         </div>
 
     </div>
