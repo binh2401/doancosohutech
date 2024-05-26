@@ -25,8 +25,10 @@
                 @foreach (var item in group.Where(item => item.LuongTonKho > 0).Take(4))
                 {
                     <div class="col mb-5">
-                        <div class="card gap-3" style="width: 18rem">
-                            <img src="@item.ImageUrl" class="card-img-top" alt="..." style="height: 300px" width="200px">
+                        <div class="card gap-3" style="width: 18rem;">
+                            <div class="card-img-wrapper" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                <img src="@item.ImageUrl" class="card-img-top" alt="...">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">
                                     @Html.DisplayFor(modelItem => item.Name)
@@ -36,9 +38,9 @@
                                     <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
                                 </div>
                                 <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
-                                    <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i></button>
+                                    <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i> </button>
                                 </a>
-                                <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">Chi tiết</a>
+                                <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">chi tiết</a>
                             </div>
                         </div>
                     </div>

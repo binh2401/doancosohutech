@@ -1,11 +1,14 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Azure;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.EntityFrameworkCore;
 using System.Diagnostics;
 using System.Security.Claims;
 using WebBanHang.Data;
 using WebBanHang.Models;
 using WebBanHang.Repositories;
+using X.PagedList;
 
 namespace WebBanHang.Controllers
 {
@@ -25,10 +28,13 @@ namespace WebBanHang.Controllers
         }
 
         // Hi?n th? danh sách s?n ph?m
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index(int? page)
         {
+            int pageSize = 5;
+            int pageNumber =page==null ||page<0?1:page.Value;
             var products = await _productRepository.GetAllAsync();
-            return View(products);
+            PagedList<Product> lst=new PagedList<Product>(products, pageNumber, pageSize);
+            return View(lst);
         }
 
         public IActionResult Privacy()
@@ -84,16 +90,24 @@ namespace WebBanHang.Controllers
 
             return View(productsInCategory);
         }
-        public async Task<IActionResult> Productcategory(int categoryId)
+        public async Task<IActionResult> Productcategory(int categoryId, int? page)
         {
-            // Truy vấn cơ sở dữ liệu để lấy các sản phẩm thuộc danh mục có ID là categoryId
-            var productsInCategory = await _productRepository.GetAllAsync();
-            productsInCategory = await _context.Products
-                                                 .Where(p => p.CategoryId == categoryId)
-                                                 .ToListAsync();
+            // Define the page size
+            int pageSize = 5;
+            int pageNumber = page ?? 1;
 
-            // Trả về view và truyền danh sách sản phẩm tới view
-            return View(productsInCategory);
+            // Query the database to get products belonging to the specified category ID
+            var productsInCategory = await _context.Products
+                                                   .Where(p => p.CategoryId == categoryId)
+                                                   .ToListAsync();
+
+            // Create a PagedList object to handle pagination
+            IPagedList<Product> pagedProducts = productsInCategory.ToPagedList(pageNumber, pageSize);
+
+            // Pass categoryId and paginated products to the view
+            ViewBag.CategoryId = categoryId;
+
+            return View(pagedProducts);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -193,16 +207,25 @@ namespace WebBanHang.Controllers
 
             return View(likedProducts);
         }
-         public async Task<IActionResult> ProductcategoryByMenu(int menuId)
-    {
-        // Truy vấn cơ sở dữ liệu để lấy các sản phẩm thuộc menu có ID là menuId
-        var productsInMenu = await _context.Products
-            .Where(p => p.Category.menu.Id == menuId && p.LuongTonKho > 0)
-            .ToListAsync();
+        public async Task<IActionResult> ProductcategoryByMenu(int menuId, int? page)
+        {
+            // Define the page size
+            int pageSize = 5;
+            int pageNumber = page ?? 1;
 
-        // Trả về view và truyền danh sách sản phẩm tới view
-        return View("Productcategory",productsInMenu);
-    }
+            // Query the database to get products belonging to the specified menu ID
+            var productsInMenu = await _context.Products
+                                               .Where(p => p.Category.menu.Id == menuId && p.LuongTonKho > 0)
+                                               .ToListAsync();
+
+            // Create a PagedList object to handle pagination
+            IPagedList<Product> pagedProducts = productsInMenu.ToPagedList(pageNumber, pageSize);
+
+            // Pass menuId and paginated products to the view
+            ViewBag.MenuId = menuId;
+
+            return View("Productcategory", pagedProducts);
+        }
         [HttpPost]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> AddReview(int productId, int rating, string reviewText)

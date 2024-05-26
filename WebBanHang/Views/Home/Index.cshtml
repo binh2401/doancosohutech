@@ -1,4 +1,6 @@
-﻿@model IEnumerable<WebBanHang.Models.Product>
+﻿
+@model X.PagedList.IPagedList<WebBanHang.Models.Product>
+@using X.PagedList.Mvc.Core;
 @{
     ViewData["Title"] = "Home Page";
     int numOfQuantity = 1;
@@ -59,8 +61,10 @@
                             if (item.LuongTonKho > 0)
                             {
                                 <div class="col mb-5">
-                                    <div class="card gap-3" style="width: 18rem">
-                                        <img src="@item.ImageUrl" class="card-img-top" alt="..." style="height: 300px" width="200px">
+                                    <div class="card gap-3" style="width: 18rem;">
+                                        <div class="card-img-wrapper" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                            <img src="@item.ImageUrl" class="card-img-top" alt="...">
+                                        </div>
                                         <div class="card-body">
                                             <h5 class="card-title">
                                                 @Html.DisplayFor(modelItem => item.Name)
@@ -94,30 +98,35 @@
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
 
-                    @foreach (var item in Model.OrderByDescending(p => p.TotalLikes).Take(4))
-                    {
-                        if (item.LuongTonKho > 0)
+                        @foreach (var item in Model.OrderByDescending(p => p.TotalLikes).Take(4))
                         {
-                            <div class="col mb-5">
-                                <div class="card gap-3" style="width: 18rem">
-                                    <img src="@item.ImageUrl" class="card-img-top" alt="..." style="height: 300px" width="200px">
-                                    <div class="card-body">
-                                        <h5 class="card-title">
-                                            @Html.DisplayFor(modelItem => item.Name)
-                                        </h5>
-                                        <div class="d-flex">
-                                            <span>Price: </span>
-                                            <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
+                            if (item.LuongTonKho > 0)
+                            {
+                                <div class="col mb-5">
+                                    <div class="card gap-3" style="width: 18rem;">
+                                        <div class="card-img-wrapper" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                            <img src="@item.ImageUrl" class="card-img-top" alt="...">
                                         </div>
-                                        <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
-                                            <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i>  </button>
-                                        </a>
-                                        <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">chi tiết</a>
+                                        <div class="card-body">
+                                            <h5 class="card-title">
+                                                @Html.DisplayFor(modelItem => item.Name)
+                                            </h5>
+                                            <div class="d-flex">
+                                                <span>Price: </span>
+                                                <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
+                                            </div>
+                                            <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
+                                                <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i> </button>
+                                            </a>
+                                            <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">chi tiết</a>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                            }
                         }
-                    }
+
+
+
                 </div>
             </div>
         </ul>
@@ -126,15 +135,32 @@
     </div>
     <partial name="ProductsByCategory" />
 </div>
+<script>
+    function zoomIn(element) {
+        element.style.transform = "scale(1.1)"; // Phóng to khung
+    }
+
+    function zoomOut(element) {
+        element.style.transform = "scale(1)"; // Thu nhỏ khung khi di chuột ra khỏi
+    }
+</script>
 <style>
-    .card-img-top {
+    .card-img-wrapper {
         height: 300px;
-        width: 100%;
-        object-fit: cover; /* Đảm bảo hình ảnh giữ tỉ lệ khung hình và lấp đầy khung */
+        width: 18rem;
+        overflow: hidden;
         transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi mượt mà */
     }
 
-        .card-img-top:hover {
-            transform: scale(1.1); /* Phóng to hình ảnh khi đưa chuột vào */
+        .card-img-wrapper:hover {
+            transform: scale(1.1); /* Phóng to khung khi di chuột vào */
         }
+
+    .card-img-top {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; /* Đảm bảo tỉ lệ hình ảnh không bị biến dạng */
+    }
 </style>
+
+@Html.PagedListPager(Model, page=>Url.Action("Index", new{page=page}))
