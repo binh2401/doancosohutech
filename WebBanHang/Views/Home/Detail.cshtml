@@ -87,7 +87,7 @@
     @foreach (var review in ViewBag.Reviews)
     {
         <div>
-            <p>@review.name: @review.Rating</p>
+            <p>@review.name: @Html.Raw(string.Concat(Enumerable.Repeat("<i class=\"bi bi-star-fill\"></i>", review.Rating)))</p>
             <p>Comment: @review.ReviewText</p>
         </div>
     }
@@ -95,8 +95,14 @@
     <form action="@Url.Action("AddReview", "Home")" method="post">
         @Html.AntiForgeryToken()
         <div class="form-group">
-            <label for="rating">Rating:</label>
-            <input type="number" id="rating" name="rating" class="form-control" min="1" max="5" required>
+            <label for="starRating">Đánh giá sao:</label>
+            <div class="star-rating">
+                <input type="radio" id="star5" name="Rating" value="1" /><label for="star1" title="1 sao"></label>
+                <input type="radio" id="star4" name="Rating" value="2" /><label for="star2" title="2 sao"></label>
+                <input type="radio" id="star3" name="Rating" value="3" /><label for="star3" title="3 sao"></label>
+                <input type="radio" id="star2" name="Rating" value="4" /><label for="star4" title="4 sao"></label>
+                <input type="radio" id="star1" name="Rating" value="5" /><label for="star5" title="5 sao"></label>
+            </div>
         </div>
 
         <div class="form-group">
@@ -108,6 +114,7 @@
 
         <button type="submit" class="btn btn-primary">Submit</button>
     </form>
+
     </div>
 
 

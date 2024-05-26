@@ -3177,3 +3177,5 @@ D:\đồ án cơ sở\doancosohutech\WebBanHang\bin\Debug\net8.0\bundleconfig.js
 D:\hoctap\DoAnCoSo\doancosohutech\WebBanHang\bin\Debug\net8.0\bundleconfig.json
 D:\hoctap\DoAnCoSo\doancosohutech\WebBanHang\bin\Debug\net8.0\X.PagedList.dll
 D:\hoctap\DoAnCoSo\doancosohutech\WebBanHang\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll
+D:\đồ án cơ sở\doancosohutech\WebBanHang\bin\Debug\net8.0\X.PagedList.dll
+D:\đồ án cơ sở\doancosohutech\WebBanHang\bin\Debug\net8.0\X.PagedList.Mvc.Core.dll

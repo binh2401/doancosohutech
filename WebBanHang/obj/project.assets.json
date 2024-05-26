@@ -8660,19 +8660,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ADMIN\\.nuget\\packages\\": {}
+    "C:\\Users\\PC\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\WebBanHang.csproj",
+      "projectUniqueName": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\WebBanHang.csproj",
       "projectName": "WebBanHang",
-      "projectPath": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\WebBanHang.csproj",
-      "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
-      "outputPath": "D:\\hoctap\\DoAnCoSo\\doancosohutech\\WebBanHang\\obj\\",
+      "projectPath": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\WebBanHang.csproj",
+      "packagesPath": "C:\\Users\\PC\\.nuget\\packages\\",
+      "outputPath": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\PC\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8765,7 +8765,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.202/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
