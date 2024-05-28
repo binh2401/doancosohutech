@@ -57,11 +57,11 @@ namespace WebBanHang.Controllers
                 return NotFound();
             }
 
-            var productCategory = await _productRepository.GetByIdAsync(product.CategoryId);
-            if (productCategory == null)
-            {
-                return NotFound("Product category not found");
-            }
+            //var productCategory = await _productRepository.GetByIdAsync(product.CategoryId);
+            //if (productCategory == null)
+            //{
+            //    return NotFound("Product category not found");
+            //}
 
             // Lấy danh sách đánh giá của sản phẩm
             var reviews = await _context.comments
@@ -72,7 +72,7 @@ namespace WebBanHang.Controllers
             ViewBag.Reviews = reviews;
 
             // Truyền thông tin loại sản phẩm vào ViewBag
-            ViewBag.ProductCategory = productCategory;
+            //ViewBag.ProductCategory = productCategory;
 
             return View(product);
         }
@@ -83,12 +83,12 @@ namespace WebBanHang.Controllers
 
             return PartialView();
         }
-        public async Task<IActionResult> ProductsByCategory(int categoryId)
+        public async Task<IActionResult> ProductsByCategory(int categoryId, int page = 1, int pageSize = 4)
         {
             // Lấy danh sách sản phẩm thuộc thể loại categoryId từ cơ sở dữ liệu
             var productsInCategory = await _context.Products
                 .Where(p => p.CategoryId == categoryId)
-                .ToListAsync();
+                .ToPagedListAsync(page, pageSize);
 
             return View(productsInCategory);
         }

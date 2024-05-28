@@ -1,77 +1,57 @@
-﻿@model IEnumerable<WebBanHang.Models.Product>
+﻿@using X.PagedList.Mvc.Core
+@model X.PagedList.IPagedList<WebBanHang.Models.Product>
 @{
-    // Group products by category
-    int numOfQuantity = 1;
-    var productsByCategory = Model.GroupBy(p => p.Category?.Name);
+    ViewBag.Title = "Products by Category";
 }
-@foreach (var group in productsByCategory)
-{
-    // Kiểm tra xem danh mục có sản phẩm có số lượng tồn kho lớn hơn 0 không
-    if (group.Any(item => item.LuongTonKho > 0))
-    {
-        <p class="tieude">@group.Key</p>
-        <hr class="divider">
 
-        <div class="container px-4 px-lg-5 mt-5">
-            <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
-                @foreach (var item in group.Where(item => item.LuongTonKho > 0).Take(4))
-                {
-                    <div class="col mb-5">
-                        <div class="card gap-3" style="width: 18rem;">
-                            <div class="card-img-wrapper" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                                <img src="@item.ImageUrl" class="card-img-top" alt="...">
+<div class="container px-4 px-lg-5 mt-5">
+    @if (Model.Count > 0)
+    {
+        <p class="tieude">@Model.FirstOrDefault()?.Category?.Name</p>
+
+        <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-4 justify-content-center">
+            @foreach (var item in Model.Take(4))
+            {
+                <div class="col mb-5">
+                    <div class="card gap-3" style="width: 18rem;">
+                        <div class="card-img-wrapper" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                            <img src="@item.ImageUrl" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                @Html.DisplayFor(modelItem => item.Name)
+                            </h5>
+                            <div class="d-flex">
+                                <span>Price: </span>
+                                <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
                             </div>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    @Html.DisplayFor(modelItem => item.Name)
-                                </h5>
-                                <div class="d-flex">
-                                    <span>Price: </span>
-                                    <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
-                                </div>
-                                <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
-                                    <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i> </button>
-                                </a>
-                                <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">chi tiết</a>
-                            </div>
+                            <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="1">
+                                <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i> </button>
+                            </a>
+                            <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">chi tiết</a>
                         </div>
                     </div>
-                }
-
-            </div>
+                </div>
+            }
         </div>
-        @foreach (var view in group.Take(1))
-        {
-            <a asp-controller="Home" asp-action="Productcategory" asp-route-categoryId="@view.CategoryId" class="view-link">
-                <p>view</p>
-            </a>
-        }
-    }
-}
-<script>
-    function zoomIn(element) {
-        element.style.transform = "scale(1.1)"; // Phóng to khung
-    }
 
-    function zoomOut(element) {
-        element.style.transform = "scale(1)"; // Thu nhỏ khung khi di chuột ra khỏi
+
     }
-</script>
+    else
+    {
+        <p>No products available in this category.</p>
+    }
+</div>
+
 <style>
-    .card-img-wrapper {
+    .card-img-top {
         height: 300px;
-        width: 18rem;
-        overflow: hidden;
+        width: 100%;
+        object-fit: cover; /* Đảm bảo hình ảnh giữ tỉ lệ khung hình và lấp đầy khung */
         transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi mượt mà */
     }
 
-        .card-img-wrapper:hover {
-            transform: scale(1.1); /* Phóng to khung khi di chuột vào */
+        .card-img-top:hover {
+            transform: scale(1.1); /* Phóng to hình ảnh khi đưa chuột vào */
         }
-
-    .card-img-top {
-        height: 100%;
-        width: 100%;
-        object-fit: cover; /* Đảm bảo tỉ lệ hình ảnh không bị biến dạng */
-    }
 </style>
