@@ -34,7 +34,7 @@
                 </div>
             }
         </div>
-
+        <a asp-controller="Home" asp-action="Productcategory" class="view-link" asp-route-categoryId="@Model.FirstOrDefault()?.Category?.Id">View All</a>
 
     }
     else
