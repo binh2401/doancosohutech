@@ -30,14 +30,21 @@ namespace WebBanHang.Controllers
         }
 
         // Hi?n th? danh sách s?n ph?m
-        public async Task<IActionResult> Index(int? page)
+        public IActionResult Index(int? page)
         {
-            int pageSize = 5;
-            int pageNumber =page==null ||page<0?1:page.Value;
-            var products = await _productRepository.GetAllAsync();
-            PagedList<Product> lst=new PagedList<Product>(products, pageNumber, pageSize);
-            return View(lst);
+            var products = _context.Products.Include(p => p.Likes).ToList();
+            var productLikes = new Dictionary<int, bool>();
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            foreach (var product in products)
+            {
+                productLikes[product.Id] = _context.Likes.Any(l => l.ProductId == product.Id && l.UserId == userId);
+            }
+
+            ViewBag.IsLiked = productLikes;
+            return View(products.ToPagedList(page ?? 1, 10));
         }
+
 
         public IActionResult Privacy()
         {
@@ -85,6 +92,7 @@ namespace WebBanHang.Controllers
         }
         public async Task<IActionResult> ProductsByCategory(int categoryId, int page = 1, int pageSize = 4)
         {
+
             // Lấy danh sách sản phẩm thuộc thể loại categoryId từ cơ sở dữ liệu
             var productsInCategory = await _context.Products
                 .Where(p => p.CategoryId == categoryId)
@@ -112,87 +120,41 @@ namespace WebBanHang.Controllers
             return View(pagedProducts);
         }
         [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> LikeProduct(int productId)
+        public JsonResult LikeProduct(int productId)
         {
-            // Lấy sản phẩm
-            var product = await _context.Products.FindAsync(productId);
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var product = _context.Products.Find(productId);
 
-            // Kiểm tra sản phẩm tồn tại
             if (product == null)
             {
-                return NotFound();
+                return Json(new { success = false, message = "Product not found." });
             }
 
-            // Thêm "like" cho sản phẩm
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (userId == null)
+            var existingLike = _context.Likes.FirstOrDefault(l => l.ProductId == productId && l.UserId == userId);
+            if (existingLike != null)
             {
-                return Json(new { success = false, message = "User not logged in." });
+                _context.Likes.Remove(existingLike);
+                product.TotalLikes -= 1;
             }
-
-            // Kiểm tra xem đã tồn tại "like" từ người dùng cho sản phẩm này chưa
-            var existingLike = await _context.Likes
-                .FirstOrDefaultAsync(l => l.ProductId == productId && l.UserId == userId);
-
-            if (existingLike == null)
+            else
             {
-                var newLike = new like
-                {
-                    ProductId = productId,
-                    UserId = userId,
-                    IsLiked = true
-                };
-
-                // Thêm "like" mới vào cơ sở dữ liệu
-                _context.Likes.Add(newLike);
-                await _context.SaveChangesAsync();
-
-                // Cập nhật tổng số lượt "like" của sản phẩm
-                product.TotalLikes++;
-                await _context.SaveChangesAsync();
-
-                return Json(new { success = true, totalLikes = product.TotalLikes });
+                var like = new like { ProductId = productId, UserId = userId };
+                _context.Likes.Add(like);
+                product.TotalLikes += 1;
             }
 
-            return Json(new { success = false, message = "User has already liked this product." });
+            _context.SaveChanges();
+
+            var isLiked = _context.Likes.Any(l => l.ProductId == productId && l.UserId == userId);
+
+            return Json(new { success = true, totalLikes = product.TotalLikes, isLiked = isLiked });
         }
-        public async Task<IActionResult> UnlikeProduct(int productId)
-{
-    // Lấy sản phẩm
-    var product = await _context.Products.FindAsync(productId);
 
-    // Kiểm tra sản phẩm tồn tại
-    if (product == null)
-    {
-        return NotFound();
-    }
-
-    // Xóa "like" cho sản phẩm
-    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-    if (userId == null)
-    {
-        return Json(new { success = false, message = "User not logged in." });
-    }
-
-    var existingLike = await _context.Likes
-        .FirstOrDefaultAsync(l => l.ProductId == productId && l.UserId == userId);
-
-    if (existingLike != null)
-    {
-        // Xóa "like" khỏi cơ sở dữ liệu
-        _context.Likes.Remove(existingLike);
-        await _context.SaveChangesAsync();
-
-        // Giảm tổng số lượt "like" của sản phẩm
-        product.TotalLikes--;
-        await _context.SaveChangesAsync();
-
-        return Json(new { success = true, totalLikes = product.TotalLikes });
-    }
-
-    return Json(new { success = false, message = "User has not liked this product." });
-}
+        public bool IsLikedByUser(int productId)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            return _context.Likes.Any(l => l.ProductId == productId && l.UserId == userId);
+        }
         public async Task<IActionResult> likeuser()
         {
             var user = await _userManager.GetUserAsync(User);

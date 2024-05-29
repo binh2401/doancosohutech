@@ -2,6 +2,8 @@
 @model X.PagedList.IPagedList<WebBanHang.Models.Product>
 @{
     ViewBag.Title = "Products by Category";
+    int numOfQuantity = 1;
+    var isLikedDict = ViewBag.IsLiked as Dictionary<int, bool>;
 }
 
 <div class="container px-4 px-lg-5 mt-5">
@@ -12,6 +14,8 @@
         <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-4 justify-content-center">
             @foreach (var item in Model.Take(4))
             {
+                var isLiked = isLikedDict.ContainsKey(item.Id) && isLikedDict[item.Id];
+                
                 <div class="col mb-5">
                     <div class="card gap-3" style="width: 18rem;">
                         <div class="card-img-wrapper" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
@@ -29,6 +33,12 @@
                                 <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i> </button>
                             </a>
                             <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">chi tiết</a>
+                            <form>
+                                @Html.AntiForgeryToken()
+                                <button class="likeButton" type="button" data-product-id="@item.Id">
+                                    @(isLiked ? "Unlike" : "Like")
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>

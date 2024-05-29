@@ -280,7 +280,6 @@ namespace WebBanHang.Controllers
     .Include(o => o.OrderDetails)
     .ThenInclude(od => od.Product) // Load dữ liệu sản phẩm
     .ToListAsync();
-
             return View(orders);
         }
     }

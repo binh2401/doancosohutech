@@ -12,6 +12,6 @@ namespace WebBanHang.Models
         public decimal Price { get; set; }
         public Order Order { get; set; }
         public Product Product { get; set; } // Thêm thuộc tính này để tham chiếu đến sản phẩm
-
+       
     }
 }

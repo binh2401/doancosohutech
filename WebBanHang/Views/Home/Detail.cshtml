@@ -30,19 +30,7 @@
                         </button>
                     </form>
 
-                        <form>
-                            @Html.AntiForgeryToken()
-                            <button id="likeButton" type="button" data-product-id="@Model.Id">
-                                @if (Model.IsLiked)
-                                {
-                                    <text>Unlike</text>
-                                }
-                                else
-                                {
-                                    <text>Like</text>
-                                }
-                            </button>
-                        </form>
+                       
                         <span id="totalLikes">@Model.TotalLikes</span> likes
                    
                     <span id="totalLikes">@Model.Likes.Count(l => l.IsLiked)</span>
@@ -118,38 +106,3 @@
     </div>
 
 
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<script>
-    $(document).ready(function () {
-        $('#likeButton').click(function () {
-            var productId = $(this).data('product-id');
-            var token = $('input[name="__RequestVerificationToken"]').val();
-            var totalLikes = parseInt($('#totalLikes').text());
-            var isLiked = $(this).text() === 'Unlike';
-
-            $.ajax({
-                url: isLiked ? '@Url.Action("UnlikeProduct", "Home")' : '@Url.Action("LikeProduct", "Home")',
-                type: 'POST',
-                data: {
-                    productId: productId,
-                    __RequestVerificationToken: token
-                },
-                success: function (response) {
-                    if (response.success) {
-                        $('#totalLikes').text(response.totalLikes);
-                        $('#totalUsersLiked').text(response.totalUsersLiked);
-
-                        // Cập nhật nút "like" để phản ánh trạng thái mới
-                        $('#likeButton').text(isLiked ? 'Like' : 'Unlike');
-                    } else {
-                        alert(response.message || 'Something went wrong!');
-                    }
-                },
-                error: function (xhr, status, error) {
-                    console.log(xhr.responseText);
-                    alert('An error occurred while processing your request: ' + xhr.status + ' ' + error);
-                }
-            });
-        });
-    });
-</script>
