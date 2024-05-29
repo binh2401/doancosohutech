@@ -5,29 +5,10 @@
     var showMenuPagination = ViewBag.MenuId != null; // Kiểm tra xem có menuId không
     // Group products by category
     int numOfQuantity = 1;
+    var isLikedDict = ViewBag.IsLiked as Dictionary<int, bool>;
 }
 <div class="menuincatecory">
     <partial name="MenuPartial" />
-    <div>
-        <h3>Lọc sản phẩm</h3>
-        <div class="filter-container">
-            <button class="btn btn-primary filter-button" onclick="toggleSortOptions()">Lọc</button>
-            <div id="sortOptions" class="sort-options">
-                <a class="btn btn-link sort-option" asp-controller="Home" asp-action="SortByPriceAsc" method="get">
-                    Giá từ thấp lên cao
-                </a>
-                <a class="btn btn-link sort-option" asp-controller="Home" asp-action="giamPriceAsc" method="get">
-                    Giá từ cao xuống thấp
-                </a>
-                <a class="btn btn-link sort-option" asp-controller="Home" asp-action="FilterByLetter" asp-route-letter="A" method="get">
-                    A đến Z
-                </a>
-                <a class="btn btn-link sort-option" asp-controller="Home" asp-action="FilterByLetter" asp-route-letter="Z" method="get">
-                   Từ Z đến A
-                </a>
-            </div>
-        </div>
-    </div>
 
 <ul>
  
@@ -35,26 +16,44 @@
         <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
             @foreach (var item in Model)
             {
-                    <div class="col mb-5">
-                        <div class="card gap-3" style="width: 18rem;">
-                            <div class="card-img-wrapper" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
-                                <img src="@item.ImageUrl" class="card-img-top" alt="...">
-                            </div>
-                            <div class="card-body">
-                                <h5 class="card-title">
-                                    @Html.DisplayFor(modelItem => item.Name)
-                                </h5>
-                                <div class="d-flex">
-                                    <span>Price: </span>
-                                    <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
+                    if (item.LuongTonKho > 0)
+                    {
+                        bool isLiked = isLikedDict != null && isLikedDict.ContainsKey(item.Id) && isLikedDict[item.Id];
+                        <div class="col mb-5">
+                            <div class="card gap-3" style="width: 18rem;">
+                                <div class="card-img-wrapper" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                    <img src="@item.ImageUrl" class="card-img-top" alt="...">
                                 </div>
-                                <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
-                                    <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i> </button>
-                                </a>
-                                <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">chi tiết</a>
+                                <div class="card-body">
+                                    <h5 class="card-title">
+                                        @Html.DisplayFor(modelItem => item.Name)
+                                    </h5>
+                                    <div class="d-flex">
+                                        <span>Price: </span>
+                                        <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
+                                    </div>
+                                    <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
+                                        <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i> </button>
+                                    </a>
+                                    <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">chi tiết</a>
+                                    <form>
+                                        @Html.AntiForgeryToken()
+                                        <button class="likeButton" type="button" data-product-id="@item.Id">
+                                            @(isLiked ? "Unlike" : "Like")
+                                        </button>
+                                    </form>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    }
+                    else
+                    {
+                        <div class="col mb-5">
+                            <div class="alert alert-warning" role="alert">
+                                Hết hàng
+                            </div>
+                        </div>
+                    }
             }
         </div>
     </div>

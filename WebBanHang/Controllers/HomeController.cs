@@ -30,8 +30,9 @@ namespace WebBanHang.Controllers
         }
 
         // Hi?n th? danh sách s?n ph?m
-        public IActionResult Index(int? page)
+        public async Task<IActionResult> IndexAsync(int? page)
         {
+            var productdf = await _productRepository.GetAllAsync();
             var products = _context.Products.Include(p => p.Likes).ToList();
             var productLikes = new Dictionary<int, bool>();
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -40,7 +41,7 @@ namespace WebBanHang.Controllers
             {
                 productLikes[product.Id] = _context.Likes.Any(l => l.ProductId == product.Id && l.UserId == userId);
             }
-
+         
             ViewBag.IsLiked = productLikes;
             return View(products.ToPagedList(page ?? 1, 10));
         }
@@ -90,16 +91,16 @@ namespace WebBanHang.Controllers
 
             return PartialView();
         }
+        [HttpPost]
         public async Task<IActionResult> ProductsByCategory(int categoryId, int page = 1, int pageSize = 4)
         {
-
             // Lấy danh sách sản phẩm thuộc thể loại categoryId từ cơ sở dữ liệu
             var productsInCategory = await _context.Products
                 .Where(p => p.CategoryId == categoryId)
                 .ToPagedListAsync(page, pageSize);
-
             return View(productsInCategory);
         }
+
         public async Task<IActionResult> Productcategory(int categoryId, int? page)
         {
             // Define the page size
@@ -176,18 +177,14 @@ namespace WebBanHang.Controllers
             // Define the page size
             int pageSize = 5;
             int pageNumber = page ?? 1;
-
             // Query the database to get products belonging to the specified menu ID
             var productsInMenu = await _context.Products
                                                .Where(p => p.Category.menu.Id == menuId && p.LuongTonKho > 0)
                                                .ToListAsync();
-
             // Create a PagedList object to handle pagination
             IPagedList<Product> pagedProducts = productsInMenu.ToPagedList(pageNumber, pageSize);
-
             // Pass menuId and paginated products to the view
             ViewBag.MenuId = menuId;
-
             return View("Productcategory", pagedProducts);
         }
         [HttpPost]
