@@ -61,10 +61,27 @@
                         else
                         {
                             <div class="col mb-5">
-                                <div class="alert alert-warning" role="alert">
-                                    Hết hàng
+                                <div class="card gap-3" style="width: 18rem;">
+                                    <div class="card-img-wrapper" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                        <img src="@item.ImageUrl" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            @Html.DisplayFor(modelItem => item.Name)
+                                        </h5>
+                                        <div class="d-flex">
+                                            <span>Price: </span>
+                                            <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
+                                        </div>
+
+                                        <div class="alert alert-warning" role="alert">
+                                            Hết hàng
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
+
                         }
                     }
                 </div>
@@ -118,10 +135,27 @@
                         else
                         {
                             <div class="col mb-5">
-                                <div class="alert alert-warning" role="alert">
-                                    Hết hàng
+                                <div class="card gap-3" style="width: 18rem;">
+                                    <div class="card-img-wrapper" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                        <img src="@item.ImageUrl" class="card-img-top" alt="...">
+                                    </div>
+                                    <div class="card-body">
+                                        <h5 class="card-title">
+                                            @Html.DisplayFor(modelItem => item.Name)
+                                        </h5>
+                                        <div class="d-flex">
+                                            <span>Price: </span>
+                                            <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
+                                        </div>
+
+                                        <div class="alert alert-warning" role="alert">
+                                            Hết hàng
+                                        </div>
+
+                                    </div>
                                 </div>
                             </div>
+
                         }
                 }
             </div>

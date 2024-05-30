@@ -24,16 +24,14 @@
                     <form asp-controller="ShoppingCart" asp-action="AddToCart" method="post">
                         <input type="hidden" name="productId" value="@Model.Id" />
                         <label for="quantity">Số lượng:</label>
-                        <input type="number" id="quantity" name="quantity" value="1" min="1" />
+                        <input type="number" id="quantity" name="quantity" value="1" min="1" max="@Model.LuongTonKho" />
                         <button class="btn btn-dark btn-rounded mr-1" data-toggle="tooltip" title="" data-original-title="Add to cart">
                            Thêm vào giỏ hàng
                         </button>
                     </form>
 
-                       
-                        <span id="totalLikes">@Model.TotalLikes</span> likes
-                   
-                    <span id="totalLikes">@Model.Likes.Count(l => l.IsLiked)</span>
+
+                    hàng còn   <span id="totalLikes">@Model.LuongTonKho</span>
                     <h3 class="box-title mt-5"></h3>
                     <ul class="list-unstyled">
                         <li><i class="fa fa-check text-success"></i>Tác giả: @Model.author </li>
