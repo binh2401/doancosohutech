@@ -2,7 +2,11 @@
 @using Microsoft.AspNetCore.Mvc.Rendering
 @{
     ViewData["Title"] = "Add Product";
+    Layout = "_AdminLayout";
 }
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
 <h2>Add Product</h2>
 <form asp-action="Add" method="post" enctype="multipart/form-data">
     <div class="form-group">
@@ -74,7 +78,9 @@
     <div id="imagePreview" style="max-width:200px;"></div>
     <button type="submit" class="btn btn-primary">Add</button>
 </form>
-
+</div>
+</main>
+</div>
 <script>
     function previewImage() {
         var preview = document.getElementById("imagePreview");

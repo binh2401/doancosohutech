@@ -2,9 +2,11 @@
 
 @{
     ViewData["Title"] = "Add";
-    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    Layout = "_AdminLayout";
 }
-
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
 <h2>Add</h2>
 
 <h4>Category</h4>
@@ -29,6 +31,8 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-
+</div>
+</main>
+</div>
 
 

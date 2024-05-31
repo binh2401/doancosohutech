@@ -1,5 +1,10 @@
 ﻿@model List<Order>
-
+@{
+    Layout = "_AdminLayout";
+}
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
 <h1>Danh sách đơn hàng</h1>
 
 @if (Model != null && Model.Count > 0)
@@ -39,3 +44,6 @@ else
 {
     <p>Không có đơn hàng nào.</p>
 }
+</div>
+</main>
+</div>

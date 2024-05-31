@@ -2,9 +2,11 @@
 
 @{
     ViewData["Title"] = "Update";
-    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    Layout = "_AdminLayout";
 }
-
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
 <h2>Edit Category</h2>
 <form asp-controller="Categories" asp-action="Update" method="post" enctype="multipart/form-data">
     <input type="hidden" asp-for="Id" />
@@ -20,3 +22,6 @@
     </div>
     <button type="submit" class="btn btn-primary">Update</button>
 </form>
+</div>
+</main>
+</div>

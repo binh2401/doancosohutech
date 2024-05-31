@@ -1,13 +1,12 @@
 ﻿@model IEnumerable<WebBanHang.Models.Product>
 @{
     var uniqueCategories = Model.Select(p => p.Category?.Name).Where(name => !string.IsNullOrEmpty(name)).Distinct();
+    Layout = "_AdminLayout";
 }
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
 <h2>kho</h2>
-
-    @foreach (var categoryName in uniqueCategories)
-    {
-        <a asp-controller="Product" asp-action="ProductCategory"><p>@categoryName</p></a>
-    }
     <table class="table">
 
         <thead>
@@ -41,3 +40,6 @@
             }
         </tbody>
     </table>
+</div>
+</main>
+</div>

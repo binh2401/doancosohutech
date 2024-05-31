@@ -2,10 +2,13 @@
 
 @{
     ViewData["Title"] = "Thống kê doanh thu";
+    Layout = "_AdminLayout";
     var dates = Model.RevenueData.Select(x => x.Date.ToString("dd/MM/yyyy")).ToArray();
     var revenues = Model.RevenueData.Select(x => x.Revenue).ToArray();
 }
-
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
 <h1>Thống kê doanh thu</h1>
 
 <form method="get">
@@ -21,7 +24,9 @@
 </form>
 
 <canvas id="revenueChart" width="400" height="200"></canvas>
-
+</div>
+</main>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
     var ctx = document.getElementById('revenueChart').getContext('2d');

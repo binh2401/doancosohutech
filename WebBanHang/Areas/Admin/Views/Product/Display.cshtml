@@ -1,4 +1,10 @@
 ﻿@model WebBanHang.Models.Product
+@{
+    Layout = "_AdminLayout";
+}
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
 <h2>@Model.Name</h2>
 <div>
     <h3>@Model.author</h3>
@@ -15,3 +21,6 @@
     }
 </div>
 <a asp-action="Index">Back to List</a>
+</div>
+</main>
+</div>

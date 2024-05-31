@@ -1,5 +1,10 @@
 ﻿@model EditUserRoleViewModel
-
+@{
+    Layout = "_AdminLayout";
+}
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
 <form asp-action="EditUserRole" method="post">
     <div class="form-group">
         <label asp-for="UserId">ID Người Dùng</label>
@@ -27,5 +32,8 @@
     <a asp-controller="Ad" asp-action="Account" class="btn btn-secondary">Quay về</a>
 
 </form>
+</div>
+</main>
+</div>
 
 

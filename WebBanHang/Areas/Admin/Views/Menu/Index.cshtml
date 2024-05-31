@@ -1,9 +1,13 @@
 ﻿@model IEnumerable<WebBanHang.Models.Menu>
 
+
 @{
     ViewData["Title"] = "Menus";
+    Layout = "_AdminLayout";
 }
-
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
 <h2>Categories</h2>
 
 <p>
@@ -37,3 +41,6 @@
         }
     </tbody>
 </table>
+</div>
+</main>
+</div>

@@ -1,11 +1,10 @@
 ﻿@model List<AccountViewModel>
-
-<!DOCTYPE html>
-<html>
-<head>
-    <title>User List</title>
-</head>
-<body>
+@{
+    Layout = "_AdminLayout";
+}
+    <div id="layoutSidenav_content">
+        <main>
+            <div class="container-fluid px-4">
     <h1>User List</h1>
     <table>
         <tr>
@@ -27,5 +26,6 @@
             </tr>
         }
     </table>
-</body>
-</html>
+    </div>
+    </main>
+    </div>

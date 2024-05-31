@@ -1718,7 +1718,6 @@ D:\đồ án cơ sở\doancosohutech\WebBanHang\obj\Debug\net8.0\staticwebassets
 D:\đồ án cơ sở\doancosohutech\WebBanHang\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.WebBanHang.props
 D:\đồ án cơ sở\doancosohutech\WebBanHang\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.WebBanHang.props
 D:\đồ án cơ sở\doancosohutech\WebBanHang\obj\Debug\net8.0\staticwebassets.pack.json
-D:\đồ án cơ sở\doancosohutech\WebBanHang\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\đồ án cơ sở\doancosohutech\WebBanHang\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 D:\đồ án cơ sở\doancosohutech\WebBanHang\obj\Debug\net8.0\scopedcss\bundle\WebBanHang.styles.css
 D:\đồ án cơ sở\doancosohutech\WebBanHang\obj\Debug\net8.0\scopedcss\projectbundle\WebBanHang.bundle.scp.css
@@ -3475,3 +3474,4 @@ D:\hoctap\DoAnCoSo\admin\doancosohutech\WebBanHang\obj\Debug\net8.0\refint\WebBa
 D:\hoctap\DoAnCoSo\admin\doancosohutech\WebBanHang\obj\Debug\net8.0\WebBanHang.pdb
 D:\hoctap\DoAnCoSo\admin\doancosohutech\WebBanHang\obj\Debug\net8.0\WebBanHang.genruntimeconfig.cache
 D:\hoctap\DoAnCoSo\admin\doancosohutech\WebBanHang\obj\Debug\net8.0\ref\WebBanHang.dll
+D:\đồ án cơ sở\doancosohutech\WebBanHang\obj\Debug\net8.0\scopedcss\Areas\Admin\Views\Shared\_AdminLayout.cshtml.rz.scp.css

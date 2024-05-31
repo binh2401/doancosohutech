@@ -13,6 +13,10 @@
       "PackagePath": "staticwebassets\\css\\Style.css"
     },
     {
+      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\css\\admin\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\admin\\css\\styles.css"
+    },
+    {
       "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\css\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap.min.css"
     },
@@ -151,6 +155,30 @@
     {
       "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\images\\z5285480413340_cc86db0bbe031ec926b98856c4cfdd8e.jpg",
       "PackagePath": "staticwebassets\\images\\z5285480413340_cc86db0bbe031ec926b98856c4cfdd8e.jpg"
+    },
+    {
+      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\js\\admin\\demo\\chart-area-demo.js",
+      "PackagePath": "staticwebassets\\js\\admin\\demo\\chart-area-demo.js"
+    },
+    {
+      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\js\\admin\\demo\\chart-bar-demo.js",
+      "PackagePath": "staticwebassets\\js\\admin\\demo\\chart-bar-demo.js"
+    },
+    {
+      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\js\\admin\\demo\\chart-pie-demo.js",
+      "PackagePath": "staticwebassets\\js\\admin\\demo\\chart-pie-demo.js"
+    },
+    {
+      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\js\\admin\\demo\\datatables-demo.js",
+      "PackagePath": "staticwebassets\\js\\admin\\demo\\datatables-demo.js"
+    },
+    {
+      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\js\\admin\\js\\datatables-simple-demo.js",
+      "PackagePath": "staticwebassets\\js\\admin\\js\\datatables-simple-demo.js"
+    },
+    {
+      "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\js\\admin\\js\\scripts.js",
+      "PackagePath": "staticwebassets\\js\\admin\\js\\scripts.js"
     },
     {
       "Id": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\js\\bootstrap.min.js",

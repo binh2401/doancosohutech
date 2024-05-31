@@ -1,9 +1,14 @@
 ﻿@model IEnumerable<WebBanHang.Models.Product>
 @{
     ViewData["Title"] = "SearchResults";
-    Layout = "~/Areas/Admin/Views/Shared/_Layout.cshtml";
+    Layout = "_AdminLayout";
 }
-
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
 <h2>SearchResults</h2>
 <table class="table">
 
@@ -44,4 +49,6 @@
         }
     </tbody>
 </table>
-
+</div>
+</main>
+</div>
