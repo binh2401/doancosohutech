@@ -96,3 +96,40 @@
         object-fit: cover; /* Đảm bảo tỉ lệ hình ảnh không bị biến dạng */
     }
 </style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.likeButton').click(function () {
+            var button = $(this);
+            var productId = button.data('product-id');
+            var token = $('input[name="__RequestVerificationToken"]').val();
+            var isLiked = button.data('is-liked');
+
+            $.ajax({
+                url: isLiked ? '@Url.Action("UnlikeProduct", "Home")' : '@Url.Action("LikeProduct", "Home")',
+                type: 'POST',
+                data: {
+                    productId: productId,
+                    __RequestVerificationToken: token
+                },
+                success: function (response) {
+                    if (response.success) {
+                        button.data('is-liked', !isLiked);
+                        button.text(response.isLiked ? 'Unlike' : 'Like');
+                        // Cập nhật số lượt thích (nếu có phần tử để hiển thị)
+                        $('#totalLikes-' + productId).text(response.totalLikes);
+                    } else {
+                        alert(response.message || 'Something went wrong!');
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.log(xhr.responseText);
+                    alert('An error occurred while processing your request: ' + xhr.status + ' ' + error);
+                }
+            });
+        });
+    });
+
+
+
+</script>

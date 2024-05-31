@@ -30,7 +30,7 @@ namespace WebBanHang.Controllers
         }
 
         // Hi?n th? danh sách s?n ph?m
-        public async Task<IActionResult> IndexAsync(int? page)
+        public async Task<IActionResult> Index()
         {
             var productdf = await _productRepository.GetAllAsync();
             var products = _context.Products.Include(p => p.Likes).ToList();
@@ -43,7 +43,7 @@ namespace WebBanHang.Controllers
             }
          
             ViewBag.IsLiked = productLikes;
-            return View(products.ToPagedList(page ?? 1, 10));
+            return View(products);
         }
 
 
@@ -92,33 +92,52 @@ namespace WebBanHang.Controllers
             return PartialView();
         }
         [HttpPost]
-        public async Task<IActionResult> ProductsByCategory(int categoryId, int page = 1, int pageSize = 4)
+        public async Task<IActionResult> ProductsByCategory(int categoryId)
         {
+            var products = _context.Products.Include(p => p.Likes).ToList();
+            var productLikes = new Dictionary<int, bool>();
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            foreach (var product in products)
+            {
+                productLikes[product.Id] = _context.Likes.Any(l => l.ProductId == product.Id && l.UserId == userId);
+            }
+
+            ViewBag.IsLiked = productLikes;
             // Lấy danh sách sản phẩm thuộc thể loại categoryId từ cơ sở dữ liệu
             var productsInCategory = await _context.Products
-                .Where(p => p.CategoryId == categoryId)
-                .ToPagedListAsync(page, pageSize);
+               .Where(p => p.CategoryId == categoryId)
+               .ToListAsync();
+
             return View(productsInCategory);
         }
 
-        public async Task<IActionResult> Productcategory(int categoryId, int? page)
+        public async Task<IActionResult> Productcategory(int categoryId)
         {
+            var productdf = await _productRepository.GetAllAsync();
             // Define the page size
-            int pageSize = 5;
-            int pageNumber = page ?? 1;
+            var products = _context.Products.Include(p => p.Likes).ToList();
+            var productLikes = new Dictionary<int, bool>();
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
+            foreach (var product in products)
+            {
+                productLikes[product.Id] = _context.Likes.Any(l => l.ProductId == product.Id && l.UserId == userId);
+            }
+
+            ViewBag.IsLiked = productLikes;
             // Query the database to get products belonging to the specified category ID
             var productsInCategory = await _context.Products
                                                    .Where(p => p.CategoryId == categoryId)
                                                    .ToListAsync();
 
             // Create a PagedList object to handle pagination
-            IPagedList<Product> pagedProducts = productsInCategory.ToPagedList(pageNumber, pageSize);
 
             // Pass categoryId and paginated products to the view
             ViewBag.CategoryId = categoryId;
 
-            return View(pagedProducts);
+
+            return View(productsInCategory);
         }
         [HttpPost]
         public JsonResult LikeProduct(int productId)
@@ -158,6 +177,17 @@ namespace WebBanHang.Controllers
         }
         public async Task<IActionResult> likeuser()
         {
+            var productdf = await _productRepository.GetAllAsync();
+            var products = _context.Products.Include(p => p.Likes).ToList();
+            var productLikes = new Dictionary<int, bool>();
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            foreach (var product in products)
+            {
+                productLikes[product.Id] = _context.Likes.Any(l => l.ProductId == product.Id && l.UserId == userId);
+            }
+
+            ViewBag.IsLiked = productLikes;
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
@@ -172,20 +202,19 @@ namespace WebBanHang.Controllers
 
             return View(likedProducts);
         }
-        public async Task<IActionResult> ProductcategoryByMenu(int menuId, int? page)
+        public async Task<IActionResult> ProductcategoryByMenu(int menuId)
         {
             // Define the page size
-            int pageSize = 5;
-            int pageNumber = page ?? 1;
+            var productdf = await _productRepository.GetAllAsync();
             // Query the database to get products belonging to the specified menu ID
             var productsInMenu = await _context.Products
                                                .Where(p => p.Category.menu.Id == menuId && p.LuongTonKho > 0)
                                                .ToListAsync();
             // Create a PagedList object to handle pagination
-            IPagedList<Product> pagedProducts = productsInMenu.ToPagedList(pageNumber, pageSize);
+          
             // Pass menuId and paginated products to the view
             ViewBag.MenuId = menuId;
-            return View("Productcategory", pagedProducts);
+            return View("Productcategory", productsInMenu);
         }
         [HttpPost]
         [ValidateAntiForgeryToken]
@@ -247,6 +276,16 @@ namespace WebBanHang.Controllers
         }
         public async Task< IActionResult> BestSellingProducts()
         {
+            var products = _context.Products.Include(p => p.Likes).ToList();
+            var productLikes = new Dictionary<int, bool>();
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            foreach (var product in products)
+            {
+                productLikes[product.Id] = _context.Likes.Any(l => l.ProductId == product.Id && l.UserId == userId);
+            }
+
+            ViewBag.IsLiked = productLikes;
             var bestSellingProducts = _context.Products
                 .OrderByDescending(p => p.SoLuongBanRa)
                 .Take(10) // Lấy 10 sản phẩm bán chạy nhất
@@ -256,6 +295,16 @@ namespace WebBanHang.Controllers
         }
         public async Task< IActionResult> MostLikedProducts()
         {
+            var products = _context.Products.Include(p => p.Likes).ToList();
+            var productLikes = new Dictionary<int, bool>();
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            foreach (var product in products)
+            {
+                productLikes[product.Id] = _context.Likes.Any(l => l.ProductId == product.Id && l.UserId == userId);
+            }
+
+            ViewBag.IsLiked = productLikes;
             var mostLikedProducts = _context.Products
                 .OrderByDescending(p => p.TotalLikes)
                 .Take(10) // Lấy 10 sản phẩm được yêu thích nhất

@@ -474,3 +474,14 @@ p.tieude {
     z-index: 9;
 }
 
+.view-link {
+    display: flex;
+    justify-content: center; /* Cãn gi?a theo chi?u ngang */
+    border-left: 1px solid #000; /* Ðý?ng vi?n bên trái */
+    border-right: 1px solid #000; /* Ðý?ng vi?n bên ph?i */
+    padding: 5px; /* Ði?u ch?nh l? theo nhu c?u */
+}
+
+    .view-link p {
+        margin: 0; /* Lo?i b? l? m?c ð?nh cho th? <p> */
+    }

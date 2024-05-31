@@ -1,19 +1,18 @@
-﻿@using X.PagedList.Mvc.Core
-@model X.PagedList.IPagedList<WebBanHang.Models.Product>
+﻿@model IEnumerable<WebBanHang.Models.Product>
 @{
     ViewBag.Title = "Products by Category";
     int numOfQuantity = 1;
     var isLikedDict = ViewBag.IsLiked as Dictionary<int, bool>;
+    var productsByCategory = Model.GroupBy(p => p.Category?.Name);
 }
-
+@foreach (var group in productsByCategory)
+{
 <div class="container px-4 px-lg-5 mt-5">
-    @if (Model.Count > 0)
-    {
-        <p class="tieude">@Model.FirstOrDefault()?.Category?.Name</p>
-
+            <p class="tieude">@group.Key</p>
+            
         <div class="row gx-4 gx-lg-5 row-cols-1 row-cols-md-4 justify-content-center">
-            @foreach (var item in Model.Take(4))
-            {
+                @foreach (var item in group.Take(4))
+                {
                 if (item.LuongTonKho > 0)
                 {
                     bool isLiked = isLikedDict != null && isLikedDict.ContainsKey(item.Id) && isLikedDict[item.Id];
@@ -69,17 +68,22 @@
                     </div>
                    
                 }
+
             }
         </div>
-        <a asp-controller="Home" asp-action="Productcategory" class="view-link" asp-route-categoryId="@Model.FirstOrDefault()?.Category?.Id">View All</a>
+        @foreach (var view in group.Take(1))
+        {
 
-    }
-    else
-    {
-        <p>No products available in this category.</p>
-    }
+
+            <a asp-controller="Home" asp-action="Productcategory" class="view-link" asp-route-categoryId="@view.CategoryId">
+                <p>View All</p>
+
+            </a>
+        }
+
+
 </div>
-
+}
 <style>
     .card-img-top {
         height: 300px;
