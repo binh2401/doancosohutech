@@ -139,13 +139,16 @@ namespace WebBanHang.Areas.Admin.Controllers
                     Revenue = g.Sum(r => r.Revenue)
                 })
                 .ToListAsync();
+            var totalRevenue = revenueData.Sum(r => r.Revenue);
 
             var viewModel = new RevenueStatisticsViewModel
             {
                 RevenueData = revenueData,
                 StartDate = startDate,
-                EndDate = endDate
+                EndDate = endDate,
+                TotalRevenue = totalRevenue
             };
+
 
             return View(viewModel);
         }

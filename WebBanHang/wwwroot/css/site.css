@@ -485,3 +485,6 @@ p.tieude {
     .view-link p {
         margin: 0; /* Lo?i b? l? m?c ð?nh cho th? <p> */
     }
+.as {
+    display: flex;
+}

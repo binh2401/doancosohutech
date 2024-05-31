@@ -28,7 +28,7 @@
                                     @foreach (var subItem in item.Category.menu.Categorys)
                                     {
                                         <li>
-                                            <a asp-controller="Home" asp-action="Productcategory" class="btn btn-primary font-control" asp-route-categoryId="@subItem.Id">@subItem.Name</a>
+                                            <a asp-controller="Home" asp-action="Productcategory" asp-route-categoryId="@subItem.Id">@subItem.Name</a>
                                         </li>
                                     }
                                 </ul>
