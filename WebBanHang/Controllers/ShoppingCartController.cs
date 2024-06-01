@@ -179,22 +179,32 @@ namespace WebBanHang.Controllers
 		}
 
 		[HttpPost]
-		public IActionResult Increase(int productId)
-		{
-			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
-			if (cart != null)
-			{
-				var cartItem = cart.Items.FirstOrDefault(item => item.ProductId == productId);
-				if (cartItem != null)
-				{
-					cartItem.Quantity++;
-					HttpContext.Session.SetObjectAsJson("Cart", cart);
-				}
-			}
-			return RedirectToAction("Index");
-		}
+        public IActionResult Increase(int productId)
+        {
+            var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");
+            if (cart != null)
+            {
+                var cartItem = cart.Items.FirstOrDefault(item => item.ProductId == productId);
+                if (cartItem != null)
+                {
+                    var product = _context.Products.FirstOrDefault(p => p.Id == productId);
+                    if (product != null && cartItem.Quantity < product.LuongTonKho) // Kiểm tra số lượng tồn kho
+                    {
+                        cartItem.Quantity++;
+                        HttpContext.Session.SetObjectAsJson("Cart", cart);
+                    }
+                    else
+                    {
+                        // Tùy chọn: Hiển thị thông báo cho người dùng rằng số lượng đã đạt tối đa
+                        TempData["Error"] = "Không thể thêm quá số lượng tồn kho.";
+                    }
+                }
+            }
+            return RedirectToAction("Index");
+        }
 
-		[HttpPost]
+
+        [HttpPost]
 		public IActionResult Decrease(int productId)
 		{
 			var cart = HttpContext.Session.GetObjectFromJson<ShoppingCart>("Cart");

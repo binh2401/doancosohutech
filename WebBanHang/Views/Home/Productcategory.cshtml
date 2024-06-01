@@ -29,7 +29,7 @@
                                     </h5>
                                     <div class="d-flex">
                                         <span>Price: </span>
-                                        <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
+                                        <p class="mx-3">@item.Price.ToString("#,##") Vnđ</p>
                                     </div>
                                     <div class="as">
                                         <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
@@ -38,10 +38,11 @@
                                         <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">chi tiết</a>
                                         <form>
                                             @Html.AntiForgeryToken()
-                                            <button class="likeButton" type="button" data-product-id="@item.Id">
-                                                @(isLiked ? "Unlike" : "Like")
+                                            <button class="likeButton btn btn-outline-dark" type="button" data-product-id="@item.Id">
+                                                <i class="bi @(isLiked ? "bi-heart-fill" : "bi-heart")" style="color: @(isLiked ? "red" : "gray");"></i>
                                             </button>
                                         </form>
+
                                     </div>
                                 </div>
                             </div>
@@ -87,6 +88,22 @@
      }
 </script>
 <style>
+    .card .as {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .likeButton i {
+        font-size: 1.5em; /* Điều chỉnh kích thước biểu tượng trái tim */
+    }
+
+    .btn-outline-dark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .card-img-wrapper {
         height: 300px;
         width: 18rem;
@@ -134,7 +151,12 @@
                 success: function (response) {
                     if (response.success) {
                         button.data('is-liked', !isLiked);
-                        button.text(response.isLiked ? 'Unlike' : 'Like');
+                        var icon = button.find('i');
+                        if (response.isLiked) {
+                            icon.removeClass('bi-heart').addClass('bi-heart-fill').css('color', 'red');
+                        } else {
+                            icon.removeClass('bi-heart-fill').addClass('bi-heart').css('color', 'gray');
+                        }
                         // Cập nhật số lượt thích (nếu có phần tử để hiển thị)
                         $('#totalLikes-' + productId).text(response.totalLikes);
                     } else {
@@ -148,7 +170,4 @@
             });
         });
     });
-
-
-
 </script>

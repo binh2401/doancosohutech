@@ -36,10 +36,11 @@
                                     <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">chi tiết</a>
                                     <form>
                                         @Html.AntiForgeryToken()
-                                        <button class="likeButton" type="button" data-product-id="@item.Id">
-                                            @(isLiked ? "Unlike" : "Like")
+                                        <button class="likeButton btn btn-outline-dark" type="button" data-product-id="@item.Id">
+                                            <i class="bi @(isLiked ? "bi-heart-fill" : "bi-heart")" style="color: @(isLiked ? "red" : "gray");"></i>
                                         </button>
                                     </form>
+
                                 </div>
                             </div>
                         </div>
@@ -87,6 +88,22 @@
 </div>
 }
 <style>
+    .card .as {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .likeButton i {
+        font-size: 1.5em; /* Điều chỉnh kích thước biểu tượng trái tim */
+    }
+
+    .btn-outline-dark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
     .card-img-top {
         height: 300px;
         width: 100%;

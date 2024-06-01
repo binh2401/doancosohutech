@@ -1,36 +1,158 @@
 ﻿@model IEnumerable<WebBanHang.Models.Product>
-
+@{
+    int numOfQuantity = 1;
+    var isLikedDict = ViewBag.IsLiked as Dictionary<int, bool>;
+}
 <h2>Sách bạn đang tìm ?</h2>
 
-<section class="py-2">
+<ul>
+
     <div class="container px-4 px-lg-5 mt-5">
-
-        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-
-content-center">
-
+        <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
             @foreach (var item in Model)
             {
-                <div class="col mb-5">
-                    <div class="card gap-3" style="width: 18rem">
-                        <img src="@item.ImageUrl" class="card-img-top" alt="..."
-                             style="height: 300px">
-                        <div class="card-body">
-                            <h5 class="card-title">
-                                @Html.DisplayFor(modelItem =>
-                                         item.Name)
-                            </h5>
-                            <div class="d-flex">
-                                <span>Price: </span>
-                                <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
+
+                if (item.LuongTonKho > 0)
+                {
+                    bool isLiked = isLikedDict != null && isLikedDict.ContainsKey(item.Id) && isLikedDict[item.Id];
+                    <div class="col mb-5">
+                        <div class="card gap-3" style="width: 18rem;">
+                            <div class="card-img-wrapper" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                <img src="@item.ImageUrl" class="card-img-top" alt="...">
                             </div>
-                            <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id"
-                        asp-route-quantity="">
-                                <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i> Add to Cart </button>
-                            </a>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    @Html.DisplayFor(modelItem => item.Name)
+                                </h5>
+                                <div class="d-flex">
+                                    <span>Price: </span>
+                                    <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
+                                </div>
+                                <div class="as">
+                                    <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
+                                        <button class="btn btn-outline-dark"> <i class="bi-cart-fill me-1"></i> </button>
+                                    </a>
+                                    <a asp-controller="Home" asp-action="Detail" class="btn btn-primary font-control" asp-route-id="@item.Id">chi tiết</a>
+                                    <form>
+                                        @Html.AntiForgeryToken()
+                                        <button class="likeButton btn btn-outline-dark" type="button" data-product-id="@item.Id">
+                                            <i class="bi @(isLiked ? "bi-heart-fill" : "bi-heart")" style="color: @(isLiked ? "red" : "gray");"></i>
+                                        </button>
+                                    </form>
+
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
+                }
+                else
+                {
+                    <div class="col mb-5">
+                        <div class="card gap-3" style="width: 18rem;">
+                            <div class="card-img-wrapper" onmouseover="zoomIn(this)" onmouseout="zoomOut(this)">
+                                <img src="@item.ImageUrl" class="card-img-top" alt="...">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">
+                                    @Html.DisplayFor(modelItem => item.Name)
+                                </h5>
+                                <div class="d-flex">
+                                    <span>Price: </span>
+                                    <p class="mx-3">@item.Price.ToString("#,##0") Vnđ</p>
+                                </div>
+
+                                <div class="alert alert-warning" role="alert">
+                                    Hết hàng
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                }
             }
         </div>
     </div>
-</section>
+</ul>
+<script>
+    function zoomIn(element) {
+        element.style.transform = "scale(1.1)"; // Phóng to khung
+    }
+
+    function zoomOut(element) {
+        element.style.transform = "scale(1)"; // Thu nhỏ khung khi di chuột ra khỏi
+    }
+</script>
+<style>
+    .card .as {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .likeButton i {
+        font-size: 1.5em; /* Điều chỉnh kích thước biểu tượng trái tim */
+    }
+
+    .btn-outline-dark {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card-img-wrapper {
+        height: 300px;
+        width: 18rem;
+        overflow: hidden;
+        transition: transform 0.3s ease; /* Thêm hiệu ứng chuyển đổi mượt mà */
+    }
+
+        .card-img-wrapper:hover {
+            transform: scale(1.1); /* Phóng to khung khi di chuột vào */
+        }
+
+    .card-img-top {
+        height: 100%;
+        width: 100%;
+        object-fit: cover; /* Đảm bảo tỉ lệ hình ảnh không bị biến dạng */
+    }
+</style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $('.likeButton').click(function () {
+            var button = $(this);
+            var productId = button.data('product-id');
+            var token = $('input[name="__RequestVerificationToken"]').val();
+            var isLiked = button.data('is-liked');
+
+            $.ajax({
+                url: isLiked ? '@Url.Action("UnlikeProduct", "Home")' : '@Url.Action("LikeProduct", "Home")',
+                type: 'POST',
+                data: {
+                    productId: productId,
+                    __RequestVerificationToken: token
+                },
+                success: function (response) {
+                    if (response.success) {
+                        button.data('is-liked', !isLiked);
+                        var icon = button.find('i');
+                        if (response.isLiked) {
+                            icon.removeClass('bi-heart').addClass('bi-heart-fill').css('color', 'red');
+                        } else {
+                            icon.removeClass('bi-heart-fill').addClass('bi-heart').css('color', 'gray');
+                        }
+                        // Cập nhật số lượt thích (nếu có phần tử để hiển thị)
+                        $('#totalLikes-' + productId).text(response.totalLikes);
+                    } else {
+                        alert(response.message || 'Something went wrong!');
+                    }
+                },
+                error: function (xhr, status, error) {
+                    console.log(xhr.responseText);
+                    alert('An error occurred while processing your request: ' + xhr.status + ' ' + error);
+                }
+            });
+        });
+    });
+</script>
