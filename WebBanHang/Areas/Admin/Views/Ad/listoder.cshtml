@@ -13,7 +13,8 @@
         <thead>
             <tr>
                 <th>Mã đơn hàng</th>
-                <th>id user</th>
+                           
+                            <th>id user</th> 
                 <th>tên người nhận hàng</th>
                 <th>địa chỉ</th>
                 <th>nội dung</th>
@@ -27,7 +28,11 @@
             {
                 <tr>
                     <td>@order.Id</td>
-                    <td>@order.UserId</td>
+                                <td>
+                                    <a asp-area="Admin" asp-controller="Ad" asp-action="oderforuser" asp-route-orderId="@order.Id">
+                               @order.UserId
+                                    </a>
+                                </td>
                     <td>@order.name</td>
                     <td>@order.ShippingAddress</td>
                     <td>@order.Notes</td>

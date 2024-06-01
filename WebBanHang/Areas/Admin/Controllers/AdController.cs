@@ -6,6 +6,7 @@ using WebBanHang.Data;
 using WebBanHang.Models;
 using WebBanHang.Repositories;
 using WebBanHang.Models;
+using System.Security.Claims;
 
 namespace WebBanHang.Areas.Admin.Controllers
 {
@@ -170,7 +171,22 @@ namespace WebBanHang.Areas.Admin.Controllers
 
             return View(orders);
         }
+        public async Task<IActionResult> oderforuser()
+        {
+            // Lấy ID của người dùng hiện tại
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
+            // Truy vấn các đơn hàng mà người dùng đã đặt
+            var orders = await _context.Orders
+                .Include(o => o.OrderDetails)
+                    .ThenInclude(oi => oi.Product)
+                .Where(o => o.UserId == userId)
+                .ToListAsync();
+
+            return View(orders);
+        }
 
 
-}
+
+    }
 }

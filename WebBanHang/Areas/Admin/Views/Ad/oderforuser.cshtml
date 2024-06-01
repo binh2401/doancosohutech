@@ -1,0 +1,16 @@
+﻿@* @model List<Order>
+
+@foreach (var order in Model)
+{
+    <h2>Đơn hàng số @order.Id</h2>
+    <p>Ngày đặt hàng: @order.OrderDate</p>
+    <ul>
+        @foreach (var item in order.OrderDetails)
+        {
+            <li>
+                @item.Product.Name - Số lượng: @item.Quantity - Giá: @item.Product.Price
+            </li>
+        }
+    </ul>
+}
+ *@
