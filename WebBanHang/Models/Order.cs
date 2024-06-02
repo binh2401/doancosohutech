@@ -22,5 +22,18 @@ namespace WebBanHang.Models
         [ValidateNever]
         public ApplicationUser ApplicationUser { get; set; }
         public List<OrderDetail> OrderDetails { get; set; }
+
+        public OrderStatus Status { get; set; } = OrderStatus.OrderReceived;
+
+        public DateTime? DeliveryDate { get; set; }
+    }
+    public enum OrderStatus
+    {
+        [Display(Name = "Đã nhận đơn hàng")]
+        OrderReceived,
+        [Display(Name = "Đang giao")]
+        Delivering,
+        [Display(Name = "Giao thành công")]
+        Delivered
     }
 }

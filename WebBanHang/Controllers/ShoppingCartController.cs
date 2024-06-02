@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.CodeAnalysis;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 using WebBanHang.Data;
 using WebBanHang.Extensions;
 using WebBanHang.Models;
@@ -273,6 +274,29 @@ namespace WebBanHang.Controllers
             }
 
             await _context.SaveChangesAsync();
+        }
+        // GET: Orders/Details/5
+        public IActionResult Details(int id)
+        {
+            var order = _context.Orders
+                .FirstOrDefault(m => m.Id == id);
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            return View(order);
+        }
+
+        // GET: Orders/UserOrders
+        public IActionResult UserOrders()
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var orders = _context.Orders
+                .Where(o => o.UserId == userId)
+                .ToList();
+
+            return View(orders);
         }
     }
 

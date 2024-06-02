@@ -171,22 +171,123 @@ namespace WebBanHang.Areas.Admin.Controllers
 
             return View(orders);
         }
-        public async Task<IActionResult> oderforuser()
+          public IActionResult oderlist()
         {
-            // Lấy ID của người dùng hiện tại
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-
-            // Truy vấn các đơn hàng mà người dùng đã đặt
-            var orders = await _context.Orders
-                .Include(o => o.OrderDetails)
-                    .ThenInclude(oi => oi.Product)
-                .Where(o => o.UserId == userId)
-                .ToListAsync();
-
+            var orders = _context.Orders.ToList();
             return View(orders);
         }
 
+        // GET: Orders/Details/5
+        public IActionResult Details(int id)
+        {
+            var order = _context.Orders
+                .FirstOrDefault(m => m.Id == id);
+            if (order == null)
+            {
+                return NotFound();
+            }
 
+            return View(order);
+        }
 
+        // GET: Orders/Edit/5
+        public IActionResult Edit(int id)
+        {
+            var order = _context.Orders.Find(id);
+            if (order == null)
+            {
+                return NotFound();
+            }
+            return View(order);
+        }
+
+        // POST: Orders/Edit/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Edit(int id, [Bind("Id,UserId,OrderDate,count,TotalPrice,ShippingAddress,name,Notes,Status,DeliveryDate")] Order order)
+        {
+            if (id != order.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(order);
+                    _context.SaveChanges();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!OrderExists(order.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View(order);
+        }
+
+        // POST: Orders/UpdateStatus/5
+        public IActionResult UpdateStatus(int id)
+        {
+            var order = _context.Orders.Find(id);
+            if (order == null)
+            {
+                return NotFound();
+            }
+            return View(order); // Truyền một Order cho view UpdateStatus
+        }
+
+        // POST: Orders/UpdateStatus/5
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult UpdateStatus(int id, OrderStatus status)
+        {
+            var order = _context.Orders.Find(id);
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            order.Status = status;
+            if (status == OrderStatus.Delivered)
+            {
+                order.DeliveryDate = DateTime.Now;
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    _context.Update(order);
+                    _context.SaveChanges();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (!OrderExists(order.Id))
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(oderlist));
+            }
+            return View(order); // Truyền một Order cho view UpdateStatus
+        }
+
+        private bool OrderExists(int id)
+        {
+            return _context.Orders.Any(e => e.Id == id);
+        }
     }
 }

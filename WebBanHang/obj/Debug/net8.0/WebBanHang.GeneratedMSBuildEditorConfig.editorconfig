@@ -42,12 +42,12 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Ad/listoder.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRcbGlzdG9kZXIuY3NodG1s
+[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Ad/oderlist.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRcb2Rlcmxpc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Ad/oderforuser.cshtml]
-build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRcb2RlcmZvcnVzZXIuY3NodG1s
+[D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Ad/UpdateStatus.cshtml]
+build_metadata.AdditionalFiles.TargetPath = QXJlYXNcQWRtaW5cVmlld3NcQWRcVXBkYXRlU3RhdHVzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/đồ án cơ sở/doancosohutech/WebBanHang/Areas/Admin/Views/Categories/Add.cshtml]
@@ -250,8 +250,8 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XFN1Y2Nlc3MuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/ShoppingCart/useroder.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XHVzZXJvZGVyLmNzaHRtbA==
+[D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/ShoppingCart/UserOrders.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hvcHBpbmdDYXJ0XFVzZXJPcmRlcnMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/đồ án cơ sở/doancosohutech/WebBanHang/Views/_ViewImports.cshtml]

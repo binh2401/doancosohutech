@@ -1,0 +1,61 @@
+﻿@model IEnumerable<WebBanHang.Models.Order>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "_AdminLayout";
+}
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
+<h1>Index</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.ShippingAddress)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalPrice)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Status)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ShippingAddress)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.TotalPrice)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Status)
+                </td>
+                <td>
+                    <a asp-action="UpdateStatus" asp-route-id="@item.Id">Update Status</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+</div>
+</main>
+</div>
