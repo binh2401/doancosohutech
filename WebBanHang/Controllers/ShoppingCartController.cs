@@ -84,7 +84,7 @@ namespace WebBanHang.Controllers
             {
                 var vnPayModel = new VnPaymentRequestModel
                 {
-                    Amount = cart.Items.Sum(i => (double)(i.Price * 1000) * i.Quantity),
+                    Amount = cart.Items.Sum(i => (double)(i.Price) * i.Quantity),
                     CreatedDate = DateTime.Now,
                     Description = order.Notes,
                     FullName = order.ShippingAddress,

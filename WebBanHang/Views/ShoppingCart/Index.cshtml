@@ -50,7 +50,7 @@
                                     <div class="mt-3">
                                       
                                         <p class="text-muted mb-2">Gía</p>
-                                        <h5 class="mb-0 mt-2">$@item.Price</h5>
+                                        <h5 class="mb-0 mt-2">@item.Price.ToString("#,##0")VNĐ</h5>
                                     </div>
                                 </div>
                                 <div class="col-md-4">
@@ -62,7 +62,7 @@
                                 <div class="col-md-4">
                                     <div class="mt-3">
                                         <p class="text-muted mb-2">Tổng</p>
-                                        <h5 class="mb-0 mt-2">$@(item.Price * item.Quantity)</h5>
+                                        <h5 class="mb-0 mt-2">@((item.Price) * item.Quantity)VNĐ</h5>
                                     </div>
                                 </div>
                             </div>
