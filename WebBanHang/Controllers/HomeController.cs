@@ -245,19 +245,16 @@ namespace WebBanHang.Controllers
 
             return RedirectToAction("Detail", new { id = productId });
         }
-        public async Task<IActionResult> SortByPriceAsc(int? page)
+        public async Task<IActionResult> SortByPriceAsc()
         {
             var products = _context.Products.OrderBy(p => p.Price).ToList();
-            int pageSize = 10;
-            int pageNumber = (page ?? 1);
-            return View("Productcategory", products.ToPagedList(pageNumber, pageSize));
+         
+            return View("Productcategory", products);
         }
-        public async Task<IActionResult> giamPriceAsc(int? page)
+        public async Task<IActionResult> giamPriceAsc()
         {
             var products = _context.Products.OrderByDescending(p => p.Price).ToList();
-            int pageSize = 10;
-            int pageNumber = (page ?? 1);
-            return View("Productcategory", products.ToPagedList(pageNumber, pageSize));
+            return View("Productcategory", products);
         }
         public async Task< IActionResult> FilterByLetter(char letter)
         {
