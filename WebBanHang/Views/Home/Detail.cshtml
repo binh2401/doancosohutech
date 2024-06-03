@@ -17,7 +17,7 @@
                     <h4 class="box-title mt-5">@Model.Name</h4>
                     <p>@Model.Description</p>
                     <h2 class="mt-5">
-                        @Model.Price.ToString("C")<small class="text-success"></small>
+                        @Model.Price.ToString("#,##0") VNĐ<small class="text-success"></small>
                     </h2>
                     <form asp-controller="ShoppingCart" asp-action="AddToCart" method="post">
                         <input type="hidden" name="productId" value="@Model.Id" />

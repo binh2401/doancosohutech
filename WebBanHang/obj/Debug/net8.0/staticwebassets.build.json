@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "U8j0Nm/2KGRa1ID36QML4G9f/63yRSDzlqHN5Mh0p2o=",
+  "Hash": "9foqD3lRpt7QgAXN8sfQFuRcr+cEMNEzhewwBbf8o1w=",
   "Source": "WebBanHang",
   "BasePath": "_content/WebBanHang",
   "Mode": "Default",
@@ -1915,6 +1915,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\z5285480413340_cc86db0bbe031ec926b98856c4cfdd8e.jpg"
+    },
+    {
+      "Identity": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\images\\z5484960416076_d0f46a52f1ca823873967f9434137f3d.jpg",
+      "SourceId": "WebBanHang",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\",
+      "BasePath": "_content/WebBanHang",
+      "RelativePath": "images/z5484960416076_d0f46a52f1ca823873967f9434137f3d.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\z5484960416076_d0f46a52f1ca823873967f9434137f3d.jpg"
     },
     {
       "Identity": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\js\\admin\\demo\\chart-area-demo.js",
