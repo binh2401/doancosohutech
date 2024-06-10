@@ -34,7 +34,8 @@
                     <ul class="list-unstyled">
                         <li><i class="fa fa-check text-success"></i>Tác giả: @Model.author </li>
                         <li><i class="fa fa-check text-success"></i>Loại sản phẩm: @Model.Category.Name</li>
-                        <li><i class="fa fa-check text-success"></i>tổng like: @Model.TotalLikes</li>
+                        <li><i class="fa fa-check text-success"></i>Tổng like: @Model.TotalLikes</li>
+                        
                     </ul>
                 </div>
                 <div class="col-lg-12 col-md-12 col-sm-12">
@@ -68,7 +69,33 @@
                 </div>
             </div>
         </div>
-    <h3>Product Reviews</h3>
+    <h3>Tổng đánh giá:  @Model.AverageRating.ToString("0.0")</h3>
+  
+    <span class="font-size-30 text-warning">
+        @{
+            int starCount = (int)Model.AverageRating; // Lấy phần nguyên của AverageRating để xác định số lượng sao nguyên
+            double remainder = @Model.AverageRating - starCount; // Lấy phần dư để xác định có cần thêm sao nữa hay không
+        }
+
+        @for (int i = 0; i < starCount; i++)
+        {
+            <i class="fa fa-star"></i> <!-- Hiển thị sao đầy -->
+        }
+
+        @if (remainder >= 0.5) // Nếu phần dư lớn hơn hoặc bằng 0.5, hiển thị một sao nửa
+        {
+            <i class="fa fa-star-half"></i>
+            starCount++; // Tăng số lượng sao nguyên để tránh hiển thị quá nhiều sao
+        }
+
+        @for (int i = starCount; i < 5; i++) // Duyệt qua số sao còn thiếu và hiển thị sao trống
+        {
+            <i class="fa fa-star-o"></i>
+        }
+    </span>
+    <h3>Đánh giá</h3>
+
+  
     @foreach (var review in ViewBag.Reviews)
     {
         <div>

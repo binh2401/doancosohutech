@@ -33,27 +33,8 @@
                 <nav class="iq-sidebar-menu">
                     <ul id="iq-sidebar-toggle" class="iq-menu">
                         <li class="active active-menu">
-                            <a href="#dashboard" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Trang Chủ</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
+                            <a asp-controller="Home" asp-action="Index" class="iq-waves-effect" data-toggle="collapse" aria-expanded="true"><span class="ripple rippleEffect"></span><i class="las la-home iq-arrow-left"></i><span>Trang Chủ</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
                             <ul id="dashboard" class="iq-submenu collapse show" data-parent="#iq-sidebar-toggle">
-                            </ul>
-                        </li>
-                        <li>
-                            <a href="#ui-elements" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="lab la-elementor iq-arrow-left"></i><span>Danh mục sản phẩm</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                            <ul id="ui-elements" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
-                              @*   @foreach (var item in Model)
-                                {
-                                    if (item.Category != null && item.Category.menu != null && item.Category.menu.Name != null)
-                                    {
-                                        var categoryName = item.Category.menu.Name;
-                                        if (!uniqueCategories.Contains(categoryName))
-                                        {
-                                            uniqueCategories.Add(categoryName);
-                                            <li class="elements">
-                                                <a asp-controller="Home" asp-action="ProductcategoryByMenu" asp-route-menuId="@item.Category.menu.Id" class="iq-waves-effect collapsed" data-toggle="collapse" aria-expanded="false"><i class="ri-play-circle-line"></i><span> @categoryName</span><i class="ri-arrow-right-s-line iq-arrow-right"></i></a>
-                                            </li>
-                                        }
-                                    }
-                                } *@
                             </ul>
                         </li>
                         @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
@@ -163,7 +144,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-6 text-right">
-                    Copyright 2020 <a href="#">NHASACHTV</a> All Rights Reserved.
+                    Copyright 2020 <a href="#">BOOK STORE</a> All Rights Reserved.
                 </div>
             </div>
         </div>
@@ -213,6 +194,9 @@
 </body>
 </html>
 <style>
+    img.img-fluid.rounded.w-100 {
+        height: 300px;
+    }
     .searchbox {
         display: flex;
         align-items: center;

@@ -5,6 +5,9 @@
     var isLikedDict = ViewBag.IsLiked as Dictionary<int, bool>;
 
 }
+<div>
+    <partial name="MenuPartial" />
+</div>
 <div class="col-lg-12">
 <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
     <div class="carousel-inner">
@@ -61,12 +64,28 @@
                                                 <p class="font-size-13 line-height mb-1">@item.author</p>
                                                 <div class="d-block line-height">
                                                     <span class="font-size-11 text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
+                                                        @{
+                                                            int starCount = (int)item.AverageRating; // Lấy phần nguyên của AverageRating để xác định số lượng sao nguyên
+                                                            double remainder = item.AverageRating - starCount; // Lấy phần dư để xác định có cần thêm sao nữa hay không
+                                                        }
+
+                                                        @for (int i = 0; i < starCount; i++)
+                                                        {
+                                                            <i class="fa fa-star"></i> <!-- Hiển thị sao đầy -->
+                                                        }
+
+                                                        @if (remainder >= 0.5) // Nếu phần dư lớn hơn hoặc bằng 0.5, hiển thị một sao nửa
+                                                        {
+                                                            <i class="fa fa-star-half"></i>
+                                                            starCount++; // Tăng số lượng sao nguyên để tránh hiển thị quá nhiều sao
+                                                        }
+
+                                                        @for (int i = starCount; i < 5; i++) // Duyệt qua số sao còn thiếu và hiển thị sao trống
+                                                        {
+                                                            <i class="fa fa-star-o"></i>
+                                                        }
                                                     </span>
+
                                                 </div>
                                             </div>
                                             <div class="price d-flex align-items-center">
@@ -108,11 +127,26 @@
                                                 <p class="font-size-13 line-height mb-1">@item.author</p>
                                                 <div class="d-block line-height">
                                                     <span class="font-size-11 text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
+                                                        @{
+                                                            int starCount = (int)item.AverageRating; // Lấy phần nguyên của AverageRating để xác định số lượng sao nguyên
+                                                            double remainder = item.AverageRating - starCount; // Lấy phần dư để xác định có cần thêm sao nữa hay không
+                                                        }
+
+                                                        @for (int i = 0; i < starCount; i++)
+                                                        {
+                                                            <i class="fa fa-star"></i> <!-- Hiển thị sao đầy -->
+                                                        }
+
+                                                        @if (remainder >= 0.5) // Nếu phần dư lớn hơn hoặc bằng 0.5, hiển thị một sao nửa
+                                                        {
+                                                            <i class="fa fa-star-half"></i>
+                                                            starCount++; // Tăng số lượng sao nguyên để tránh hiển thị quá nhiều sao
+                                                        }
+
+                                                        @for (int i = starCount; i < 5; i++) // Duyệt qua số sao còn thiếu và hiển thị sao trống
+                                                        {
+                                                            <i class="fa fa-star-o"></i>
+                                                        }
                                                     </span>
                                                 </div>
                                             </div>
@@ -167,11 +201,26 @@
                                                 <p class="font-size-13 line-height mb-1">@item.author</p>
                                                 <div class="d-block line-height">
                                                     <span class="font-size-11 text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
+                                                        @{
+                                                            int starCount = (int)item.AverageRating; // Lấy phần nguyên của AverageRating để xác định số lượng sao nguyên
+                                                            double remainder = item.AverageRating - starCount; // Lấy phần dư để xác định có cần thêm sao nữa hay không
+                                                        }
+
+                                                        @for (int i = 0; i < starCount; i++)
+                                                        {
+                                                            <i class="fa fa-star"></i> <!-- Hiển thị sao đầy -->
+                                                        }
+
+                                                        @if (remainder >= 0.5) // Nếu phần dư lớn hơn hoặc bằng 0.5, hiển thị một sao nửa
+                                                        {
+                                                            <i class="fa fa-star-half"></i>
+                                                            starCount++; // Tăng số lượng sao nguyên để tránh hiển thị quá nhiều sao
+                                                        }
+
+                                                        @for (int i = starCount; i < 5; i++) // Duyệt qua số sao còn thiếu và hiển thị sao trống
+                                                        {
+                                                            <i class="fa fa-star-o"></i>
+                                                        }
                                                     </span>
                                                 </div>
                                             </div>
@@ -214,11 +263,26 @@
                                                 <p class="font-size-13 line-height mb-1">@item.author</p>
                                                 <div class="d-block line-height">
                                                     <span class="font-size-11 text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
+                                                        @{
+                                                            int starCount = (int)item.AverageRating; // Lấy phần nguyên của AverageRating để xác định số lượng sao nguyên
+                                                            double remainder = item.AverageRating - starCount; // Lấy phần dư để xác định có cần thêm sao nữa hay không
+                                                        }
+
+                                                        @for (int i = 0; i < starCount; i++)
+                                                        {
+                                                            <i class="fa fa-star"></i> <!-- Hiển thị sao đầy -->
+                                                        }
+
+                                                        @if (remainder >= 0.5) // Nếu phần dư lớn hơn hoặc bằng 0.5, hiển thị một sao nửa
+                                                        {
+                                                            <i class="fa fa-star-half"></i>
+                                                            starCount++; // Tăng số lượng sao nguyên để tránh hiển thị quá nhiều sao
+                                                        }
+
+                                                        @for (int i = starCount; i < 5; i++) // Duyệt qua số sao còn thiếu và hiển thị sao trống
+                                                        {
+                                                            <i class="fa fa-star-o"></i>
+                                                        }
                                                     </span>
                                                 </div>
                                             </div>
@@ -245,6 +309,7 @@
     </div>
 
     <style>
+   
     a.likeButton.btn.btn-outline-dark {
         background-color: #F0FFFF;
     }

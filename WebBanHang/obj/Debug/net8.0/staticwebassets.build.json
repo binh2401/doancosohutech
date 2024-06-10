@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "GPZWkKdUkyFW2BVE/D+8+f+ZhYvmJ5gRib87UOR6MUc=",
+  "Hash": "KmO2HAdHWYHzKjoQCPqTojYSEVRpO0WAyGRruSv2EMA=",
   "Source": "WebBanHang",
   "BasePath": "_content/WebBanHang",
   "Mode": "Default",
@@ -1345,6 +1345,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\images\\BỐN MÙA YÊU THƯƠNG.jpg",
+      "SourceId": "WebBanHang",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\",
+      "BasePath": "_content/WebBanHang",
+      "RelativePath": "images/BỐN MÙA YÊU THƯƠNG.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\BỐN MÙA YÊU THƯƠNG.jpg"
     },
     {
       "Identity": "D:\\đồ án cơ sở\\doancosohutech\\WebBanHang\\wwwroot\\images\\f8febe599485707c8235a45183f8d76d.jpg.webp",

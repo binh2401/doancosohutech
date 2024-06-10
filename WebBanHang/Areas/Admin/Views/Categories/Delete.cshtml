@@ -5,10 +5,10 @@
 <div id="layoutSidenav_content">
     <main>
         <div class="container-fluid px-4">
-<h2>Delete Category</h2>
+<h2>Xóa thể loại</h2>
 <form asp-controller="Categories" asp-action="DeleteConfirmed" method="post">
     <input type="hidden" asp-for="Id" />
-    <p>Are you sure you want to delete @Model.Name?</p>
+    <p>Bạn có chắc là xóa chứ: @Model.Name?</p>
     <button type="submit" class="btn btn-danger">Delete</button>
 </form>
 </div>

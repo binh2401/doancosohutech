@@ -17,5 +17,6 @@ namespace WebBanHang.Models
         // Các mối quan hệ nếu có
         public Product Product { get; set; }
         public ApplicationUser User { get; set; }
+    
     }
 }

@@ -28,12 +28,27 @@
                                                 <h6 class="mb-1"> @Html.DisplayFor(modelItem => item.Name)</h6>
                                                 <p class="font-size-13 line-height mb-1">Gurt Mistrioty</p>
                                                 <div class="d-block">
-                                                    <span class="font-size-13 text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
+                                                    <span class="font-size-11 text-warning">
+                                                        @{
+                                                            int starCount = (int)item.AverageRating; // Lấy phần nguyên của AverageRating để xác định số lượng sao nguyên
+                                                            double remainder = item.AverageRating - starCount; // Lấy phần dư để xác định có cần thêm sao nữa hay không
+                                                        }
+
+                                                        @for (int i = 0; i < starCount; i++)
+                                                        {
+                                                            <i class="fa fa-star"></i> <!-- Hiển thị sao đầy -->
+                                                        }
+
+                                                        @if (remainder >= 0.5) // Nếu phần dư lớn hơn hoặc bằng 0.5, hiển thị một sao nửa
+                                                        {
+                                                            <i class="fa fa-star-half"></i>
+                                                            starCount++; // Tăng số lượng sao nguyên để tránh hiển thị quá nhiều sao
+                                                        }
+
+                                                        @for (int i = starCount; i < 5; i++) // Duyệt qua số sao còn thiếu và hiển thị sao trống
+                                                        {
+                                                            <i class="fa fa-star-o"></i>
+                                                        }
                                                     </span>
                                                 </div>
                                             </div>
@@ -74,11 +89,26 @@
                                                 <p class="font-size-13 line-height mb-1">@item.author</p>
                                                 <div class="d-block line-height">
                                                     <span class="font-size-11 text-warning">
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
-                                                        <i class="fa fa-star"></i>
+                                                        @{
+                                                            int starCount = (int)item.AverageRating; // Lấy phần nguyên của AverageRating để xác định số lượng sao nguyên
+                                                            double remainder = item.AverageRating - starCount; // Lấy phần dư để xác định có cần thêm sao nữa hay không
+                                                        }
+
+                                                        @for (int i = 0; i < starCount; i++)
+                                                        {
+                                                            <i class="fa fa-star"></i> <!-- Hiển thị sao đầy -->
+                                                        }
+
+                                                        @if (remainder >= 0.5) // Nếu phần dư lớn hơn hoặc bằng 0.5, hiển thị một sao nửa
+                                                        {
+                                                            <i class="fa fa-star-half"></i>
+                                                            starCount++; // Tăng số lượng sao nguyên để tránh hiển thị quá nhiều sao
+                                                        }
+
+                                                        @for (int i = starCount; i < 5; i++) // Duyệt qua số sao còn thiếu và hiển thị sao trống
+                                                        {
+                                                            <i class="fa fa-star-o"></i>
+                                                        }
                                                     </span>
                                                 </div>
                                             </div>
@@ -101,16 +131,11 @@
     </div>
 </div>
 
-<script>
-    function zoomIn(element) {
-        element.style.transform = "scale(1.1)"; // Phóng to khung
-    }
 
-    function zoomOut(element) {
-        element.style.transform = "scale(1)"; // Thu nhỏ khung khi di chuột ra khỏi
-    }
-</script>
 <style>
+    img.img-fluid.rounded.w-100 {
+        height: 200px;
+    }
     .card .as {
         display: flex;
         justify-content: space-between;

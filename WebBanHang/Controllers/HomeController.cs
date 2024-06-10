@@ -233,7 +233,7 @@ namespace WebBanHang.Controllers
             var review = new comment
             {
                 ProductId = productId,
-                name= userName,
+                name = userName,
                 Rating = rating,
                 ReviewText = reviewText,
                 UserId = userId
@@ -243,8 +243,24 @@ namespace WebBanHang.Controllers
             _context.comments.Add(review);
             await _context.SaveChangesAsync();
 
+            // Sau khi thêm đánh giá mới, tính lại tổng trung bình của đánh giá
+            var product = await _context.Products.FindAsync(productId);
+            if (product != null)
+            {
+                var comments = await _context.comments.Where(c => c.ProductId == productId).ToListAsync();
+                double totalRating = comments.Sum(c => (double)c.Rating);
+                int totalComments = comments.Count();
+
+                product.AverageRating = (double)(totalRating / totalComments);
+                product.TotalReviews = totalComments;
+
+                await _context.SaveChangesAsync();
+            }
+
             return RedirectToAction("Detail", new { id = productId });
         }
+
+
         public async Task<IActionResult> SortByPriceAsc()
         {
             var products = _context.Products.OrderBy(p => p.Price).ToList();

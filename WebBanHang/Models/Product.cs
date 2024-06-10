@@ -17,6 +17,7 @@ namespace WebBanHang.Models
         public string congtyphathanh { get; set; }
         public string loaibia { get; set; }
         public int sotrang { get; set; }
+        public double AverageRating { get; set; }
         public List<ProductImage>? Images { get; set; }
         public int CategoryId { get; set; }
         public Category? Category { get; set; }
@@ -26,9 +27,9 @@ namespace WebBanHang.Models
         public ICollection<like> Likes { get; set; } = new List<like>();
         public ICollection<comment> Comments { get; set; } =new List<comment>();
         public int TotalReviews { get; set; } // Tổng số lượt đánh giá
-        public decimal AverageRating { get; set; } // Điểm trung bình đánh giá
         public int SoLuongBanRa { get; set; }
         public int LuongTonKho { get; set; }
+      
         public void UpdateStock(int quantitySold)
         {
             SoLuongBanRa += quantitySold;

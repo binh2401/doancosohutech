@@ -3,12 +3,12 @@
     ViewData["Title"] = "menu";
     var uniqueCategories = new HashSet<string>();
 }
-
+<div class="menu-container">
 <div class="menu">
     <ul id="menu">
-        <li><a asp-area="" asp-controller="Home" asp-action="Index">Trang chủ</a></li>
+       
         <li>
-            <a href="#">Thể loại</a>
+            <a class="menua" href="#">Thể loại</a>
             <ul id="submenu">
 
                 @foreach (var item in Model)
@@ -19,12 +19,14 @@
                         if (!uniqueCategories.Contains(categoryName))
                         {
                             uniqueCategories.Add(categoryName);
+                            var subMenuId = "sub-submenu-" + uniqueCategories.Count; // Tạo id động
                             <li>
                                 <a asp-controller="Home" asp-action="ProductcategoryByMenu" asp-route-menuId="@item.Category.menu.Id">
                                     @categoryName
                                 </a>
 
-                                <ul id="sub-submenu">
+                                <ul id="@subMenuId">
+                                    <!-- Sử dụng id động -->
                                     @foreach (var subItem in item.Category.menu.Categorys)
                                     {
                                         <li>
@@ -36,30 +38,56 @@
                         }
                     }
                 }
-
+      
             </ul>
-        </li>
+       </li>
+
         
-        <li><a asp-area="" asp-controller="Home" asp-action="likeuser">sách bạn đã thích</a></li>
-        <li><a asp-area="" asp-controller="ShoppingCart" asp-action="UserOrders">Lịch sử mua hàng</a></li>
-        @if (User.Identity.IsAuthenticated && User.IsInRole("Admin"))
-        {
-            <li class="nav-item">
-                <a class="nav-link text-dark" asp-area="Admin" asp-controller="Ad" asp-action="danhthu">Admin</a>
-            </li>
-        }
     </ul>
 </div>
+</div>
 <style>
-    .menu ul li a {
-        display: block;
-        padding: 10px 15px;
-        color: #333;
-        text-decoration: none;
-        font-weight: bold; /* Chữ đậm */
-        background-color: white; /* Nền màu trắng */
-        border: 1px solid #ddd; /* Đường viền */
-        border-radius: 5px;
-        margin-bottom: 5px;
+    .menu-container {
+        position: relative; /* Đảm bảo phần tử cha có vị trí tương đối */
+        z-index: 9999; /* Thiết lập giá trị z-index cao hơn */
     }
+    .menu ul {
+        list-style: none;
+        padding: 0;
+    }
+
+        .menu ul li {
+            position: relative;
+        }
+
+            .menu ul li a {
+                display: block;
+                padding: 10px 15px;
+                color: #333;
+                text-decoration: none;
+                font-weight: bold;
+                background-color: white;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                margin-bottom: 5px;
+            }
+
+        .menu ul ul {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+            .menu ul ul ul {
+                top: 0;
+                left: 100%;
+            }
+
+        .menu ul li:hover > ul {
+            display: block;
+        }
 </style>
