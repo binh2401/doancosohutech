@@ -30,7 +30,7 @@
                                                 <h6 class="mb-1"> @Html.DisplayFor(modelItem => item.Name)</h6>
                                                 <p class="font-size-13 line-height mb-1">Gurt Mistrioty</p>
                                                 <div class="d-block">
-                                                    <span class="font-size-11 text-warning">
+                                                    <span class="font-size-30 text-warning">
                                                         @{
                                                             int starCount = (int)item.AverageRating; // Lấy phần nguyên của AverageRating để xác định số lượng sao nguyên
                                                             double remainder = item.AverageRating - starCount; // Lấy phần dư để xác định có cần thêm sao nữa hay không
@@ -90,7 +90,7 @@
                                                 <h6 class="mb-1">  @Html.DisplayFor(modelItem => item.Name)</h6>
                                                 <p class="font-size-13 line-height mb-1">@item.author</p>
                                                 <div class="d-block line-height">
-                                                    <span class="font-size-11 text-warning">
+                                                    <span class="font-size-30 text-warning">
                                                         @{
                                                             int starCount = (int)item.AverageRating; // Lấy phần nguyên của AverageRating để xác định số lượng sao nguyên
                                                             double remainder = item.AverageRating - starCount; // Lấy phần dư để xác định có cần thêm sao nữa hay không

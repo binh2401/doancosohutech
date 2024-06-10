@@ -19,6 +19,7 @@
                     <h2 class="mt-5">
                         @Model.Price.ToString("#,##0") VNĐ<small class="text-success"></small>
                     </h2>
+                    @if(Model.LuongTonKho>0){
                     <form asp-controller="ShoppingCart" asp-action="AddToCart" method="post">
                         <input type="hidden" name="productId" value="@Model.Id" />
                         <label for="quantity">Số lượng:</label>
@@ -27,7 +28,9 @@
                            Thêm vào giỏ hàng
                         </button>
                     </form>
-
+                    }else{
+                        <h3>Tạm hết hàng</h3>
+                    }
 
                     hàng còn   <span id="totalLikes">@Model.LuongTonKho</span>
                     <h3 class="box-title mt-5"></h3>
