@@ -61,13 +61,13 @@
                                                     <h6><b>@item.Price.ToString("#,##") Vnđ</b></h6>
                                             </div>
                                             <div class="iq-product-action">
-                                                    <a class="likeButton btn btn-outline-dark" asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity"><i class="ri-shopping-cart-2-fill text-primary"></i></a>
-                                                <form>
-                                                    @Html.AntiForgeryToken()
-                                                    <a class="likeButton btn btn-outline-dark" type="button" data-product-id="@item.Id">
-                                                        <i class="bi @(isLiked ? "bi-heart-fill" : "bi-heart")" style="color: @(isLiked ? "red" : "gray");"></i>
-                                                    </a>
-                                                </form>
+                                                    <a class="btn btn-outline-dark" asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity"><i class="ri-shopping-cart-2-fill text-primary"></i></a>
+                                                    <form>
+                                                        @Html.AntiForgeryToken()
+                                                        <a class="likeButton btn btn-outline-dark" type="button" data-product-id="@item.Id">
+                                                            <i class="bi @(isLiked ? "bi-heart-fill" : "bi-heart")" style="color: @(isLiked ? "red" : "gray");"></i>
+                                                        </a>
+                                                    </form>
                                             </div>
                                         </div>
                                     </div>
@@ -169,6 +169,7 @@
             transform: scale(1.1); /* Phóng to hình ảnh khi đưa chuột vào */
         }
 </style>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 <script>
     $(document).ready(function () {
         $('.likeButton').click(function () {
