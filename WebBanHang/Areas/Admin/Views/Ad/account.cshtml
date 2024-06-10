@@ -2,30 +2,34 @@
 @{
     Layout = "_AdminLayout";
 }
-    <div id="layoutSidenav_content">
-        <main>
-            <div class="container-fluid px-4">
-    <h1>User List</h1>
-    <table>
-        <tr>
-            <th>Email</th>
-            <th>Username</th>
-            <th>Roles</th>
-            <th>Action</th> <!-- Thêm cột Action -->
-        </tr>
-        @foreach (var userViewModel in Model)
-        {
-            <tr>
-                <td>@userViewModel.User.Email</td>
-                <td>@userViewModel.User.FullName</td>
-                <td>@string.Join(", ", userViewModel.Roles)</td>
-                <td>
-                    <a asp-controller="Ad"  asp-action="EditUserRole" asp-route-id="@userViewModel.User.Id">Edit</a> <!-- Di chuyển thẻ <a> vào trong thẻ <td> -->
-                </td>
-                
-            </tr>
-        }
-    </table>
-    </div>
+
+<div id="layoutSidenav_content">
+    <main>
+        <div class="container-fluid px-4">
+            <h1>Danh sách tài khoản</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Email</th>
+                        <th>Username</th>
+                        <th>Roles</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var userViewModel in Model)
+                    {
+                        <tr>
+                            <td>@userViewModel.User.Email</td>
+                            <td>@userViewModel.User.FullName</td>
+                            <td>@string.Join(", ", userViewModel.Roles)</td>
+                            <td>
+                                <a asp-controller="Ad" asp-action="EditUserRole" asp-route-id="@userViewModel.User.Id" class="btn btn-primary">Edit</a>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
     </main>
-    </div>
+</div>

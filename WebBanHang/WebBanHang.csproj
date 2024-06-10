@@ -8,6 +8,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Include="wwwroot\layout\.idea\misc.xml" />
+    <Content Include="wwwroot\layout\.idea\modules.xml" />
+    <Content Include="wwwroot\layout\.idea\vcs.xml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore" Version="8.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="8.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="8.0.4" />
@@ -35,6 +41,17 @@
     <Folder Include="wwwroot\lib\jquery-validation\dist\" />
     <Folder Include="wwwroot\lib\jquery\" />
     <Folder Include="wwwroot\lib\jquery\dist\" />
+    <Folder Include="wwwroot\images\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\layout\.idea\.gitignore" />
+    <None Include="wwwroot\layout\.idea\html.iml" />
+    <None Include="wwwroot\layout\images\book-dec\.DS_Store" />
+    <None Include="wwwroot\layout\images\browse-books\.DS_Store" />
+    <None Include="wwwroot\layout\images\new_realeases\.DS_Store" />
+    <None Include="wwwroot\layout\images\similar-books\.DS_Store" />
+    <None Include="wwwroot\layout\images\trendy-books\.DS_Store" />
   </ItemGroup>
 
 </Project>

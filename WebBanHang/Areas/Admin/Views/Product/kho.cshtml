@@ -6,7 +6,7 @@
 <div id="layoutSidenav_content">
     <main>
         <div class="container-fluid px-4">
-<h2>kho</h2>
+<h2>Quản lý kho</h2>
     <table class="table">
 
         <thead>
@@ -32,10 +32,10 @@
                     <td><img src="@product.ImageUrl" style="max-width:200px;" /></td>
                     <td>
 
-                     
 
-                        <a asp-action="Update" asp-route-id="@product.Id">Edit</a> 
-                    </td>
+
+                                <a class="btn btn-primary" asp-action="Update" asp-route-id="@product.Id">Edit</a>
+                            </td>
                 </tr>
             }
         </tbody>

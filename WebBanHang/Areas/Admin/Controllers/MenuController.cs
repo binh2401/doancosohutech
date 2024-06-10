@@ -85,7 +85,7 @@ namespace WebBanHang.Areas.Admin.Controllers
             var menucategory = await _imenu.GetByIdAsync(id);
             if (menucategory != null)
             {
-                await _categoryRepository.DeleteAsync(id);
+                await _imenu.DeleteAsync(id);
             }
             return RedirectToAction(nameof(Index));
         }
