@@ -92,20 +92,21 @@
                                                 <h6><b>@item.Price.ToString("#,##0") Vnđ</b></h6>
                                             </div>
                                             <div class="iq-product-action">
-                                                <div>
-                                                    <a class=" btn btn-outline-dark" asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
+                                                <div class="action-item">
+                                                    <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
                                                         <i class="ri-shopping-cart-2-fill text-primary"></i>
                                                     </a>
                                                 </div>
-                                                <div>
+                                                <div class="action-item">
                                                     <form>
                                                         @Html.AntiForgeryToken()
-                                                        <a class="likeButton btn btn-outline-dark" type="button" data-product-id="@item.Id">
+                                                        <a class="likeButton" type="button" data-product-id="@item.Id">
                                                             <i class="bi @(isLiked ? "bi-heart-fill" : "bi-heart")" style="color: @(isLiked ? "red" : "gray");"></i>
                                                         </a>
                                                     </form>
                                                 </div>
                                             </div>
+
                                         </div>
                                     </div>
                                 </div>
@@ -231,16 +232,19 @@
                                                 <h6><b>@item.Price.ToString("#,##0") Vnđ</b></h6>
                                             </div>
                                             <div class="iq-product-action">
-                                                <a class=" btn btn-outline-dark" asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
-                                                    <i class="ri-shopping-cart-2-fill text-primary"></i>
-                                                </a>
-
-                                                <form>
-                                                    @Html.AntiForgeryToken()
-                                                    <a class="likeButton btn btn-outline-dark" type="button" data-product-id="@item.Id">
-                                                        <i class="bi @(isLiked ? "bi-heart-fill" : "bi-heart")" style="color: @(isLiked ? "red" : "gray");"></i>
+                                                <div class="action-item">
+                                                    <a asp-controller="ShoppingCart" asp-action="AddToCart" asp-route-productId="@item.Id" asp-route-quantity="@numOfQuantity">
+                                                        <i class="ri-shopping-cart-2-fill text-primary"></i>
                                                     </a>
-                                                </form>
+                                                </div>
+                                                <div class="action-item">
+                                                    <form>
+                                                        @Html.AntiForgeryToken()
+                                                        <a class="likeButton" type="button" data-product-id="@item.Id">
+                                                            <i class="bi @(isLiked ? "bi-heart-fill" : "bi-heart")" style="color: @(isLiked ? "red" : "gray");"></i>
+                                                        </a>
+                                                    </form>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -312,7 +316,7 @@
 </div>
 
 <style>
-
+   
 
     .card .as {
         display: flex;
