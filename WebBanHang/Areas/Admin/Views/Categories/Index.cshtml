@@ -21,9 +21,7 @@
              Tên thể loại
 
             </th>
-            <th>
-               Tên thể loại tổng
-            </th>
+           
         </tr>
     </thead>
     <tbody>
@@ -33,11 +31,9 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Name)
                 </td>
+                
                 <td>
-                    @(item.menu?.Name)
-                </td>
-                <td>
-                                <a class="btn btn-primary" asp-action="Update" asp-route-id="@item.Id">Edit</a> |
+                                
                                 <a class="btn btn-primary" asp-action="Delete" asp-route-id="@item.Id">Delete</a>
                 </td>
             </tr>
