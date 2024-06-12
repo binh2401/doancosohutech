@@ -13,7 +13,7 @@
     <link href="~/layout/css/typography.css" rel="stylesheet" />
     <link href="~/layout/css/style.css" rel="stylesheet" />
     <link href="~/layout/css/responsive.css" rel="stylesheet" />
-   
+
     <div id="fb-root"></div>
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v19.0" nonce="xtq0K0LH"></script>
 </head>
@@ -50,7 +50,7 @@
                         }
                         <li><a asp-controller="Home" asp-action="likeuser"><i class="ri-book-line"></i>Yêu Thích</a></li>
                         <li><a asp-area="" asp-controller="ShoppingCart" asp-action="UserOrders"><i class="ri-book-line"></i>Lich sử mua hàng</a></li>
-                      
+
 
                     </ul>
                 </nav>
@@ -74,7 +74,6 @@
                         </div>
                     </div>
                     <div class="navbar-breadcrumb">
-                        <h5 class="mb-0">Trang Chủ</h5>
                     </div>
                     <div class="iq-search-bar">
                         <form asp-action="Search" asp-controller="Product" method="post" class="searchbox">
@@ -96,24 +95,24 @@
                                     <a class="search-link" href="#"><i class="ri-search-line"></i></a>
                                 </form>
                             </li>
-                          
-                          
+
+
                             <li class="nav-item nav-icon dropdown">
                                 <a asp-action="Index" asp-controller="ShoppingCart" class="search-toggle iq-waves-effect text-gray rounded">
                                     <i class="ri-shopping-cart-2-line"></i>
                                     <span class="badge badge-danger count-cart rounded-circle"></span>
                                 </a>
-                             
+
                             </li>
                             <li class="line-height pt-3">
                                 <a href="#" class="search-toggle iq-waves-effect d-flex align-items-center">
-                                  
+
                                     <div class="caption">
 
                                         <h6 class="mb-1 line-height"><partial name="_LoginPartial" /></h6>
                                     </div>
                                 </a>
-                             
+
                             </li>
                         </ul>
                     </div>
@@ -125,7 +124,7 @@
         <div id="content-page" class="content-page">
             <div class="container-fluid">
                 <div class="row">
-                  
+
                     @RenderBody()
 
 
@@ -211,7 +210,7 @@
             justify-content: center;
         }
 
-   
+
     .searchbox {
         display: flex;
         align-items: center;
