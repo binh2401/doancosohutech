@@ -9,26 +9,26 @@
 <div id="layoutSidenav_content">
     <main>
         <div class="container-fluid px-4">
-<h1>Thống kê doanh thu</h1>
+            <h1>Thống kê doanh thu</h1>
 
-<form method="get">
-    <div>
-        <label for="startDate">Từ ngày:</label>
-        <input type="date" id="startDate" name="startDate" value="@Model.StartDate?.ToString("yyyy-MM-dd")" />
-    </div>
-    <div>
-        <label for="endDate">Đến ngày:</label>
-        <input type="date" id="endDate" name="endDate" value="@Model.EndDate?.ToString("yyyy-MM-dd")" />
-    </div>
-    <button type="submit">Lọc</button>
-</form>
+            <form method="get">
+                <div>
+                    <label for="startDate">Từ ngày:</label>
+                    <input type="date" id="startDate" name="startDate" value="@Model.StartDate?.ToString("yyyy-MM-dd")" />
+                </div>
+                <div>
+                    <label for="endDate">Đến ngày:</label>
+                    <input type="date" id="endDate" name="endDate" value="@Model.EndDate?.ToString("yyyy-MM-dd")" />
+                </div>
+                <button type="submit">Lọc</button>
+            </form>
             <div style="width: 200px; height: 200px;">
                 <canvas id="totalRevenueChart" width="50" height="50"></canvas>
             </div>
-<canvas id="revenueChart" width="400" height="200"></canvas>
+            <canvas id="revenueChart" width="400" height="200"></canvas>
 
-</div>
-</main>
+        </div>
+    </main>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
@@ -42,7 +42,7 @@
                 backgroundColor: 'rgba(0, 123, 255, 0.5)',
                 borderColor: 'rgba(0, 123, 255, 1)',
                 data: @Html.Raw(Json.Serialize(revenues))
-            }]
+                }]
         },
         options: {
             responsive: true,

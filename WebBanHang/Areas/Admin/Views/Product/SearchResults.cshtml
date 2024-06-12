@@ -6,49 +6,52 @@
 <div id="layoutSidenav_content">
     <main>
         <div class="container-fluid px-4">
-<div id="layoutSidenav_content">
-    <main>
-        <div class="container-fluid px-4">
-<h2>Sản phẩm của bạn đây:</h2>
-<table class="table">
+            <div id="layoutSidenav_content">
+                <main>
+                    <div class="container-fluid px-4">
+                        <h2>Sản phẩm của bạn đây:</h2>
+                        <table class="table">
 
-    <thead>
-        <tr>
-            <th>Name</th>
-            <th>author</th>
-            <th>Price</th>
-            <th>Description</th>
-            <th>Category</th>
-            <th>the loai tong</th>
-            <th>Images</th>
-            <th>Actions</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var product in Model)
-        {
-            <tr>
-                <td>@product.Name</td>
-                <td>@product.author</td>
-                <td>@product.Price</td>
-                <td>@product.Description</td>
-                <td>@product.Category?.Name</td>
-                <td>@(product.Category?.menu?.Name ?? "Unknown")</td>
+                            <thead>
+                                <tr>
+                                    <th>Tên Sản phẩm</th>
+                                    <th>Tác giả</th>
+                                    <th>Giá</th>
+                                    <th>Nội dung</th>
+                                    <th>Thể loại</th>
+                                    <th>Thể loại lớn</th>
+                                    <th>Hình ảnh</th>
+                                    <th>Công cụ</th>
 
-                <td><img src="@product.ImageUrl" style="max-width:200px;" /></td>
-                <td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var product in Model)
+                                {
+                                    <tr>
+                                        <td>@product.Name</td>
+                                        <td>@product.author</td>
+                                        <td>@product.Price.ToString("#,##0") VNĐ</td>
+                                        <td>@product.Description</td>
+                                        <td>@product.Category?.Name</td>
+                                        <td>@(product.Category?.menu?.Name ?? "Unknown")</td>
+                                        <td><img src="@product.ImageUrl" style="max-width:200px;" /></td>
+                                        <td>
 
-                    <a asp-action="Display" asp-route-id="@product.Id">View</a> |
+                                            <a class="btn btn-primary" asp-action="Display" asp-route-id="@product.Id">xem</a>
 
-                    <a asp-action="Update" asp-route-id="@product.Id">Edit</a> |
+                                            <a class="btn btn-primary" asp-action="Update" asp-route-id="@product.Id">sửa</a>
 
-                    <a asp-action="Delete" asp-route-id="@product.Id">Delete</a>
+                                            <a class="btn btn-primary" asp-action="Delete" asp-route-id="@product.Id">xóa</a>
 
-                </td>
-            </tr>
-        }
-    </tbody>
-</table>
+                                        </td>
+                                    </tr>
+                                }
+                            </tbody>
+                        </table>
+                    </div>
+                </main>
+            </div>
+        </div>
 </div>
-</main>
-</div>
+

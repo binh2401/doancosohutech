@@ -10,10 +10,10 @@
             <table class="table">
                 <thead>
                     <tr>
-                        <th>Email</th>
-                        <th>Username</th>
-                        <th>Roles</th>
-                        <th>Action</th>
+                        <th>Tên đăng nhập</th>
+                        <th>Tên tài khoản</th>
+                        <th>Chức vụ</th>
+                        <th>Chỉnh sửa chức vụ</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -24,7 +24,7 @@
                             <td>@userViewModel.User.FullName</td>
                             <td>@string.Join(", ", userViewModel.Roles)</td>
                             <td>
-                                <a asp-controller="Ad" asp-action="EditUserRole" asp-route-id="@userViewModel.User.Id" class="btn btn-primary">Edit</a>
+                                <a asp-controller="Ad" asp-action="EditUserRole" asp-route-id="@userViewModel.User.Id" class="btn btn-primary">sửa chức vụ</a>
                             </td>
                         </tr>
                     }

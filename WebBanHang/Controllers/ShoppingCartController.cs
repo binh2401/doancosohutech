@@ -245,7 +245,7 @@ namespace WebBanHang.Controllers
 		}
 		public IActionResult PaymentSuccess()
 		{
-			return View("Success");
+			return View("OrderCompleted");
 		}
 		public IActionResult PaymentFail()
 		{
