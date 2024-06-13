@@ -63,7 +63,7 @@
                                 <div class="col-md-4">
                                     <div class="mt-3">
                                         <p class="text-muted mb-2">Tổng</p>
-                                        <h5 class="mb-0 mt-2">@((item.Price) * item.Quantity)VNĐ</h5>
+                                        <h5 class="mb-0 mt-2"> @((item.Price) * item.Quantity) VNĐ</h5>
                                     </div>
                                 </div>
                             </div>
@@ -119,7 +119,7 @@
                                             {
                                             @Model.Items.Where(x => x.ProductId == item.ProductId).Sum(x => x.Quantity * x.Price).ToString()
                                             } *@
-                                            $@Model.Items.Sum(item => item.Price * item.Quantity)
+                                            @Model.Items.Sum(item => item.Price * item.Quantity).ToString("#,##0") VNĐ
                                         </td>
                                     </tr>
                                 </tbody>

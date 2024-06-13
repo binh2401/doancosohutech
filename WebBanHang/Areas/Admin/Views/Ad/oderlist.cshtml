@@ -45,7 +45,7 @@
                                 @Html.DisplayFor(modelItem => item.ShippingAddress)
                             </td>
                             <td>
-                                @Html.DisplayFor(modelItem => item.TotalPrice)
+                                @item.TotalPrice.ToString("#,##0") VNĐ
                             </td>
                             <td>
                                 @Html.DisplayFor(modelItem => item.Status)

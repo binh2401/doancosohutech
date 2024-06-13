@@ -143,11 +143,15 @@ namespace WebBanHang.Controllers
         public JsonResult LikeProduct(int productId)
         {
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if(userId == null)
+            {
+                return Json(new { success = false, message = "Bạn cần đăng nhập" });
+            }
             var product = _context.Products.Find(productId);
 
             if (product == null)
             {
-                return Json(new { success = false, message = "Product not found." });
+                return Json(new { success = false, message = "hiện không có sản phẩm" });
             }
 
             var existingLike = _context.Likes.FirstOrDefault(l => l.ProductId == productId && l.UserId == userId);
@@ -175,12 +179,17 @@ namespace WebBanHang.Controllers
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             return _context.Likes.Any(l => l.ProductId == productId && l.UserId == userId);
         }
+        
         public async Task<IActionResult> likeuser()
         {
             var productdf = await _productRepository.GetAllAsync();
             var products = _context.Products.Include(p => p.Likes).ToList();
             var productLikes = new Dictionary<int, bool>();
             var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (userId == null)
+            {
+                return Json(new { success = false, message = "Bạn cần đăng nhập" });
+            }
 
             foreach (var product in products)
             {
@@ -223,7 +232,7 @@ namespace WebBanHang.Controllers
             if (!User.Identity.IsAuthenticated)
             {
                 // Người dùng chưa đăng nhập, bạn có thể xử lý điều này tại đây
-                return RedirectToAction("Login", "Account");
+                return Json(new { success = false, message = "Bạn cần đăng nhập để thực hiện" });
             }
 
             var userId = HttpContext.User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -301,7 +310,7 @@ namespace WebBanHang.Controllers
             ViewBag.IsLiked = productLikes;
             var bestSellingProducts = _context.Products
                 .OrderByDescending(p => p.SoLuongBanRa)
-                .Take(10) // Lấy 10 sản phẩm bán chạy nhất
+                .Take(20) // Lấy 10 sản phẩm bán chạy nhất
                 .ToList();
 
             return View(bestSellingProducts);
@@ -320,7 +329,7 @@ namespace WebBanHang.Controllers
             ViewBag.IsLiked = productLikes;
             var mostLikedProducts = _context.Products
                 .OrderByDescending(p => p.TotalLikes)
-                .Take(10) // Lấy 10 sản phẩm được yêu thích nhất
+                .Take(20)// Lấy 10 sản phẩm được yêu thích nhất
                 .ToList();
 
             return View("BestSellingProducts",mostLikedProducts);
